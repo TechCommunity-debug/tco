@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "@fontsource-variable/inter";
 
+/* Agent skill docs contain example markup; keep them out of class detection. */
+@source not "../../.agents";
+@source not "../../.claude";
+
 /*
  * Design tokens, following DESIGN.md: white canvas, near-black ink, one warm accent,
  * soft radii, and a single elevation tier. The accent is a madder red rather than

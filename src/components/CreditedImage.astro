@@ -32,7 +32,6 @@ const usableWidths = widths.filter((w) => w <= image.width);
     class={imgClass}
   />
   <figcaption class="mt-2 text-caption text-muted">
-    {t(lang, 'imageCredit')}: <a href={credit.source_url} class="underline decoration-hairline underline-offset-2 hover:decoration-muted" rel="noopener">{credit.author}, {credit.source}</a> ·
-    <a href={credit.license_url} class="underline decoration-hairline underline-offset-2 hover:decoration-muted" rel="license noopener">{credit.license}</a>
+    {t(lang, 'imageCredit')}: <a href={credit.source_url} class="underline decoration-hairline underline-offset-2 hover:decoration-muted" rel="noopener">{credit.author}, {credit.source}</a>{' · '}<a href={credit.license_url} class="underline decoration-hairline underline-offset-2 hover:decoration-muted" rel="license noopener">{credit.license}</a>
   </figcaption>
 </figure>

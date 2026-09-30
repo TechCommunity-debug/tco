@@ -81,7 +81,8 @@ for (const [path, { html }] of pages) {
   }
 
   for (const [tag] of html.matchAll(/<img\s[^>]*>/g)) {
-    if (attr(tag, 'alt') === undefined) fail(path, `image without alt: ${tag.slice(0, 120)}`);
+    // A bare `alt` attribute is valid HTML for decorative images (same as alt="").
+    if (!/\salt(?:=|[\s/>])/.test(tag)) fail(path, `image without alt: ${tag.slice(0, 120)}`);
   }
 }
 
