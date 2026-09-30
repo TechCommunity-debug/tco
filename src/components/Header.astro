@@ -1,0 +1,86 @@
+---
+import { localeMeta, segments, t, type Locale } from '../i18n/ui';
+import { localePath, type SiteRoute } from '../lib/routes';
+import Icon from './Icon.astro';
+import Logo from './Logo.astro';
+
+interface Props {
+  lang: Locale;
+  route: SiteRoute;
+  alternates: SiteRoute[];
+}
+
+const { lang, route, alternates } = Astro.props;
+
+const tabs = [
+  { label: t(lang, 'countries'), href: localePath(lang, segments[lang].countries), icon: 'globe', active: route.kind === 'countries' || route.kind === 'country' },
+  { label: t(lang, 'garments'), href: localePath(lang, segments[lang].garments), icon: 'hanger', active: route.kind === 'garments' || route.kind === 'garment' },
+] as const;
+
+const other = alternates.find((alt) => alt.lang !== lang);
+const otherLang: Locale = other?.lang ?? (lang === 'en' ? 'de' : 'en');
+const otherHref = other?.path ?? localePath(otherLang);
+---
+
+<header class="sticky top-0 z-40 border-b border-hairline bg-canvas/95 backdrop-blur supports-[backdrop-filter]:bg-canvas/85">
+  <div class="page-container flex h-[72px] items-center justify-between gap-4 md:h-20">
+    <Logo href={localePath(lang)} />
+
+    <nav aria-label={t(lang, 'mainNav')} class="hidden md:block">
+      <ul class="flex items-center gap-2">
+        {
+          tabs.map((tab) => (
+            <li>
+              <a
+                href={tab.href}
+                aria-current={tab.active ? 'page' : undefined}
+                class:list={[
+                  'relative flex h-20 items-center gap-2 px-4 text-title font-semibold transition-colors',
+                  'after:absolute after:inset-x-4 after:bottom-0 after:h-0.5 after:rounded-full after:bg-ink after:transition-opacity',
+                  tab.active ? 'text-ink after:opacity-100' : 'text-muted after:opacity-0 hover:text-ink hover:after:bg-hairline hover:after:opacity-100',
+                ]}
+              >
+                <Icon name={tab.icon} size={22} />
+                {tab.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <a
+      href={otherHref}
+      hreflang={otherLang}
+      lang={otherLang}
+      class="flex h-10 items-center gap-2 rounded-full border border-hairline px-4 text-body-sm font-medium text-ink transition-shadow hover:shadow-float"
+      aria-label={t(lang, 'switchLanguage')}
+    >
+      <Icon name="globe" size={18} />
+      <span>{localeMeta[otherLang].label}</span>
+    </a>
+  </div>
+
+  <nav aria-label={t(lang, 'mainNav')} class="border-t border-hairline-soft md:hidden">
+    <ul class="page-container flex items-center gap-1">
+      {
+        tabs.map((tab) => (
+          <li class="flex-1">
+            <a
+              href={tab.href}
+              aria-current={tab.active ? 'page' : undefined}
+              class:list={[
+                'relative flex h-12 items-center justify-center gap-2 text-body-sm font-semibold',
+                'after:absolute after:inset-x-6 after:bottom-0 after:h-0.5 after:rounded-full after:bg-ink',
+                tab.active ? 'text-ink after:opacity-100' : 'text-muted after:opacity-0',
+              ]}
+            >
+              <Icon name={tab.icon} size={18} />
+              {tab.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

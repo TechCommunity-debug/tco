@@ -1,0 +1,82 @@
+---
+import type { MarkdownHeading } from 'astro';
+import { localeMeta, t, type Locale } from '../i18n/ui';
+import type { Crumb } from '../lib/seo';
+import Breadcrumbs from './Breadcrumbs.astro';
+import CreditedImage from './CreditedImage.astro';
+
+/*
+ * Detail page frame shared by countries and garments: breadcrumbs, title, credited hero
+ * photo, then the article next to a sticky "at a glance" card (DESIGN.md reservation-card).
+ */
+interface Props {
+  lang: Locale;
+  crumbs: Crumb[];
+  title: string;
+  intro: string;
+  hero: { file: string; alt: string };
+  headings: MarkdownHeading[];
+  updated: Date;
+}
+
+const { lang, crumbs, title, intro, hero, headings, updated } = Astro.props;
+const sections = headings.filter((heading) => heading.depth === 2);
+const updatedLabel = updated.toLocaleDateString(localeMeta[lang].dateLocale, { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<div class="mx-auto w-full max-w-(--container-detail) px-6 pt-6 md:px-10">
+  <Breadcrumbs lang={lang} crumbs={crumbs} />
+
+  <header class="mt-6 max-w-3xl">
+    <h1 class="text-display-xl font-bold text-balance text-ink md:text-[32px] md:leading-tight">{title}</h1>
+    <p class="mt-3 text-[17px] leading-relaxed text-pretty text-ink-body">{intro}</p>
+  </header>
+
+  <CreditedImage
+    file={hero.file}
+    alt={hero.alt}
+    lang={lang}
+    priority
+    sizes="(min-width: 1128px) 1040px, calc(100vw - 48px)"
+    class="mt-8"
+    imgClass="aspect-[4/3] w-full rounded-md bg-surface-strong object-cover md:aspect-[16/9]"
+  />
+
+  <div class="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-16">
+    <aside class="lg:col-start-2 lg:row-start-1">
+      <div class="rounded-md border border-hairline p-6 shadow-float lg:sticky lg:top-28">
+        <h2 class="text-display-sm font-semibold text-ink">{t(lang, 'atAGlance')}</h2>
+        <slot name="facts" />
+        {
+          sections.length > 0 && (
+            <nav aria-labelledby="on-this-page" class="mt-6 border-t border-hairline pt-5">
+              <h3 id="on-this-page" class="text-body-sm font-semibold text-ink">
+                {t(lang, 'onThisPage')}
+              </h3>
+              <ol class="mt-3 space-y-2">
+                {sections.map((section) => (
+                  <li>
+                    <a href={`#${section.slug}`} class="text-body-sm text-muted hover:text-ink hover:underline">
+                      {section.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )
+        }
+      </div>
+    </aside>
+    <div class="min-w-0 lg:col-start-1 lg:row-start-1">
+      <article class="prose-content">
+        <slot />
+      </article>
+      <p class="mt-10 text-caption text-muted">
+        {t(lang, 'lastUpdated')}: <time datetime={updated.toISOString().slice(0, 10)}>{updatedLabel}</time>
+      </p>
+    </div>
+
+  </div>
+
+  <slot name="after" />
+</div>

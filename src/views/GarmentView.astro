@@ -1,0 +1,60 @@
+---
+import { getEntry, render } from 'astro:content';
+import ArticleShell from '../components/ArticleShell.astro';
+import FactList from '../components/FactList.astro';
+import PhotoCard from '../components/PhotoCard.astro';
+import { segments, t } from '../i18n/ui';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocalImage, getSocialImageUrl } from '../lib/images';
+import { countryPath, garmentPath, getGarments, localePath, type SiteRoute } from '../lib/routes';
+import { articleJsonLd, breadcrumbJsonLd, type Crumb } from '../lib/seo';
+
+interface Props {
+  route: SiteRoute;
+}
+
+const { route } = Astro.props;
+const { lang } = route;
+const garment = (await getEntry('garments', route.entryId!))!;
+const { Content, headings } = await render(garment);
+const data = garment.data;
+
+const countries = (await Promise.all(data.countries.map((id) => getEntry('countries', `${lang}/${id}`)))).filter((c) => c !== undefined);
+const moreGarments = (await getGarments(lang)).filter((g) => g.id !== garment.id).slice(0, 4);
+
+const crumbs: Crumb[] = [
+  { label: t(lang, 'home'), href: localePath(lang) },
+  { label: t(lang, 'garments'), href: localePath(lang, segments[lang].garments) },
+  { label: data.name, href: route.path },
+];
+
+const facts = [{ label: t(lang, 'origin'), links: countries.map((c) => ({ label: c.data.name, href: countryPath(c) })) }, ...data.facts];
+
+const site = Astro.site!;
+const heroImage = getLocalImage(data.hero.file);
+const heroUrl = await getSocialImageUrl(heroImage, site);
+const jsonLd = [
+  breadcrumbJsonLd(crumbs, site),
+  articleJsonLd({ headline: data.title, description: data.description, url: new URL(route.path, site).href, image: heroUrl, dateModified: data.updated, lang }),
+];
+---
+
+<BaseLayout route={route} title={data.title} description={data.description} ogImage={heroImage} jsonLd={jsonLd}>
+  <ArticleShell lang={lang} crumbs={crumbs} title={data.title} intro={data.intro} hero={data.hero} headings={headings} updated={data.updated}>
+    <Content />
+    <FactList slot="facts" items={facts} />
+
+    <section slot="after" class="mt-16 border-t border-hairline pt-12" aria-labelledby="more-garments">
+      <h2 id="more-garments" class="text-display-lg font-semibold text-ink">{t(lang, 'moreGarments')}</h2>
+      <ul class="mt-6 grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-3 lg:grid-cols-4">
+        {
+          moreGarments.map((other) => (
+            <li>
+              <PhotoCard href={garmentPath(other)} title={other.data.name} description={other.data.summary} image={other.data.hero} aspect="portrait" />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </ArticleShell>
+</BaseLayout>

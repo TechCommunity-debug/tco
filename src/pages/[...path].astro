@@ -1,0 +1,39 @@
+---
+/*
+ * Every page on the site is generated here from the route registry (src/lib/routes.ts),
+ * so each URL, its translations and its hreflang links come from one place.
+ */
+import type { GetStaticPaths } from 'astro';
+import { getRoutes, type SiteRoute } from '../lib/routes';
+import CountriesView from '../views/CountriesView.astro';
+import CountryView from '../views/CountryView.astro';
+import GarmentsView from '../views/GarmentsView.astro';
+import GarmentView from '../views/GarmentView.astro';
+import HomeView from '../views/HomeView.astro';
+import PageView from '../views/PageView.astro';
+
+export const getStaticPaths = (async () => {
+  const routes = await getRoutes();
+  return routes.map((route) => ({
+    params: { path: route.path === '/' ? undefined : route.path.slice(1, -1) },
+    props: { route },
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  route: SiteRoute;
+}
+
+const { route } = Astro.props;
+const views = {
+  home: HomeView,
+  countries: CountriesView,
+  garments: GarmentsView,
+  country: CountryView,
+  garment: GarmentView,
+  page: PageView,
+} as const;
+const View = views[route.kind];
+---
+
+<View route={route} />

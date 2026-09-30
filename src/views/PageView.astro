@@ -1,0 +1,112 @@
+---
+import { getEntry, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { localeMeta, t } from '../i18n/ui';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllCredits, getLocalImage } from '../lib/images';
+import { countryPath, garmentPath, getCountries, getGarments, localePath, splitEntryId, type SiteRoute } from '../lib/routes';
+import { breadcrumbJsonLd, type Crumb } from '../lib/seo';
+
+/* Trust pages (about, contact, privacy) and the image sources page, which adds the credit list. */
+interface Props {
+  route: SiteRoute;
+}
+
+const { route } = Astro.props;
+const { lang } = route;
+const page = (await getEntry('pages', route.entryId!))!;
+const { Content } = await render(page);
+const isSources = splitEntryId(page.id).sharedId === 'sources';
+
+const crumbs: Crumb[] = [
+  { label: t(lang, 'home'), href: localePath(lang) },
+  { label: page.data.title, href: route.path },
+];
+
+const credits = isSources ? await getAllCredits() : [];
+const usage = new Map<string, { label: string; href: string }[]>();
+if (isSources) {
+  const [countries, garments] = await Promise.all([getCountries(lang), getGarments(lang)]);
+  const uses = [
+    ...countries.map((c) => ({ file: c.data.hero.file, label: c.data.name, href: countryPath(c) })),
+    ...garments.map((g) => ({ file: g.data.hero.file, label: g.data.name, href: garmentPath(g) })),
+  ];
+  for (const use of uses) usage.set(use.file, [...(usage.get(use.file) ?? []), { label: use.label, href: use.href }]);
+}
+
+const formatDate = (value: string | Date) =>
+  new Date(value).toLocaleDateString(localeMeta[lang].dateLocale, { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<BaseLayout route={route} title={page.data.title} description={page.data.description} jsonLd={[breadcrumbJsonLd(crumbs, Astro.site!)]}>
+  <div class="page-container pt-6">
+    <Breadcrumbs lang={lang} crumbs={crumbs} />
+    <div class="mt-6 max-w-3xl">
+      <h1 class="text-display-xl font-bold text-ink md:text-[32px]">{page.data.title}</h1>
+      <div class="prose-content mt-6">
+        <Content />
+      </div>
+      <p class="mt-10 text-caption text-muted">
+        {t(lang, 'lastUpdated')}: <time datetime={page.data.updated.toISOString().slice(0, 10)}>{formatDate(page.data.updated)}</time>
+      </p>
+    </div>
+
+    {
+      isSources && (
+        <ul class="mt-12 grid gap-4 md:grid-cols-2">
+          {credits.map((credit) => (
+            <li class="flex gap-4 rounded-md border border-hairline p-4">
+              <Image
+                src={getLocalImage(credit.file_name)}
+                alt=""
+                widths={[112, 224]}
+                sizes="112px"
+                class="size-24 shrink-0 rounded-sm bg-surface-strong object-cover md:size-28"
+              />
+              <div class="min-w-0 text-body-sm">
+                <p class="font-semibold text-ink">{credit.title}</p>
+                <dl class="mt-2 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-ink-body">
+                  <dt class="text-muted">{t(lang, 'author')}</dt>
+                  <dd>{credit.author}</dd>
+                  <dt class="text-muted">{t(lang, 'source')}</dt>
+                  <dd>
+                    <a href={credit.source_url} class="underline underline-offset-2" rel="noopener">
+                      {credit.source}
+                    </a>
+                  </dd>
+                  <dt class="text-muted">{t(lang, 'license')}</dt>
+                  <dd>
+                    <a href={credit.license_url} class="underline underline-offset-2" rel="license noopener">
+                      {credit.license}
+                    </a>
+                  </dd>
+                  <dt class="text-muted">{t(lang, 'downloaded')}</dt>
+                  <dd>
+                    <time datetime={credit.date_downloaded}>{formatDate(credit.date_downloaded)}</time>
+                  </dd>
+                  {usage.has(credit.file_name) && (
+                    <>
+                      <dt class="text-muted">{t(lang, 'usedOn')}</dt>
+                      <dd>
+                        {usage.get(credit.file_name)!.map((use, index) => (
+                          <>
+                            {index > 0 && ', '}
+                            <a href={use.href} class="underline underline-offset-2">
+                              {use.label}
+                            </a>
+                          </>
+                        ))}
+                      </dd>
+                    </>
+                  )}
+                </dl>
+                <p class="mt-2 font-mono text-[12px] break-all text-muted">{credit.file_name}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</BaseLayout>

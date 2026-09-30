@@ -1,0 +1,29 @@
+---
+interface Props {
+  items: { label: string; value?: string; links?: { label: string; href: string }[] }[];
+}
+
+const { items } = Astro.props;
+---
+
+<dl class="mt-4 divide-y divide-hairline-soft">
+  {
+    items.map((item) => (
+      <div class="flex justify-between gap-4 py-3 first:pt-0">
+        <dt class="text-body-sm text-muted">{item.label}</dt>
+        <dd class="text-right text-body-sm font-medium text-ink">
+          {item.links
+            ? item.links.map((link, index) => (
+                <>
+                  {index > 0 && ', '}
+                  <a href={link.href} class="underline decoration-border-strong underline-offset-2 hover:decoration-ink">
+                    {link.label}
+                  </a>
+                </>
+              ))
+            : item.value}
+        </dd>
+      </div>
+    ))
+  }
+</dl>

@@ -1,0 +1,83 @@
+---
+import { localeMeta, segments, t, type Locale } from '../i18n/ui';
+import { localePath, pathFor, type SiteRoute } from '../lib/routes';
+import Icon from './Icon.astro';
+
+interface Props {
+  lang: Locale;
+  alternates: SiteRoute[];
+}
+
+const { lang, alternates } = Astro.props;
+
+const columns = [
+  {
+    heading: t(lang, 'footerExplore'),
+    links: [
+      { label: t(lang, 'countries'), href: localePath(lang, segments[lang].countries) },
+      { label: t(lang, 'garments'), href: localePath(lang, segments[lang].garments) },
+    ],
+  },
+  {
+    heading: t(lang, 'footerAbout'),
+    links: [
+      { label: t(lang, 'about'), href: await pathFor('page:about', lang) },
+      { label: t(lang, 'contact'), href: await pathFor('page:contact', lang) },
+      { label: t(lang, 'sources'), href: await pathFor('page:sources', lang) },
+    ],
+  },
+  {
+    heading: t(lang, 'footerLegal'),
+    links: [{ label: t(lang, 'privacy'), href: await pathFor('page:privacy', lang) }],
+  },
+];
+
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-16 border-t border-hairline bg-canvas">
+  <nav aria-label={t(lang, 'footerNav')} class="page-container grid gap-8 py-12 md:grid-cols-3 md:gap-6">
+    {
+      columns.map((column) => (
+        <div>
+          <h2 class="text-title font-semibold text-ink">{column.heading}</h2>
+          <ul class="mt-4 space-y-3">
+            {column.links.map((link) => (
+              <li>
+                <a href={link.href} class="text-body-sm text-ink hover:underline">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </nav>
+
+  <div class="border-t border-hairline">
+    <div class="page-container flex flex-col-reverse gap-4 py-6 text-caption text-muted md:flex-row md:items-center md:justify-between">
+      <p>{t(lang, 'copyright', { year })}</p>
+      <div class="flex items-center gap-4">
+        <Icon name="globe" size={16} class="text-ink" />
+        <ul class="flex items-center gap-4" aria-label={t(lang, 'language')}>
+        {
+          alternates.map((alt) => (
+            <li>
+              <a
+                href={alt.path}
+                hreflang={alt.lang}
+                lang={alt.lang}
+                aria-current={alt.lang === lang ? 'true' : undefined}
+                class:list={['hover:underline', alt.lang === lang ? 'font-semibold text-ink' : 'text-muted']}
+              >
+                {localeMeta[alt.lang].label}
+              </a>
+            </li>
+          ))
+        }
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

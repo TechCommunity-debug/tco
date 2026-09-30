@@ -1,0 +1,22 @@
+---
+/*
+ * Site mark: a T-shaped garment silhouette. Kimono, poncho, huipil and agbada are all cut
+ * from rectangles into this basic shape, which suits a site about many clothing traditions.
+ */
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a href={href} class="flex items-center gap-2.5 rounded-sm text-primary" aria-label="Traditional Clothing Hub">
+  <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M11 3.5h10l3 3.5h6.5v7.5H24V29H8V14.5H1.5V7H8Z" fill="currentColor" />
+    <path d="m12.5 3.5 3.5 6 3.5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" />
+    <path d="M8 19h16" stroke="#fff" stroke-width="2" />
+  </svg>
+  <span translate="no" class="text-[15px] leading-tight font-semibold tracking-[-0.2px] text-ink sm:text-[17px]">
+    Traditional<br class="sm:hidden" /> Clothing Hub
+  </span>
+</a>

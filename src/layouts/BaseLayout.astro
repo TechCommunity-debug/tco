@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+import type { ImageMetadata } from 'astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { defaultLocale, localeMeta, t, type Locale } from '../i18n/ui';
+import { getSocialImageUrl } from '../lib/images';
+import { getAlternates, type SiteRoute } from '../lib/routes';
+
+interface Props {
+  route: SiteRoute;
+  /** Page title without the site name. Omit on the home page. */
+  title?: string;
+  description: string;
+  ogImage?: ImageMetadata;
+  jsonLd?: Record<string, unknown>[];
+}
+
+const { route, title, description, ogImage, jsonLd = [] } = Astro.props;
+const lang: Locale = route.lang;
+const siteName = t(lang, 'siteName');
+const fullTitle = title ? `${title} | ${siteName}` : `${siteName}: ${t(lang, 'siteTagline').replace(/\.$/, '')}`;
+
+const site = Astro.site!;
+const absolute = (path: string) => new URL(path, site).href;
+const canonical = absolute(route.path);
+const alternates = await getAlternates(route.key);
+const xDefault = alternates.find((alt) => alt.lang === defaultLocale);
+
+const ogImageUrl = ogImage ? await getSocialImageUrl(ogImage, site) : undefined;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {alternates.map((alt) => <link rel="alternate" hreflang={alt.lang} href={absolute(alt.path)} />)}
+    {xDefault && <link rel="alternate" hreflang="x-default" href={absolute(xDefault.path)} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:type" content={route.kind === 'home' ? 'website' : 'article'} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={title ?? siteName} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={localeMeta[lang].ogLocale} />
+    {alternates.filter((alt) => alt.lang !== lang).map((alt) => <meta property="og:locale:alternate" content={localeMeta[alt.lang].ogLocale} />)}
+    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
+
+    {jsonLd.map((data) => <script type="application/ld+json" set:html={JSON.stringify(data)} />)}
+  </head>
+  <body class="flex min-h-dvh flex-col">
+    <a
+      href="#main"
+      class="sr-only z-50 rounded-sm bg-ink px-4 py-3 text-body-sm font-medium text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+    >
+      {t(lang, 'skipToContent')}
+    </a>
+    <Header lang={lang} route={route} alternates={alternates} />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer lang={lang} alternates={alternates} />
+  </body>
+</html>

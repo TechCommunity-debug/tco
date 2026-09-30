@@ -1,0 +1,84 @@
+---
+import { getEntry, render } from 'astro:content';
+import ArticleShell from '../components/ArticleShell.astro';
+import FactList from '../components/FactList.astro';
+import PhotoCard from '../components/PhotoCard.astro';
+import { continents, segments, t } from '../i18n/ui';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocalImage, getSocialImageUrl } from '../lib/images';
+import { countryPath, garmentPath, getCountries, localePath, type SiteRoute } from '../lib/routes';
+import { articleJsonLd, breadcrumbJsonLd, type Crumb } from '../lib/seo';
+
+interface Props {
+  route: SiteRoute;
+}
+
+const { route } = Astro.props;
+const { lang } = route;
+const country = (await getEntry('countries', route.entryId!))!;
+const { Content, headings } = await render(country);
+const data = country.data;
+
+const garments = (await Promise.all(data.garments.map((id) => getEntry('garments', `${lang}/${id}`)))).filter((g) => g !== undefined);
+const others = (await getCountries(lang)).filter((c) => c.id !== country.id);
+const moreCountries = [...others.filter((c) => c.data.continent === data.continent), ...others.filter((c) => c.data.continent !== data.continent)].slice(0, 4);
+
+const countriesHref = localePath(lang, segments[lang].countries);
+const crumbs: Crumb[] = [
+  { label: t(lang, 'home'), href: localePath(lang) },
+  { label: t(lang, 'countries'), href: countriesHref },
+  { label: data.name, href: route.path },
+];
+
+const facts = [
+  { label: t(lang, 'continent'), links: [{ label: continents[data.continent][lang], href: `${countriesHref}#${continents[data.continent].anchor[lang]}` }] },
+  ...(garments.length ? [{ label: t(lang, 'keyGarments'), links: garments.map((g) => ({ label: g.data.name, href: garmentPath(g) })) }] : []),
+  ...data.facts,
+];
+
+const site = Astro.site!;
+const heroImage = getLocalImage(data.hero.file);
+const heroUrl = await getSocialImageUrl(heroImage, site);
+const jsonLd = [
+  breadcrumbJsonLd(crumbs, site),
+  articleJsonLd({ headline: data.title, description: data.description, url: new URL(route.path, site).href, image: heroUrl, dateModified: data.updated, lang }),
+];
+---
+
+<BaseLayout route={route} title={data.title} description={data.description} ogImage={heroImage} jsonLd={jsonLd}>
+  <ArticleShell lang={lang} crumbs={crumbs} title={data.title} intro={data.intro} hero={data.hero} headings={headings} updated={data.updated}>
+    <Content />
+    <FactList slot="facts" items={facts} />
+
+    <Fragment slot="after">
+      {
+        garments.length > 0 && (
+          <section class="mt-16 border-t border-hairline pt-12" aria-labelledby="country-garments">
+            <h2 id="country-garments" class="text-display-lg font-semibold text-ink">
+              {t(lang, 'garmentsFrom', { name: data.name })}
+            </h2>
+            <ul class="mt-6 grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-3 lg:grid-cols-4">
+              {garments.map((garment) => (
+                <li>
+                  <PhotoCard href={garmentPath(garment)} title={garment.data.name} description={garment.data.summary} image={garment.data.hero} aspect="portrait" />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+      <section class="mt-16 border-t border-hairline pt-12" aria-labelledby="more-countries">
+        <h2 id="more-countries" class="text-display-lg font-semibold text-ink">{t(lang, 'moreCountries')}</h2>
+        <ul class="mt-6 grid gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          {
+            moreCountries.map((other) => (
+              <li>
+                <PhotoCard href={countryPath(other)} title={other.data.name} meta={continents[other.data.continent][lang]} image={other.data.hero} />
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </Fragment>
+  </ArticleShell>
+</BaseLayout>

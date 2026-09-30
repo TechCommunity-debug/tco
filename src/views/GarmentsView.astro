@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { t } from '../i18n/ui';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocalImage } from '../lib/images';
+import { garmentPath, getCountries, getGarments, localePath, type SiteRoute } from '../lib/routes';
+import { breadcrumbJsonLd, type Crumb } from '../lib/seo';
+
+interface Props {
+  route: SiteRoute;
+}
+
+const { route } = Astro.props;
+const { lang } = route;
+const [garments, countries] = await Promise.all([getGarments(lang), getCountries(lang)]);
+const countryNames = new Map(countries.map((c) => [c.id.split('/')[1], c.data.name]));
+
+const letterOf = (name: string) =>
+  name
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .charAt(0)
+    .toUpperCase();
+const groups = [...new Set(garments.map((g) => letterOf(g.data.name)))].map((letter) => ({
+  letter,
+  anchor: `letter-${letter.toLowerCase()}`,
+  garments: garments.filter((g) => letterOf(g.data.name) === letter),
+}));
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
+const crumbs: Crumb[] = [
+  { label: t(lang, 'home'), href: localePath(lang) },
+  { label: t(lang, 'garments'), href: route.path },
+];
+---
+
+<BaseLayout route={route} title={t(lang, 'garmentsTitle')} description={t(lang, 'garmentsDescription')} jsonLd={[breadcrumbJsonLd(crumbs, Astro.site!)]}>
+  <div class="page-container pt-6">
+    <Breadcrumbs lang={lang} crumbs={crumbs} />
+    <header class="mt-6 max-w-3xl">
+      <h1 class="text-display-xl font-bold text-ink md:text-[32px]">{t(lang, 'garmentsTitle')}</h1>
+      <p class="mt-3 text-body text-muted">{t(lang, 'garmentsLead')}</p>
+    </header>
+
+    <nav aria-label={t(lang, 'jumpToLetter')} class="mt-8">
+      <ul class="flex flex-wrap gap-1">
+        {
+          alphabet.map((letter) => {
+            const group = groups.find((g) => g.letter === letter);
+            return (
+              <li>
+                {group ? (
+                  <a
+                    href={`#${group.anchor}`}
+                    class="flex size-10 items-center justify-center rounded-full text-body-sm font-semibold text-ink transition-colors hover:bg-surface-strong"
+                  >
+                    {letter}
+                  </a>
+                ) : (
+                  <span class="flex size-10 items-center justify-center text-body-sm text-muted-soft" aria-hidden="true">
+                    {letter}
+                  </span>
+                )}
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+
+    <div class="mt-10 max-w-4xl">
+      {
+        groups.map((group) => (
+          <section class="grid grid-cols-[56px_1fr] gap-4 border-t border-hairline py-8 md:grid-cols-[96px_1fr]" aria-labelledby={group.anchor}>
+            <h2 id={group.anchor} class="text-[32px] leading-none font-bold text-ink">
+              {group.letter}
+            </h2>
+            <ul class="space-y-6">
+              {group.garments.map((garment) => (
+                <li class="group relative flex items-center gap-4">
+                  <Image
+                    src={getLocalImage(garment.data.hero.file)}
+                    alt=""
+                    widths={[96, 192]}
+                    sizes="96px"
+                    class="size-20 shrink-0 rounded-sm bg-surface-strong object-cover md:size-24"
+                  />
+                  <div class="min-w-0">
+                    <h3 class="text-title font-semibold text-ink">
+                      <a href={garmentPath(garment)} class="after:absolute after:inset-0 group-hover:underline">
+                        {garment.data.name}
+                      </a>
+                    </h3>
+                    <p class="mt-1 text-body-sm text-muted">{garment.data.countries.map((c) => countryNames.get(c)).filter(Boolean).join(' · ')}</p>
+                    <p class="mt-1 text-body-sm text-ink-body">{garment.data.summary}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

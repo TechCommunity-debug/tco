@@ -1,0 +1,225 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+/*
+ * Design tokens, following DESIGN.md: white canvas, near-black ink, one warm accent,
+ * soft radii, and a single elevation tier. The accent is a madder red rather than
+ * Airbnb's Rausch; it also passes WCAG AA for white text (4.9:1).
+ */
+@theme {
+  --font-sans: "Inter Variable", -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif;
+
+  --color-*: initial;
+  --color-primary: #cc3d2e;
+  --color-primary-active: #a8321f;
+  --color-primary-disabled: #f3cdc7;
+  --color-primary-soft: #fbece9;
+  --color-error: #b3261e;
+  --color-ink: #222222;
+  --color-ink-body: #3f3f3f;
+  --color-muted: #6a6a6a;
+  --color-muted-soft: #929292;
+  --color-hairline: #dddddd;
+  --color-hairline-soft: #ebebeb;
+  --color-border-strong: #c1c1c1;
+  --color-canvas: #ffffff;
+  --color-surface-soft: #f7f7f7;
+  --color-surface-strong: #f2f2f2;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+
+  --shadow-float: rgba(0, 0, 0, 0.02) 0 0 0 1px, rgba(0, 0, 0, 0.04) 0 2px 6px 0, rgba(0, 0, 0, 0.1) 0 4px 8px 0;
+
+  --text-display-xl: 28px;
+  --text-display-xl--line-height: 1.3;
+  --text-display-xl--font-weight: 700;
+  --text-display-lg: 22px;
+  --text-display-lg--line-height: 1.18;
+  --text-display-lg--letter-spacing: -0.44px;
+  --text-display-md: 21px;
+  --text-display-md--line-height: 1.43;
+  --text-display-sm: 20px;
+  --text-display-sm--line-height: 1.2;
+  --text-display-sm--letter-spacing: -0.18px;
+  --text-title: 16px;
+  --text-title--line-height: 1.25;
+  --text-body: 16px;
+  --text-body--line-height: 1.5;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 1.43;
+  --text-caption: 13px;
+  --text-caption--line-height: 1.23;
+  --text-badge: 11px;
+  --text-badge--line-height: 1.18;
+
+  /* DESIGN.md breakpoints: tablet 744px, desktop 1128px, wide 1440px. */
+  --breakpoint-sm: 550px;
+  --breakpoint-md: 744px;
+  --breakpoint-lg: 1128px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-2xl: initial;
+
+  --container-page: 1280px;
+  --container-detail: 1120px;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    /* Keeps anchored headings and focused elements clear of the sticky header. */
+    scroll-padding-top: 128px;
+  }
+
+  a,
+  button,
+  input,
+  label {
+    touch-action: manipulation;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-body text-ink antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+@utility page-container {
+  width: 100%;
+  max-width: var(--container-page);
+  margin-inline: auto;
+  padding-inline: 24px;
+
+  @media (width >= 744px) {
+    padding-inline: 40px;
+  }
+
+  @media (width >= 1128px) {
+    padding-inline: 80px;
+  }
+}
+
+/* Scoped styles for rendered Markdown, which we don't control element by element. */
+@layer components {
+  .prose-content {
+    color: var(--color-ink-body);
+    font-size: 16px;
+    line-height: 1.6;
+
+    & > * + * {
+      margin-top: 1rem;
+    }
+
+    & h2 {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-hairline-soft);
+      color: var(--color-ink);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.3px;
+    }
+
+    & > h2:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    & h3 {
+      margin-top: 2rem;
+      color: var(--color-ink);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    & h2 + *,
+    & h3 + * {
+      margin-top: 0.75rem;
+    }
+
+    & a {
+      color: var(--color-ink);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--color-border-strong);
+    }
+
+    & a:hover {
+      text-decoration-color: var(--color-ink);
+    }
+
+    & strong {
+      color: var(--color-ink);
+      font-weight: 600;
+    }
+
+    & ul,
+    & ol {
+      padding-left: 1.25rem;
+    }
+
+    & ul {
+      list-style: disc;
+    }
+
+    & ol {
+      list-style: decimal;
+    }
+
+    & li + li {
+      margin-top: 0.5rem;
+    }
+
+    & li::marker {
+      color: var(--color-muted);
+    }
+
+    & blockquote {
+      border-left: 3px solid var(--color-primary);
+      padding-left: 1rem;
+      color: var(--color-ink);
+    }
+
+    & table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    & th,
+    & td {
+      border-bottom: 1px solid var(--color-hairline);
+      padding: 0.625rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    & th {
+      color: var(--color-ink);
+      font-weight: 600;
+    }
+  }
+}
