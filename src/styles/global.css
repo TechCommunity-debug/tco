@@ -5,10 +5,15 @@
 @source not "../../.agents";
 @source not "../../.claude";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /*
  * Design tokens, following DESIGN.md: white canvas, near-black ink, one warm accent,
  * soft radii, and a single elevation tier. The accent is a madder red rather than
  * Airbnb's Rausch; it also passes WCAG AA for white text (4.9:1).
+ *
+ * Dark mode tokens extend the system with a deep charcoal canvas (#121212),
+ * layered neutral surfaces, high-contrast ink, and calibrated brand red.
  */
 @theme {
   --font-sans: "Inter Variable", -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif;
@@ -75,6 +80,50 @@
   --container-detail: 1120px;
 }
 
+@layer theme {
+  :root {
+    @variant dark {
+      --color-primary: #e04838;
+      --color-primary-active: #f05b4c;
+      --color-primary-disabled: #4a221e;
+      --color-primary-soft: #2a1715;
+      --color-error: #f87171;
+      --color-ink: #f4f4f6;
+      --color-ink-body: #d1d1d6;
+      --color-muted: #98989f;
+      --color-muted-soft: #636366;
+      --color-hairline: #2c2c2e;
+      --color-hairline-soft: #222224;
+      --color-border-strong: #48484a;
+      --color-canvas: #121212;
+      --color-surface-soft: #1c1c1e;
+      --color-surface-strong: #262629;
+      --shadow-float: rgba(0, 0, 0, 0.6) 0 4px 12px 0, rgba(255, 255, 255, 0.08) 0 0 0 1px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      --color-primary: #e04838;
+      --color-primary-active: #f05b4c;
+      --color-primary-disabled: #4a221e;
+      --color-primary-soft: #2a1715;
+      --color-error: #f87171;
+      --color-ink: #f4f4f6;
+      --color-ink-body: #d1d1d6;
+      --color-muted: #98989f;
+      --color-muted-soft: #636366;
+      --color-hairline: #2c2c2e;
+      --color-hairline-soft: #222224;
+      --color-border-strong: #48484a;
+      --color-canvas: #121212;
+      --color-surface-soft: #1c1c1e;
+      --color-surface-strong: #262629;
+      --shadow-float: rgba(0, 0, 0, 0.6) 0 4px 12px 0, rgba(255, 255, 255, 0.08) 0 0 0 1px;
+    }
+  }
+}
+
 @layer base {
   html {
     color-scheme: light;
@@ -82,6 +131,20 @@
     -webkit-tap-highlight-color: transparent;
     /* Keeps anchored headings and focused elements clear of the sticky header. */
     scroll-padding-top: 128px;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      color-scheme: dark;
+    }
   }
 
   a,
@@ -107,6 +170,10 @@
   }
 }
 
+@utility shadow-float {
+  box-shadow: var(--shadow-float);
+}
+
 @utility page-container {
   width: 100%;
   max-width: var(--container-page);
@@ -120,6 +187,37 @@
   @media (width >= 1128px) {
     padding-inline: 80px;
   }
+}
+
+/* Theme toggle icon switching based on active theme or OS preference */
+.theme-toggle .theme-toggle-sun {
+  display: none;
+}
+.theme-toggle .theme-toggle-moon {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) .theme-toggle .theme-toggle-sun {
+    display: block;
+  }
+  :root:not(.light) .theme-toggle .theme-toggle-moon {
+    display: none;
+  }
+}
+
+html.dark .theme-toggle .theme-toggle-sun {
+  display: block;
+}
+html.dark .theme-toggle .theme-toggle-moon {
+  display: none;
+}
+
+html.light .theme-toggle .theme-toggle-sun {
+  display: none;
+}
+html.light .theme-toggle .theme-toggle-moon {
+  display: block;
 }
 
 /* Scoped styles for rendered Markdown, which we don't control element by element. */

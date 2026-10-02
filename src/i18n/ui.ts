@@ -125,6 +125,9 @@ const strings = {
   footerExplore: { en: 'Explore', de: 'Entdecken' },
   footerAbout: { en: 'Traditional Clothing Hub', de: 'Traditional Clothing Hub' },
   footerLegal: { en: 'Legal', de: 'Rechtliches' },
+  toggleTheme: { en: 'Switch color theme', de: 'Farbschema wechseln' },
+  themeLight: { en: 'Light theme', de: 'Helles Schema' },
+  themeDark: { en: 'Dark theme', de: 'Dunkles Schema' },
 } satisfies Record<string, Record<Locale, string>>;
 
 export type UiKey = keyof typeof strings;

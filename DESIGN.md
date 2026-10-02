@@ -354,7 +354,27 @@ The shape language is **soft**. Buttons are 8px radius (`{rounded.sm}`), propert
 - **Plus Magenta** (`{colors.plus}` — #92174d): Sub-brand accent for Airbnb Plus. Same scoping as Luxe — sub-product only.
 
 ### Surface
-- **Canvas** (`{colors.canvas}` — #ffffff): The default page floor for every public page. Airbnb does not have a dark mode on the public web.
+- **Canvas** (`{colors.canvas}` — #ffffff in light mode, #121212 in dark mode): The foundational page floor.
+
+### Dark Mode System
+While original Airbnb Web historically lacked dark mode, Traditional Clothing Hub implements a fully integrated dark mode extension adhering to the Airbnb design principles (generous whitespace, soft radii, single elevation tier, and high-contrast typography):
+- **Canvas** (`{colors.canvas}` — #121212): Deep charcoal background floor preventing glare and showcasing garment photography.
+- **Surface Soft** (`{colors.surface-soft}` — #1c1c1e): Elevated cards, At-a-Glance rail, and container backgrounds.
+- **Surface Strong** (`{colors.surface-strong}` — #262629): Image container placeholders, interactive button fills, and pill hover states.
+- **Hairline** (`{colors.hairline}` — #2c2c2e): Subtle 1px structural dividers, header/footer borders, and card outlines.
+- **Hairline Soft** (`{colors.hairline-soft}` — #222224): Secondary dividers and table hairlines.
+- **Border Strong** (`{colors.border-strong}` — #48484a): Active outline states, focus accents, and link decorations.
+- **Ink** (`{colors.ink}` — #f4f4f6): High-contrast titles, headlines, active navigation links, and brand wordmark.
+- **Ink Body** (`{colors.ink-body}` — #d1d1d6): Comfortable reading contrast for body text and descriptive metadata (WCAG AAA compliant).
+- **Muted** (`{colors.muted}` — #98989f): Captions, breadcrumb trails, dates, and inactive tab labels (passes WCAG AA 4.5:1).
+- **Muted Soft** (`{colors.muted-soft}` — #636366): Disabled letters and decorative icons.
+- **Primary / Brand Red** (`{colors.primary}` — #e04838): Calibrated slightly brighter for dark surfaces while maintaining 4.5:1+ contrast on buttons.
+- **Shadow Float**: Elevated with `rgba(0, 0, 0, 0.6) 0 4px 12px 0, rgba(255, 255, 255, 0.08) 0 0 0 1px` for subtle rim highlighting.
+
+**Theme Selection Behavior**:
+- **Default Mode**: Automatically respects the user's browser or operating system preference (`prefers-color-scheme`).
+- **Manual Toggle**: Allows explicit switching via an `{component.icon-button-outline}` toggle in the header navigation and 404 page, persisted in `localStorage`.
+- **Zero FOUC**: Inlined blocking `<script>` in `<head>` applies `.dark` or `.light` class prior to first paint.
 - **Surface Soft** (`{colors.surface-soft}` — #f7f7f7): The lightest fill — used on disabled fields, sub-nav hover backgrounds, and the inline search filter band.
 - **Surface Strong** (`{colors.surface-strong}` — #f2f2f2): Slightly heavier fill — circular icon-button surface (e.g., the breadcrumb back-arrow and listing toolbar buttons).
 

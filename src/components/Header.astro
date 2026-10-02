@@ -3,6 +3,7 @@ import { localeMeta, segments, t, type Locale } from '../i18n/ui';
 import { localePath, type SiteRoute } from '../lib/routes';
 import Icon from './Icon.astro';
 import Logo from './Logo.astro';
+import ThemeToggle from './ThemeToggle.astro';
 
 interface Props {
   lang: Locale;
@@ -49,16 +50,19 @@ const otherHref = other?.path ?? localePath(otherLang);
       </ul>
     </nav>
 
-    <a
-      href={otherHref}
-      hreflang={otherLang}
-      lang={otherLang}
-      class="flex h-10 items-center gap-2 rounded-full border border-hairline px-4 text-body-sm font-medium text-ink transition-shadow hover:shadow-float"
-      aria-label={t(lang, 'switchLanguage')}
-    >
-      <Icon name="globe" size={18} />
-      <span>{localeMeta[otherLang].label}</span>
-    </a>
+    <div class="flex items-center gap-2">
+      <ThemeToggle lang={lang} />
+      <a
+        href={otherHref}
+        hreflang={otherLang}
+        lang={otherLang}
+        class="flex h-10 items-center gap-2 rounded-full border border-hairline px-4 text-body-sm font-medium text-ink transition-shadow hover:shadow-float"
+        aria-label={t(lang, 'switchLanguage')}
+      >
+        <Icon name="globe" size={18} />
+        <span>{localeMeta[otherLang].label}</span>
+      </a>
+    </div>
   </div>
 
   <nav aria-label={t(lang, 'mainNav')} class="border-t border-hairline-soft md:hidden">

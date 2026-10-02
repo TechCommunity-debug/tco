@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
 import { locales, t } from '../i18n/ui';
 import { localePath } from '../lib/routes';
 ---
@@ -8,6 +9,25 @@ import { localePath } from '../lib/routes';
 <!doctype html>
 <html lang="en">
   <head>
+    <script is:inline>
+      (() => {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (_) {}
+      })();
+    </script>
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
@@ -21,8 +41,9 @@ import { localePath } from '../lib/routes';
   </head>
   <body>
     <header class="border-b border-hairline">
-      <div class="page-container flex h-20 items-center">
+      <div class="page-container flex h-20 items-center justify-between">
         <Logo href="/" />
+        <ThemeToggle lang="en" />
       </div>
     </header>
     <main class="page-container grid gap-12 py-16 md:grid-cols-2">

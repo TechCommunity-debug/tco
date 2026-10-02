@@ -1,0 +1,99 @@
+---
+import { t, type Locale } from '../i18n/ui';
+import Icon from './Icon.astro';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+---
+
+<button
+  type="button"
+  class="theme-toggle flex size-10 items-center justify-center rounded-full border border-hairline bg-canvas text-ink transition-shadow hover:shadow-float focus-visible:outline-none"
+  aria-label={t(lang, 'toggleTheme')}
+  title={t(lang, 'toggleTheme')}
+>
+  <span class="theme-toggle-moon" aria-hidden="true">
+    <Icon name="moon" size={18} />
+  </span>
+  <span class="theme-toggle-sun" aria-hidden="true">
+    <Icon name="sun" size={18} />
+  </span>
+</button>
+
+<script>
+  function setupThemeToggles() {
+    function getTheme(): 'dark' | 'light' {
+      const stored = localStorage.getItem('theme');
+      if (stored === 'dark' || stored === 'light') return stored;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function applyTheme(theme: 'dark' | 'light') {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }
+
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.theme-toggle');
+    buttons.forEach((button) => {
+      button.onclick = (e) => {
+        e.preventDefault();
+        const current = getTheme();
+        const next = current === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+      };
+    });
+  }
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('storage', (event) => {
+      if (event.key === 'theme') {
+        const theme =
+          event.newValue === 'dark'
+            ? 'dark'
+            : event.newValue === 'light'
+              ? 'light'
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      }
+    });
+
+    const mql = window.matchMedia('(prefers-color-scheme: dark)');
+    mql.addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        if (e.matches) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      }
+    });
+
+    setupThemeToggles();
+    document.addEventListener('astro:page-load', setupThemeToggles);
+  }
+</script>

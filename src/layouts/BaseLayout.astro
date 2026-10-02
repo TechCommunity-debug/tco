@@ -33,6 +33,23 @@ const ogImageUrl = ogImage ? await getSocialImageUrl(ogImage, site) : undefined;
 <!doctype html>
 <html lang={lang}>
   <head>
+    <script is:inline>
+      (() => {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (_) {}
+      })();
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
@@ -47,7 +64,8 @@ const ogImageUrl = ogImage ? await getSocialImageUrl(ogImage, site) : undefined;
     <meta name="apple-mobile-web-app-title" content="TraditionalC" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap.xml" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
 
     <meta property="og:type" content={route.kind === 'home' ? 'website' : 'article'} />
     <meta property="og:site_name" content={siteName} />
@@ -64,7 +82,7 @@ const ogImageUrl = ogImage ? await getSocialImageUrl(ogImage, site) : undefined;
   <body class="flex min-h-dvh flex-col">
     <a
       href="#main"
-      class="sr-only z-50 rounded-sm bg-ink px-4 py-3 text-body-sm font-medium text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+      class="sr-only z-50 rounded-sm bg-ink px-4 py-3 text-body-sm font-medium text-canvas focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
     >
       {t(lang, 'skipToContent')}
     </a>
