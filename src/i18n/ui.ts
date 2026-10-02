@@ -31,6 +31,26 @@ const strings = {
     en: 'Traditional clothing from around the world, explained country by country.',
     de: 'Traditionelle Kleidung aus aller Welt, Land für Land erklärt.',
   },
+  homeMetaDescription: {
+    en: 'Explore authentic traditional clothing from around the world. Discover traditional clothing for men and women per country, folk costumes, cultural attire, and history.',
+    de: 'Entdecke traditionelle Kleidung aus aller Welt. Finde authentische traditionelle Kleidung für Männer und Frauen nach Ländern, Volkstrachten und Festtagsgewänder.',
+  },
+  homeMetaKeywords: {
+    en: 'Traditional Clothing, Traditional Clothing men, Traditional Clothing women, Traditional Clothing per country, traditional clothing by country, traditional garments, cultural attire, folk costumes, national costumes, ethnic wear, traditional dress, heritage clothing, traditional wedding attire',
+    de: 'Traditionelle Kleidung, Traditionelle Kleidung Männer, Traditionelle Kleidung Frauen, Traditionelle Kleidung nach Land, Trachten, Volkstrachten, traditionelle Tracht, traditionelle Gewänder, Festtracht, traditionelle Hochzeitskleidung',
+  },
+  homeGuideBadge: {
+    en: 'Cultural Explorer & Directory',
+    de: 'Kultur-Explorer & Verzeichnis',
+  },
+  homeGuideTitle: {
+    en: 'Traditional Clothing Hub: The Definitive Guide to World Traditional Clothing',
+    de: 'Traditional Clothing Hub: Der umfassende Guide für weltweite traditionelle Kleidung',
+  },
+  homeGuideLead: {
+    en: 'An interactive cultural explorer and visual encyclopedia documenting authentic traditional clothing, folk costumes, and heritage garments across continents.',
+    de: 'Ein interaktiver Kultur-Explorer und ein visuelles Verzeichnis zur Dokumentation authentischer traditioneller Kleidung, Volkstrachten und Festgewänder weltweit.',
+  },
   skipToContent: { en: 'Skip to content', de: 'Zum Inhalt springen' },
   home: { en: 'Home', de: 'Startseite' },
   countries: { en: 'Countries', de: 'Länder' },
@@ -82,6 +102,24 @@ const strings = {
   garmentsFrom: { en: 'Garments from {name}', de: 'Kleidungsstücke aus {name}' },
   moreCountries: { en: 'More countries to explore', de: 'Weitere Länder entdecken' },
   moreGarments: { en: 'More garments to explore', de: 'Weitere Kleidungsstücke entdecken' },
+  exploreMoreCountries: { en: 'Explore more countries', de: 'Weitere Länder entdecken' },
+  exploreMoreCountriesLead: {
+    en: 'Browse traditional clothing across all continents',
+    de: 'Traditionelle Kleidung aller Kontinente durchsuchen',
+  },
+  viewAllCountries: { en: 'View all countries', de: 'Alle Länder ansehen' },
+  exploreMoreGarments: { en: 'Explore more garments', de: 'Weitere Kleidungsstücke entdecken' },
+  exploreMoreGarmentsLead: {
+    en: 'Browse the complete A–Z index of traditional garments',
+    de: 'Das vollständige A–Z Verzeichnis aller Kleidungsstücke',
+  },
+  viewAllGarments: { en: 'View all garments', de: 'Alle Kleidungsstücke ansehen' },
+  faqBadge: { en: 'Frequently Asked Questions', de: 'Häufig gestellte Fragen' },
+  faqTitle: { en: 'Traditional Clothing FAQ', de: 'FAQ zu traditioneller Kleidung' },
+  faqLead: {
+    en: 'Answers to essential questions about world cultural attire, national dress, and living textile traditions.',
+    de: 'Antworten auf die wichtigsten Fragen zu weltweiten Trachten, Nationalkleidung und lebendigen Textiltraditionen.',
+  },
   lastUpdated: { en: 'Last updated', de: 'Zuletzt aktualisiert' },
   countriesTitle: { en: 'Traditional clothing by country', de: 'Traditionelle Kleidung nach Ländern' },
   countriesLead: {

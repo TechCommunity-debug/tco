@@ -4,7 +4,7 @@ import type { ImageMetadata } from 'astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { defaultLocale, localeMeta, t, type Locale } from '../i18n/ui';
-import { getSocialImageUrl } from '../lib/images';
+import { getLocalImage, getSocialImageUrl } from '../lib/images';
 import { getAlternates, type SiteRoute } from '../lib/routes';
 
 interface Props {
@@ -12,14 +12,28 @@ interface Props {
   /** Page title without the site name. Omit on the home page. */
   title?: string;
   description: string;
+  keywords?: string | string[];
+  ogTitle?: string;
   ogImage?: ImageMetadata;
   jsonLd?: Record<string, unknown>[];
 }
 
-const { route, title, description, ogImage, jsonLd = [] } = Astro.props;
+const { route, title, description, keywords, ogTitle, ogImage, jsonLd = [] } = Astro.props;
 const lang: Locale = route.lang;
 const siteName = t(lang, 'siteName');
-const fullTitle = title ? `${title} | ${siteName}` : `${siteName}: ${t(lang, 'siteTagline').replace(/\.$/, '')}`;
+const defaultHomeTitle =
+  lang === 'de' ? `Traditionelle Kleidung aus aller Welt | ${siteName}` : `Traditional Clothing from Around the World | ${siteName}`;
+const fullTitle = title ? `${title} | ${siteName}` : defaultHomeTitle;
+const effectiveOgTitle = ogTitle ?? fullTitle;
+
+const defaultKeywords =
+  lang === 'de'
+    ? 'Traditionelle Kleidung, Traditionelle Kleidung Männer, Traditionelle Kleidung Frauen, Traditionelle Kleidung nach Land, Trachten, Volkstrachten, traditionelle Tracht, traditionelle Gewänder, Festtracht, traditionelle Hochzeitskleidung'
+    : 'Traditional Clothing, Traditional Clothing men, Traditional Clothing women, Traditional Clothing per country, traditional clothing by country, traditional garments, cultural attire, folk costumes, national costumes, ethnic wear, traditional dress, heritage clothing, traditional wedding attire';
+
+const metaKeywords = keywords
+  ? (Array.isArray(keywords) ? keywords.join(', ') : keywords)
+  : (title ? `${title}, ${defaultKeywords}` : defaultKeywords);
 
 const site = Astro.site!;
 const absolute = (path: string) => new URL(path, site).href;
@@ -27,7 +41,9 @@ const canonical = absolute(route.path);
 const alternates = await getAlternates(route.key);
 const xDefault = alternates.find((alt) => alt.lang === defaultLocale);
 
-const ogImageUrl = ogImage ? await getSocialImageUrl(ogImage, site) : undefined;
+const defaultOgImage = getLocalImage('nigeria-traditional-wedding-couple.webp');
+const effectiveOgImage = ogImage ?? defaultOgImage;
+const ogImageUrl = await getSocialImageUrl(effectiveOgImage, site);
 ---
 
 <!doctype html>
@@ -54,6 +70,8 @@ const ogImageUrl = ogImage ? await getSocialImageUrl(ogImage, site) : undefined;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <meta name="keywords" content={metaKeywords} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href={canonical} />
     {alternates.map((alt) => <link rel="alternate" hreflang={alt.lang} href={absolute(alt.path)} />)}
     {xDefault && <link rel="alternate" hreflang="x-default" href={absolute(xDefault.path)} />}
@@ -67,15 +85,28 @@ const ogImageUrl = ogImage ? await getSocialImageUrl(ogImage, site) : undefined;
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
 
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
     <meta property="og:type" content={route.kind === 'home' ? 'website' : 'article'} />
     <meta property="og:site_name" content={siteName} />
-    <meta property="og:title" content={title ?? siteName} />
+    <meta property="og:title" content={effectiveOgTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={localeMeta[lang].ogLocale} />
     {alternates.filter((alt) => alt.lang !== lang).map((alt) => <meta property="og:locale:alternate" content={localeMeta[alt.lang].ogLocale} />)}
-    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
-    <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:url" content={ogImageUrl} />
+    <meta property="og:image:secure_url" content={ogImageUrl} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title ? `${title} - ${siteName}` : (lang === 'de' ? 'Traditionelle Kleidung aus aller Welt' : 'Traditional Clothing from Around the World')} />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={effectiveOgTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content={title ? `${title} - ${siteName}` : (lang === 'de' ? 'Traditionelle Kleidung aus aller Welt' : 'Traditional Clothing from Around the World')} />
 
     {jsonLd.map((data) => <script type="application/ld+json" set:html={JSON.stringify(data)} />)}
   </head>

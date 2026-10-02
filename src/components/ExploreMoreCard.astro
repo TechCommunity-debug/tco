@@ -1,0 +1,81 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  href: string;
+  title: string;
+  subtitle?: string;
+  actionText?: string;
+  aspect?: 'square' | 'portrait';
+  headingLevel?: 'h2' | 'h3';
+}
+
+const {
+  href,
+  title,
+  subtitle,
+  actionText,
+  aspect = 'square',
+  headingLevel = 'h3',
+} = Astro.props;
+
+const Heading = headingLevel;
+---
+
+<article class="group relative flex h-full flex-col">
+  <div
+    class:list={[
+      'relative flex flex-col items-center justify-center overflow-hidden rounded-md border border-hairline bg-surface-soft p-6 text-center transition-all duration-300 ease-out group-hover:border-ink group-hover:bg-surface-strong',
+      aspect === 'square' ? 'aspect-square' : 'aspect-[4/5]',
+    ]}
+  >
+    <!-- Arrow Orb -->
+    <div
+      class="relative mb-3 flex size-12 items-center justify-center rounded-full bg-ink text-canvas shadow-sm transition-all duration-300 ease-out group-hover:scale-110 group-hover:bg-primary group-hover:text-white sm:size-14"
+    >
+      <Icon
+        name="arrow-right"
+        size={22}
+        class="transition-transform duration-300 ease-out group-hover:translate-x-1"
+      />
+    </div>
+
+    <!-- Title inside card -->
+    <span class="relative px-2 text-title font-semibold text-ink transition-colors group-hover:text-primary">
+      {title}
+    </span>
+
+    {
+      subtitle && (
+        <span class="relative mt-1 line-clamp-2 px-2 text-caption text-muted transition-colors group-hover:text-ink-body">
+          {subtitle}
+        </span>
+      )
+    }
+  </div>
+
+  <div class="mt-3">
+    <Heading class="text-title font-semibold text-ink">
+      <a
+        href={href}
+        class="inline-flex items-center gap-1.5 after:absolute after:inset-0 after:rounded-md focus-visible:outline-none transition-colors group-hover:text-primary"
+      >
+        <span>{actionText || title}</span>
+        <Icon
+          name="arrow-right"
+          size={16}
+          class="shrink-0 text-ink transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:text-primary"
+        />
+      </a>
+    </Heading>
+    {subtitle && <p class="mt-1 line-clamp-1 text-body-sm text-muted">{subtitle}</p>}
+  </div>
+</article>
+
+<style>
+  article:has(a:focus-visible) {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 4px;
+    border-radius: var(--radius-md);
+  }
+</style>

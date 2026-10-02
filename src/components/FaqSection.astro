@@ -1,0 +1,73 @@
+---
+import Icon from './Icon.astro';
+
+export interface FaqItem {
+  question: string;
+  answerHtml: string;
+}
+
+interface Props {
+  badge: string;
+  title: string;
+  lead: string;
+  items: FaqItem[];
+  id?: string;
+}
+
+const { badge, title, lead, items, id = 'home-faq' } = Astro.props;
+---
+
+<section class="page-container py-12 md:py-16 border-t border-hairline" aria-labelledby={id}>
+  <header class="max-w-3xl mb-8">
+    <span class="inline-block rounded-full bg-surface-strong px-3 py-1 text-caption font-semibold uppercase tracking-wider text-muted">
+      {badge}
+    </span>
+    <h2 id={id} class="mt-3 text-display-xl font-bold text-ink md:text-[30px] leading-tight">
+      {title}
+    </h2>
+    <p class="mt-3 text-body text-muted">
+      {lead}
+    </p>
+  </header>
+
+  <div class="space-y-4 max-w-4xl">
+    {
+      items.map((item, index) => (
+        <details
+          class="group rounded-xl border border-hairline-soft bg-surface-soft p-5 md:p-6 transition-all duration-200 hover:border-hairline open:bg-canvas open:border-hairline open:shadow-xs"
+          open={index < 2}
+        >
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-ink focus-visible:outline-none [&::-webkit-details-marker]:hidden">
+            <span class="text-balance text-display-sm font-semibold text-ink">
+              {item.question}
+            </span>
+            <span class="shrink-0 flex items-center justify-center size-8 rounded-full border border-hairline bg-surface-strong text-muted transition-transform duration-200 group-open:rotate-180 group-open:bg-surface-soft group-open:text-ink">
+              <Icon name="chevron-down" size={18} />
+            </span>
+          </summary>
+          <div class="mt-4 border-t border-hairline-soft pt-4 text-body text-ink-body leading-relaxed prose-faq" set:html={item.answerHtml} />
+        </details>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .prose-faq :global(p + p) {
+    margin-top: 0.75rem;
+  }
+  .prose-faq :global(a) {
+    color: var(--color-ink);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.15s ease;
+  }
+  .prose-faq :global(a:hover) {
+    color: var(--color-primary);
+  }
+  .prose-faq :global(strong) {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+</style>

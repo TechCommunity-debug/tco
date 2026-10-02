@@ -1,6 +1,7 @@
 ---
 import Icon from '../components/Icon.astro';
 import PhotoCard from '../components/PhotoCard.astro';
+import ExploreMoreCard from '../components/ExploreMoreCard.astro';
 import SearchPill from '../components/SearchPill.astro';
 import { continentKeys, continents, segments, t, type ContinentKey } from '../i18n/ui';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -14,8 +15,12 @@ const { route } = Astro.props;
 const { lang } = route;
 const [countries, garments] = await Promise.all([getCountries(lang), getGarments(lang)]);
 const garmentNames = new Map(garments.map((g) => [g.id.split('/')[1], g.data.name]));
+const countryMap = new Map(countries.map((c) => [c.id.split('/')[1], countryPath(c)]));
+const garmentMap = new Map(garments.map((g) => [g.id.split('/')[1], garmentPath(g)]));
 const countriesHref = localePath(lang, segments[lang].countries);
 const garmentsHref = localePath(lang, segments[lang].garments);
+const featuredCountries = countries.length > 7 ? countries.slice(0, 7) : countries;
+const featuredGarments = garments.length > 7 ? garments.slice(0, 7) : garments;
 
 const continentIcons: Record<ContinentKey, 'sun' | 'pagoda' | 'castle' | 'cactus' | 'mountain'> = {
   africa: 'sun',
@@ -37,13 +42,28 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: t(lang, 'siteName'),
+    alternateName: ['Traditional Clothing Hub', 'Traditional Clothing Guide'],
     url: new URL(route.path, site).href,
     inLanguage: lang,
+    description: t(lang, 'homeMetaDescription'),
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${new URL(countriesHref, site).href}#{search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: t(lang, 'siteName'),
+    url: site.href,
+    logo: new URL('/favicon.svg', site).href,
+    description: t(lang, 'homeMetaDescription'),
   },
 ];
 ---
 
-<BaseLayout route={route} description={t(lang, 'siteTagline')} jsonLd={jsonLd}>
+<BaseLayout route={route} description={t(lang, 'homeMetaDescription')} keywords={t(lang, 'homeMetaKeywords')} jsonLd={jsonLd}>
   <section class="page-container pt-10 pb-8 text-center md:pt-16 md:pb-12">
     <h1 class="mx-auto max-w-2xl text-display-xl font-bold text-balance text-ink md:text-[32px]">{t(lang, 'heroTitle')}</h1>
     <p class="mx-auto mt-3 max-w-xl text-body text-pretty text-muted">{t(lang, 'heroLead')}</p>
@@ -82,7 +102,7 @@ const jsonLd = [
     </div>
     <ul class="mt-6 grid gap-x-4 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {
-        countries.map((country, index) => (
+        featuredCountries.map((country, index) => (
           <li>
             <PhotoCard
               href={countryPath(country)}
@@ -94,10 +114,19 @@ const jsonLd = [
           </li>
         ))
       }
+      <li>
+        <ExploreMoreCard
+          href={countriesHref}
+          title={t(lang, 'exploreMoreCountries')}
+          subtitle={t(lang, 'exploreMoreCountriesLead')}
+          actionText={t(lang, 'viewAllCountries')}
+          aspect="square"
+        />
+      </li>
     </ul>
   </section>
 
-  <section class="page-container pb-12 md:pb-16" aria-labelledby="home-garments">
+  <section class="page-container pb-12 md:py-16" aria-labelledby="home-garments">
     <div class="flex items-end justify-between gap-4">
       <div>
         <h2 id="home-garments" class="text-display-lg font-semibold text-ink">{t(lang, 'featuredGarments')}</h2>
@@ -109,13 +138,173 @@ const jsonLd = [
     </div>
     <ul class="mt-6 grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-3 lg:grid-cols-4">
       {
-        garments.map((garment) => (
+        featuredGarments.map((garment) => (
           <li>
             <PhotoCard href={garmentPath(garment)} title={garment.data.name} description={garment.data.summary} image={garment.data.hero} aspect="portrait" />
           </li>
         ))
       }
+      <li>
+        <ExploreMoreCard
+          href={garmentsHref}
+          title={t(lang, 'exploreMoreGarments')}
+          subtitle={t(lang, 'exploreMoreGarmentsLead')}
+          actionText={t(lang, 'viewAllGarments')}
+          aspect="portrait"
+        />
+      </li>
     </ul>
+  </section>
+
+  {/* Comprehensive 600+ Word Editorial Guide & Educational SEO Section */}
+  <section class="page-container py-12 md:py-16 border-t border-hairline" aria-labelledby="home-guide">
+    <header class="max-w-3xl">
+      <span class="inline-block rounded-full bg-surface-strong px-3 py-1 text-caption font-semibold uppercase tracking-wider text-muted">
+        {t(lang, 'homeGuideBadge')}
+      </span>
+      <h2 id="home-guide" class="mt-3 text-display-xl font-bold text-ink md:text-[30px] leading-tight">
+        {t(lang, 'homeGuideTitle')}
+      </h2>
+      <p class="mt-3 text-body text-muted">
+        {t(lang, 'homeGuideLead')}
+      </p>
+    </header>
+
+    {
+      lang === 'de' ? (
+        <div class="mt-10 space-y-10">
+          <div class="rounded-xl border border-hairline-soft bg-surface-soft p-6 md:p-8">
+            <h3 class="text-display-sm font-semibold text-ink">
+              Das Verzeichnis für weltweite traditionelle Kleidung und Kulturgewänder
+            </h3>
+            <p class="mt-3 text-body text-ink-body leading-relaxed">
+              <strong>Traditional Clothing Hub</strong> ist ein frei zugängliches digitales Referenzwerkzeug und ein interaktives Verzeichnis zur Erforschung und Dokumentation authentischer <strong>traditioneller Kleidung</strong> weltweit. Von festlichen Bräuchen bis hin zum lebendigen Alltagskulturerbe bietet unser Archiv fundierte historische Recherchen, detaillierte Analysen zur Schnittführung und geprüfte Bilddokumente aus führenden Museen der Welt. Ob Lehrkräfte, Textilforschende, Modeschaffende oder Kulturinteressierte: Dieses digitale Werkzeug ermöglicht eine intuitive und lehrreiche Entdeckungsreise durch das faszinierende textile Erbe der Menschheit rund um den Globus.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-hairline bg-canvas p-6 md:p-8">
+            <h3 class="text-display-sm font-semibold text-ink">
+              Traditionelle Kleidung nach Land: Kontinente, Regionen und lebendige Identität
+            </h3>
+            <p class="mt-3 text-body text-ink-body leading-relaxed">
+              Unser Online-Verzeichnis erfasst <strong>traditionelle Kleidung nach Land</strong> und ordnet das weltweite textile Erbe übersichtlich nach Kontinenten: Afrika, Asien, Europa, Nordamerika und Südamerika. Jede Tracht und jedes traditionelle Kleidungsstück erzählt eine eigene kulturgeschichtliche Geschichte, die von regionaler Geografie, lokal verfügbaren Naturfasern, klimatischen Bedingungen und historischen Handelswegen geprägt wurde. In Asien entdecken Sie weltbekannte Ikonen wie den japanischen Seidenkimono (<a href={garmentMap.get('kimono')} class="underline font-medium text-ink hover:text-primary">Kimono in Japan</a>), das figurbetonte chinesische <a href={garmentMap.get('qipao')} class="underline font-medium text-ink hover:text-primary">Qipao</a> und den edlen koreanischen <a href={garmentMap.get('hanbok')} class="underline font-medium text-ink hover:text-primary">Hanbok</a> in <a href={countryMap.get('south-korea')} class="underline font-medium text-ink hover:text-primary">Südkorea</a>. In Südasien begeistert der indische <a href={garmentMap.get('sari')} class="underline font-medium text-ink hover:text-primary">Sari</a> mit jahrhundertealter Webkunst und unnachahmlichen Farbwelten. In Europa veranschaulicht der mitteleuropäische Alpenraum mit bayerischem <a href={garmentMap.get('dirndl')} class="underline font-medium text-ink hover:text-primary">Dirndl</a> und rustikalen Lederhosen in <a href={countryMap.get('germany')} class="underline font-medium text-ink hover:text-primary">Deutschland</a> die lebendige Trachtentradition. In Westafrika zeugt die nigerianische <a href={garmentMap.get('agbada')} class="underline font-medium text-ink hover:text-primary">Agbada</a>-Robe in <a href={countryMap.get('nigeria')} class="underline font-medium text-ink hover:text-primary">Nigeria</a> von handwerklicher Meisterschaft und königlicher Würde, während in Südamerika farbenfroh gewebte <a href={garmentMap.get('poncho')} class="underline font-medium text-ink hover:text-primary">Ponchos</a> in <a href={countryMap.get('peru')} class="underline font-medium text-ink hover:text-primary">Peru</a> und kunstvoll verzierte <a href={garmentMap.get('sarape')} class="underline font-medium text-ink hover:text-primary">Sarapes</a> in <a href={countryMap.get('mexico')} class="underline font-medium text-ink hover:text-primary">Mexiko</a> das indigene Kunsthandwerk lebendig halten.
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div class="rounded-xl border border-hairline-soft bg-surface-soft p-6 md:p-8">
+              <h3 class="text-display-sm font-semibold text-ink">
+                Traditionelle Kleidung für Männer: Würde, Struktur und Funktion
+              </h3>
+              <p class="mt-3 text-body text-ink-body leading-relaxed">
+                In den verschiedenen Weltkulturen spiegelt <strong>traditionelle Kleidung für Männer</strong> gesellschaftliche Rollen, Würde, handwerkliche Funktion und Familienabstammung wider. In Nigeria ist die <a href={garmentMap.get('agbada')} class="underline font-medium text-ink hover:text-primary">Agbada</a> ein dreiteiliges Prachtgewand mit weiten, fließenden Schulterbahnen, das bei Hochzeiten, Krönungen und festlichen Empfängen getragen wird und Autorität ausstrahlt. In Ostasien kombiniert der traditionelle <a href={garmentMap.get('hanbok')} class="underline font-medium text-ink hover:text-primary">Hanbok</a> für Männer weite Baji-Hosen mit einer strukturierten Jeogori-Jacke, während japanische Männer dezente Seidenkimonos oder luftige Yukata mit einem stabilen Kaku-Obi binden. Im europäischen Alpenraum zeichnen sich Lederhosen für Männer durch sämisch gegerbtes Hirschleder, Hornknöpfe, kunstvoll bestickte Hosenträger und jahrzehntelange Haltbarkeit für alpine Bedingungen aus. In Mexiko dient der dichte wollene <a href={garmentMap.get('sarape')} class="underline font-medium text-ink hover:text-primary">Sarape</a> seit Generationen als wetterfester Umhang und Reitermantel der Charros. Unser Online-Guide beleuchtet Schnittmuster, Schulterdrapierungen, Stoffqualitäten und Trageregeln für traditionelle Männerkleidung weltweit im Detail.
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-hairline-soft bg-surface-soft p-6 md:p-8">
+              <h3 class="text-display-sm font-semibold text-ink">
+                Traditionelle Kleidung für Frauen: Kunstvolle Drapierung und Symbolik
+              </h3>
+              <p class="mt-3 text-body text-ink-body leading-relaxed">
+                Ebenso faszinierend ist die <strong>traditionelle Kleidung für Frauen</strong>, die sich durch unübertroffene textile Finesse, symbolträchtige Farbwahl und kunstvolle Drapiertechniken auszeichnet. In Indien besteht der <a href={garmentMap.get('sari')} class="underline font-medium text-ink hover:text-primary">Sari</a> aus fünf bis neun Metern ungeschnittener Seide oder feinster Baumwolle, getragen mit einer passgenauen Choli-Bluse und Unterrock, verziert mit traditionellen Pfauen- und Paisley-Motiven. In Japan reicht das Spektrum der Frauenkleidung vom prachtvollen, langärmeligen Furisode-<a href={garmentMap.get('kimono')} class="underline font-medium text-ink hover:text-primary">Kimono</a> für unverheiratete Frauen bis zum eleganten schwarzen Tomesode mit goldenen Familienwappen für feierliche Anlässe. In China revolutionierte das hochgeschlossene <a href={garmentMap.get('qipao')} class="underline font-medium text-ink hover:text-primary">Qipao</a> im Shanghai der 1920er Jahre die feminine Silhouette mit Stehkragen und kunstvollen Posamentenverschlüssen. In Bayern und Österreich vereint das <a href={garmentMap.get('dirndl')} class="underline font-medium text-ink hover:text-primary">Dirndl</a> figurbetontes Mieder, schwingenden Rock und weiße Schürze – wobei die Schleife der Schürze traditionell den Beziehungsstatus der Trägerin verrät. In den peruanischen Anden tragen indigene Frauen mehrlagige, leuchtend bestickte Polleras und mit natürlichen Cochenille-Farben gefärbte Wolltücher (Lliclla).
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-xl border border-hairline bg-canvas p-6 md:p-8">
+            <h3 class="text-display-sm font-semibold text-ink">
+              Trachten, Volkstrachten und lebendiges Weltkulturerbe
+            </h3>
+            <p class="mt-3 text-body text-ink-body leading-relaxed">
+              <strong>Trachten, Volkstrachten und traditionelle Gewänder</strong> sind keineswegs verstaubte Relikte der Vergangenheit, sondern lebendige Zeugnisse kultureller Identität. Zu feierlichen Höhepunkten entfaltet <strong>traditionelle Hochzeitskleidung</strong> ihre volle Strahlkraft: Bei nigerianischen Hochzeiten kleidet sich das Brautpaar in abgestimmte königsblaue Aso-Ebi-Spitze, während indische Bräute in scharlachroter Banarasi-Seide mit goldenen Zari-Stickereien erstrahlen. Bei regionalen Festen wie dem Münchner Oktoberfest, dem traditionellen Gion Matsuri in Kyoto oder dem koreanischen Chuseok-Fest tragen Generationen ihre Festtagstracht mit Stolz. Zudem lassen sich moderne Modeschaffende und Designer von den abfallfreien Schnitttechniken traditionsreicher Gewänder für zeitgenössische nachhaltige Mode inspirieren.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-hairline-soft bg-surface-soft p-6 md:p-8">
+            <h3 class="text-display-sm font-semibold text-ink">
+              So nutzen Sie den Traditional Clothing Hub
+            </h3>
+            <p class="mt-3 text-body text-ink-body leading-relaxed">
+              Traditional Clothing Hub macht die Erkundung weltweiter Trachten und traditioneller Kleidung so einfach und zugänglich wie nie zuvor. Nutzen Sie unsere dynamische Suchfunktion, um jedes Land und jedes Kleidungsstück innerhalb von Sekunden aufzurufen. Filtern Sie nach <a href={countriesHref} class="underline font-medium text-ink hover:text-primary">Kontinenten</a>, um regionale Handwerkstraditionen zu vergleichen, oder stöbern Sie im alphabetischen <a href={garmentsHref} class="underline font-medium text-ink hover:text-primary">A–Z-Verzeichnis aller Kleidungsstücke</a>. Jede Länderseite bietet Querverweise zu passenden Kleidungsstücken, fundierten historischen Kontext und Bildnachweise aus weltberühmten Museen wie The Metropolitan Museum of Art und Smithsonian. Beginnen Sie jetzt Ihre Entdeckungsreise durch die faszinierende Welt der traditionellen Kleidung!
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href={countriesHref} class="inline-flex h-11 items-center rounded-sm bg-ink px-5 text-body-sm font-medium text-canvas transition hover:opacity-90">
+                {t(lang, 'countriesTitle')}
+              </a>
+              <a href={garmentsHref} class="inline-flex h-11 items-center rounded-sm border border-hairline bg-canvas px-5 text-body-sm font-medium text-ink transition hover:bg-surface-strong">
+                {t(lang, 'garmentsTitle')}
+              </a>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div class="mt-10 space-y-10">
+          <div class="rounded-xl border border-hairline-soft bg-surface-soft p-6 md:p-8">
+            <h3 class="text-display-sm font-semibold text-ink">
+              An Open-Access Directory for World Traditional Clothing & Cultural Attire
+            </h3>
+            <p class="mt-3 text-body text-ink-body leading-relaxed">
+              <strong>Traditional Clothing Hub</strong> is an open-access cultural reference tool and interactive directory dedicated to documenting authentic <strong>traditional clothing</strong> across continents and cultures. From celebratory ceremonies to everyday living heritage, our digital archive provides verified historical research, garment construction breakdowns, and museum-sourced visual records. Whether you are an educator, textile researcher, designer, or cultural enthusiast, this tool offers an intuitive platform to discover how human identity is woven into fabric across the globe.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-hairline bg-canvas p-6 md:p-8">
+            <h3 class="text-display-sm font-semibold text-ink">
+              Traditional Clothing per Country: Continents, Regions, and Cultures
+            </h3>
+            <p class="mt-3 text-body text-ink-body leading-relaxed">
+              Our directory organizes <strong>traditional clothing per country</strong>, mapping unique sartorial heritage across Africa, Asia, Europe, North America, and South America. Each nation's <strong>traditional dress</strong> tells a story shaped by geography, local materials, climate, and historical trade routes. In Asia, explore iconic garments like Japan's silk <a href={garmentMap.get('kimono')} class="underline font-medium text-ink hover:text-primary">kimono</a> in <a href={countryMap.get('japan')} class="underline font-medium text-ink hover:text-primary">Japan</a>, China's form-fitting <a href={garmentMap.get('qipao')} class="underline font-medium text-ink hover:text-primary">qipao</a> in <a href={countryMap.get('china')} class="underline font-medium text-ink hover:text-primary">China</a>, and South Korea's vibrant <a href={garmentMap.get('hanbok')} class="underline font-medium text-ink hover:text-primary">hanbok</a> in <a href={countryMap.get('south-korea')} class="underline font-medium text-ink hover:text-primary">South Korea</a>. In South Asia, discover the unstitched artistry of India's <a href={garmentMap.get('sari')} class="underline font-medium text-ink hover:text-primary">sari</a> in <a href={countryMap.get('india')} class="underline font-medium text-ink hover:text-primary">India</a>, with regional handloom traditions spanning centuries. In Europe, delve into the Alpine heritage of Germany's <a href={garmentMap.get('dirndl')} class="underline font-medium text-ink hover:text-primary">dirndl</a> and lederhosen in <a href={countryMap.get('germany')} class="underline font-medium text-ink hover:text-primary">Germany</a>, celebrated during seasonal harvest festivals. In Africa, examine the monumental prestige of Nigeria's <a href={garmentMap.get('agbada')} class="underline font-medium text-ink hover:text-primary">agbada</a> in <a href={countryMap.get('nigeria')} class="underline font-medium text-ink hover:text-primary">Nigeria</a>, hand-woven from rich aso-oke and damask. In the Americas, explore the enduring indigenous weaving of Peru's striped wool <a href={garmentMap.get('poncho')} class="underline font-medium text-ink hover:text-primary">ponchos</a> in <a href={countryMap.get('peru')} class="underline font-medium text-ink hover:text-primary">Peru</a> and Mexico's mastercrafted <a href={garmentMap.get('sarape')} class="underline font-medium text-ink hover:text-primary">sarapes</a> in <a href={countryMap.get('mexico')} class="underline font-medium text-ink hover:text-primary">Mexico</a>. By categorizing <strong>traditional clothing by country</strong>, our explorer enables cross-cultural comparisons and deep regional understanding.
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div class="rounded-xl border border-hairline-soft bg-surface-soft p-6 md:p-8">
+              <h3 class="text-display-sm font-semibold text-ink">
+                Traditional Clothing Men: Structure, Status, and Silhouette
+              </h3>
+              <p class="mt-3 text-body text-ink-body leading-relaxed">
+                Across world cultures, <strong>traditional clothing men</strong> wear reflects societal structure, lineage, ceremonial status, and functional craftsmanship. In West Africa, the Nigerian <a href={garmentMap.get('agbada')} class="underline font-medium text-ink hover:text-primary">agbada</a> is a three-piece royal robe featuring a wide, flowing silhouette that commands presence at weddings and state gatherings. In East Asia, Korean male <a href={garmentMap.get('hanbok')} class="underline font-medium text-ink hover:text-primary">hanbok</a> pairs voluminous baji trousers with a structured jeogori jacket, while Japanese men wear tailored, muted <a href={garmentMap.get('kimono')} class="underline font-medium text-ink hover:text-primary">kimono</a> or breezy indigo yukata fastened with a firm kaku obi. In the European Alps, men's folk costumes feature rugged leather lederhosen crafted with horn buttons, suspenders, and intricate oak-leaf embroidery built for mountainous terrain. In Mexico, the wool <a href={garmentMap.get('sarape')} class="underline font-medium text-ink hover:text-primary">sarape</a> serves as a versatile mantle and horseman's cloak. Our guide details tailoring techniques, shoulder draping, and fabric weights for men's traditional garments worldwide.
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-hairline-soft bg-surface-soft p-6 md:p-8">
+              <h3 class="text-display-sm font-semibold text-ink">
+                Traditional Clothing Women: Elegance, Symbolism, and Textile Art
+              </h3>
+              <p class="mt-3 text-body text-ink-body leading-relaxed">
+                Equally rich is the realm of <strong>traditional clothing women</strong> wear, characterized by masterful textile artistry, color symbolism, and dynamic drapes. In India, the <a href={garmentMap.get('sari')} class="underline font-medium text-ink hover:text-primary">sari</a>—a five to nine-meter unstitched drape of pure silk or fine cotton—is worn with a fitted blouse and tailored petticoat, carrying sacred motifs of peacocks and paisleys. In Japan, women's <a href={garmentMap.get('kimono')} class="underline font-medium text-ink hover:text-primary">kimono</a> range from the long-sleeved furisode worn by unmarried women at Coming-of-Age ceremonies to the understated tomesode adorned with family crests (kamon). In China, the high-collared <a href={garmentMap.get('qipao')} class="underline font-medium text-ink hover:text-primary">qipao</a> (cheongsam) revolutionized feminine silhouette in 1920s Shanghai with jade frog fasteners and silk brocade. In the Bavarian countryside, women's traditional <a href={garmentMap.get('dirndl')} class="underline font-medium text-ink hover:text-primary">dirndl</a> combines a fitted bodice, full skirt, and crisp apron—where the placement of the apron bow traditionally signals marital status. In the Peruvian Andes, women wear layered, richly embroidered polleras and wool shawls (lliclla) dyed with natural cochineal pigments.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-xl border border-hairline bg-canvas p-6 md:p-8">
+            <h3 class="text-display-sm font-semibold text-ink">
+              Cultural Attire, Folk Costumes, and Living Heritage
+            </h3>
+            <p class="mt-3 text-body text-ink-body leading-relaxed">
+              <strong>Cultural attire</strong> and <strong>folk costumes</strong> are never static artifacts frozen in history; they remain vital expressions of living culture. Across continents, traditional clothing reaches its zenith during milestone celebrations. <strong>Traditional wedding attire</strong> reflects profound spiritual and familial symbolism: from Nigerian couples wearing matching royal blue aso-ebi lace to Indian brides adorned in crimson Banarasi silk and gold zari, wedding attire symbolizes ancestral blessing and family union. In seasonal folk celebrations, Alpine Oktoberfest, Kyoto's Gion Matsuri, Mexican Dia de los Muertos, and Korean Chuseok see communities proudly donning their heritage garments. Furthermore, contemporary textile designers increasingly draw inspiration from ancient zero-waste pattern-making found in kimono and sari traditions, making traditional garments a cornerstone of modern sustainable fashion.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-hairline-soft bg-surface-soft p-6 md:p-8">
+            <h3 class="text-display-sm font-semibold text-ink">
+              How to Use This Traditional Clothing Explorer
+            </h3>
+            <p class="mt-3 text-body text-ink-body leading-relaxed">
+              Traditional Clothing Hub makes exploring world dress effortless. Use our dynamic search to look up any country or garment name in seconds. Filter by <a href={countriesHref} class="underline font-medium text-ink hover:text-primary">continent</a> to trace regional textile traditions, or browse the alphabetical <a href={garmentsHref} class="underline font-medium text-ink hover:text-primary">A–Z garments index</a> to compare silhouettes, necklines, and drapery styles. Every country guide is cross-referenced with related garments, historical context, and high-resolution photography sourced from open-access museum archives like The Metropolitan Museum of Art and the Smithsonian Institution. Start exploring today to discover the timeless beauty of global traditional clothing!
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href={countriesHref} class="inline-flex h-11 items-center rounded-sm bg-ink px-5 text-body-sm font-medium text-canvas transition hover:opacity-90">
+                {t(lang, 'countriesTitle')}
+              </a>
+              <a href={garmentsHref} class="inline-flex h-11 items-center rounded-sm border border-hairline bg-canvas px-5 text-body-sm font-medium text-ink transition hover:bg-surface-strong">
+                {t(lang, 'garmentsTitle')}
+              </a>
+            </div>
+          </div>
+        </div>
+      )
+    }
   </section>
 
   <section class="page-container" aria-labelledby="home-trust">

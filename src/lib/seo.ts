@@ -29,3 +29,23 @@ export function articleJsonLd(options: { headline: string; description: string; 
     publisher: { '@type': 'Organization', name: 'Traditional Clothing Hub', url: 'https://traditionalclothinghub.com/' },
   };
 }
+
+export interface FaqItem {
+  question: string;
+  answerHtml: string;
+}
+
+export function faqJsonLd(items: FaqItem[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answerHtml,
+      },
+    })),
+  };
+}
