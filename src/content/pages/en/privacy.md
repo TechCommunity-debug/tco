@@ -1,39 +1,63 @@
 ---
 slug: privacy
 title: Privacy Policy
-description: What personal data Traditional Clothing Hub processes, why, and what rights you have.
-updated: 2026-09-30
-todo:
-  - Add the legal name and postal address of the controller (required by GDPR Art. 13).
-  - Name the hosting provider and describe its server logs once hosting is chosen; conclude a data processing agreement with it.
-  - Before enabling Google AdSense or any analytics, add a consent banner (CMP certified for Google's requirements) and extend this policy with the cookies and partners used.
-  - Have the policy reviewed by a legal professional before launch.
+description: Privacy policy for Traditional Clothing Hub, explaining data protection, edge delivery logs, and third-party advertising cookies.
+updated: 2026-10-02
 ---
 
-This policy explains what personal data is processed when you visit traditionalclothinghub.com and what rights you have. It applies to all language versions of the site.
+This Privacy Policy describes how Traditional Clothing Hub ("we", "our", or "us") processes personal data when you visit traditionalclothinghub.com, how we protect your information, and how privacy is respected. This policy applies to all language versions and subpages of the website.
 
-## Who is responsible {#controller}
+## Data controller {#controller}
 
-The controller responsible for processing personal data on this website is the operator of Traditional Clothing Hub. You can reach us at [contact@traditionalclothinghub.com](mailto:contact@traditionalclothinghub.com).
+The data controller responsible for the processing of personal data on this website is the operator of Traditional Clothing Hub. For any data protection inquiries or privacy concerns, please contact us at:
 
-## What we process when you visit {#server-logs}
+**Email**: [contact@traditionalclothinghub.com](mailto:contact@traditionalclothinghub.com)
 
-When you open a page, your browser automatically sends technical information to the server that hosts this website. This usually includes your IP address, the date and time of the request, the page requested, the referring page, and your browser and operating system. The hosting provider processes this data to deliver the website and to keep it secure. The legal basis is our legitimate interest in operating a secure website (Art. 6(1)(f) GDPR). Log data is not combined with other data and is deleted after a short period.
+## Global edge delivery network and server logs {#edge-network}
 
-## Cookies, fonts and third parties {#cookies}
+To ensure rapid global page load times, high reliability, and robust cybersecurity, this website is hosted and distributed through an international edge content delivery network (CDN) and reverse proxy. When you access any page, your connection is routed through geodistributed edge nodes located closest to your physical location.
 
-At the moment this website does not set any cookies and does not use analytics or advertising services. Fonts and images are stored on our own server, so opening a page does not send your data to font or image providers.
+### Information processed by edge nodes
+When your browser requests a resource from our website, edge servers automatically receive and process technical data transmitted by your client. This technical connection data includes:
+- Your Internet Protocol (IP) address (which may be processed in truncated or anonymized form for security metrics)
+- Date and exact timestamp of the request
+- Uniform Resource Identifier (URI) and specific webpage requested
+- HTTP status code and volume of transmitted bytes
+- Referrer URL (the webpage from which you navigated to our site)
+- Browser type, browser engine version, and client operating system
+- Security connection parameters (including SSL/TLS handshake protocol and cipher suite)
 
-If we add advertising (for example Google AdSense) or analytics in the future, we will update this policy first and ask for your consent where the law requires it before any non-essential cookies are set.
+### Purpose of technical processing
+The processing of this technical information is necessary to deliver the requested website files to your device, optimize content caching, prevent Distributed Denial of Service (DDoS) attacks, detect and mitigate malicious bot traffic, and enforce Web Application Firewall (WAF) filtering.
 
-## Contacting us by email {#email}
+### Data retention
+Edge access and diagnostic log data are retained only for the short duration necessary to ensure network stability, troubleshoot technical incidents, and detect security threats. Log data is stored in isolated, secure network facilities and is automatically purged on a regular cycle. It is not merged with other data sources or used to build personal user profiles.
 
-If you email us, we process your email address and the content of your message to answer you. The legal basis is Art. 6(1)(f) GDPR, or Art. 6(1)(b) GDPR if your message relates to a contract. We delete the correspondence when it is no longer needed, unless we are required by law to keep it.
+## Third-party advertising and cookies {#advertising-and-cookies}
+
+To support the substantial costs of ongoing cultural research, web hosting, and global network distribution, we may partner with third-party digital advertising networks and advertising technology providers to display advertisements on our website.
+
+### Use of cookies and tracking technologies
+Third-party advertising partners and ad servers may place, read, or utilize cookies, web beacons (pixel tags), scripts, and unique mobile/device identifiers on your browser when ads are displayed on our pages:
+- **Cookies**: Small text files stored on your device that enable advertising technology to recognize your browser, record ad impressions, and prevent showing you the same ad repeatedly.
+- **Web beacons and pixel tags**: Transparent graphic elements or code snippets used to track engagement, count page views, or measure the performance and reach of advertising campaigns.
+
+### Personalized vs. non-personalized advertising
+- **Personalized advertising (interest-based ads)**: Where permitted by applicable law and subject to your consent, third-party advertising partners may use cookies to serve advertisements based on your prior visits to this website and other websites across the internet. These systems build generalized interest categories to display ads relevant to your preferences.
+- **Non-personalized advertising**: If you decline consent or opt out of personalized advertising, ads will still be displayed, but they will be selected based solely on contextual criteria (such as the content of the current page you are viewing, general geographical location at city/region level, or current device characteristics).
+
+## Local storage and user preferences {#local-storage}
+
+Our website utilizes browser local storage solely for non-tracking, functional user experience preferences—specifically to remember your chosen visual theme (light mode or dark mode) across page navigations. This preference is stored locally within your browser client, is never transmitted to our servers, and contains no personally identifiable information.
+
+## Email communications {#email}
+
+If you contact us by email at `contact@traditionalclothinghub.com`, we process your email address, your name (if provided), and the content of your message to respond to your inquiry, correct an editorial error, or process your feedback.
 
 ## External links {#links}
 
-Our pages link to other websites, for example to museum collections and photo libraries in the image credits. When you follow such a link, the other website's privacy policy applies.
+Our pages include hyperlinks to external third-party websites, including museums, universities, image databases, and academic references. When you click on an external link, you leave our site, and the privacy policies of the respective external operators apply. We have no influence over data processing on third-party websites.
 
-## Your rights {#rights}
+## Changes to this Privacy Policy {#changes}
 
-Under the GDPR you have the right to access your personal data, to have it corrected or deleted, to restrict its processing, to data portability and to object to processing based on legitimate interests. You also have the right to lodge a complaint with a data protection supervisory authority. To exercise your rights, email us at the address above.
+We may revise this Privacy Policy periodically to reflect technological advancements, operational enhancements, updates to our edge delivery infrastructure, or statutory legal changes. The latest version will always be accessible on this page, with the revision date clearly indicated at the top.

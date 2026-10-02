@@ -3,6 +3,8 @@ import Icon from '../components/Icon.astro';
 import PhotoCard from '../components/PhotoCard.astro';
 import ExploreMoreCard from '../components/ExploreMoreCard.astro';
 import SearchPill from '../components/SearchPill.astro';
+import FaqSection, { type FaqItem } from '../components/FaqSection.astro';
+import { faqJsonLd } from '../lib/seo';
 import { continentKeys, continents, segments, t, type ContinentKey } from '../i18n/ui';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { countryPath, garmentPath, getCountries, getGarments, localePath, pathFor, type SiteRoute } from '../lib/routes';
@@ -37,6 +39,69 @@ const searchOptions = [
 ];
 
 const site = Astro.site!;
+const faqItems: FaqItem[] =
+  lang === 'de'
+    ? [
+        {
+          question: 'Was gilt als traditionelle Kleidung?',
+          answerHtml:
+            '<p>Als <strong>traditionelle Kleidung</strong> (auch Tracht, Volkstracht oder Festgewand) bezeichnet man Gewänder, Textilien und Ensembles, die über Generationen hinweg innerhalb einer bestimmten Kultur, Volksgruppe oder Region entstanden sind. Sie zeichnet sich durch tiefe symbolische Bedeutung, die Darstellung von sozialem oder ehelichem Status sowie die Anpassung an regionale Klimabedingungen und Naturfasern aus. Typisch sind überlieferte Handwerkstechniken wie Weben, Sticken und natürliches Färben.</p>',
+        },
+        {
+          question: 'Welche Länder haben traditionelle Trachten?',
+          answerHtml: `<p>Praktisch jedes Land und jede Kultur der Welt besitzt traditionelle Trachten oder charakteristische Festgewänder. Zu den weltweit bekanntesten Beispielen zählen der japanische <a href="${garmentMap.get('kimono')}">Kimono</a>, der südkoreanische <a href="${garmentMap.get('hanbok')}">Hanbok</a>, der indische <a href="${garmentMap.get('sari')}">Sari</a>, das deutsche <a href="${garmentMap.get('dirndl')}">Dirndl</a> und die Lederhose, das nigerianische <a href="${garmentMap.get('agbada')}">Agbada</a>, der peruanische <a href="${garmentMap.get('poncho')}">Poncho</a>, der mexikanische <a href="${garmentMap.get('sarape')}">Sarape</a> sowie das chinesische <a href="${garmentMap.get('qipao')}">Qipao</a>. Viele Staaten beherbergen zudem zahlreiche regionale Trachtenvarianten.</p>`,
+        },
+        {
+          question: 'Was ist der Unterschied zwischen traditioneller Kleidung und einer Nationaltracht?',
+          answerHtml:
+            '<p>Während <strong>traditionelle Kleidung</strong> das breite historische Spektrum an regionaler Alltags-, Arbeits- und Festtagskleidung verschiedener Gemeinschaften umfasst, bezeichnet eine <strong>Nationaltracht</strong> meist ein offiziell stilisiertes oder repräsentatives Gewand, das ausgewählt wurde, um die kulturelle Identität eines gesamten Staates bei internationalen Anlässen, Staatsakten oder Kulturfestivals zu repräsentieren.</p>',
+        },
+        {
+          question: 'Warum wird traditionelle Kleidung auch heute noch getragen?',
+          answerHtml:
+            '<p>Traditionelle Kleidung wird getragen, um das kulturelle Erbe und familiäre Wurzeln zu ehren, bedeutende Lebensereignisse (wie Hochzeiten, religiöse Feiertage und Reifezeremonien) zu begehen und regionale Identität in einer globalisierten Welt auszudrücken. Zudem bewahrt das Tragen von Trachten wertvolles Handwerkswissen und inspiriert moderne nachhaltige Mode durch abfallfreie Schnittmuster.</p>',
+        },
+        {
+          question: 'Wie beeinflussen Geografie und Klima traditionelle Gewänder?',
+          answerHtml: `<p>Klima und regionale Naturressourcen haben Schnitt und Material traditioneller Kleidung maßgeblich geprägt. In kalten Gebirgsregionen wie den Anden oder Alpen schützen dichte Schaf- und Alpakawolle sowie robustes Leder vor der Kälte – wie beim peruanischen <a href="${garmentMap.get('poncho')}">Poncho</a> und der Alpen-Lederhose. In warmen, feuchten Zonen entstanden atmungsaktive Wickelgewänder und weite Schnitte aus Baumwolle und Seide – wie der indische <a href="${garmentMap.get('sari')}">Sari</a>, das nigerianische <a href="${garmentMap.get('agbada')}">Agbada</a> oder der japanische Yukata.</p>`,
+        },
+        {
+          question: 'Was zeichnet traditionelle Hochzeitskleidung aus?',
+          answerHtml:
+            '<p>Traditionelle Hochzeitskleidung gehört zu den aufwendigsten und symbolträchtigsten Formen kultureller Kleidung weltweit. Sie zeichnet sich durch glücksbringende Farben und kostbare Stickereien aus: von scharlachroter Banarasi-Seide mit Goldfäden bei indischen Bräuten über feierliche Aso-Ebi-Spitze mit farblich abgestimmtem Gele in Nigeria bis hin zur weißen Shiromuku-Seidenrobe in Japan und dem Zeremonial-Hanbok in Korea.</p>',
+        },
+      ]
+    : [
+        {
+          question: 'What is considered traditional clothing?',
+          answerHtml:
+            '<p><strong>Traditional clothing</strong> refers to garments, ensembles, textiles, and accessories that have evolved within a specific culture, community, ethnic group, or geographic region over generations. Unlike fast-moving modern fashion cycles, traditional clothing is deeply rooted in local heritage, social customs, religious practices, marital status, and adaptations to regional climate. Hallmarks include distinctive silhouettes, handloom weaving, elaborate embroidery, and the use of natural fibers like silk, wool, linen, and cotton.</p>',
+        },
+        {
+          question: 'Which country has traditional dress?',
+          answerHtml: `<p>Nearly every country and culture in the world has traditional dress or regional folk costumes. Iconic examples featured in our directory include Japan (<a href="${garmentMap.get('kimono')}">Kimono</a>), South Korea (<a href="${garmentMap.get('hanbok')}">Hanbok</a>), India (<a href="${garmentMap.get('sari')}">Sari</a>), Germany (<a href="${garmentMap.get('dirndl')}">Dirndl</a> and Lederhosen), Nigeria (<a href="${garmentMap.get('agbada')}">Agbada</a>), Peru (<a href="${garmentMap.get('poncho')}">Poncho</a>), Mexico (<a href="${garmentMap.get('sarape')}">Sarape</a>), and China (<a href="${garmentMap.get('qipao')}">Qipao</a>). Many nations also feature dozens of regional variations reflecting distinct ethnic provinces and historical eras.</p>`,
+        },
+        {
+          question: 'What is the difference between traditional clothing and a national costume?',
+          answerHtml:
+            '<p>While <strong>traditional clothing</strong> encompasses the wide variety of everyday, seasonal, and ceremonial garments developed organically by distinct ethnic or regional communities over centuries, a <strong>national costume</strong> is often an officially recognized or widely popularized ensemble selected to symbolize the collective identity of an entire nation on the global stage, such as in diplomatic gatherings, cultural pageants, or international ceremonies.</p>',
+        },
+        {
+          question: 'Why do people still wear traditional clothing today?',
+          answerHtml:
+            '<p>People continue wearing traditional clothing to honor ancestral roots, mark significant life milestones (such as weddings, religious festivals, and coming-of-age ceremonies), and express cultural pride in an interconnected world. In addition, traditional garments preserve master artisanal craftsmanship, sustain local handloom economies, and inspire contemporary sustainable fashion with zero-waste pattern drafting.</p>',
+        },
+        {
+          question: 'How does climate and geography shape traditional attire?',
+          answerHtml: `<p>Geography and local natural materials fundamentally shape traditional garment construction. Cold, mountainous regions developed insulating garments made of sheep or alpaca wool and durable leather—such as Andean <a href="${garmentMap.get('poncho')}">ponchos</a> and Alpine lederhosen. Tropical and humid climates favored breathable, unstitched drapes and lightweight silks or cottons—such as Indian <a href="${garmentMap.get('sari')}">saris</a>, Nigerian <a href="${garmentMap.get('agbada')}">agbadas</a>, and Japanese summer yukatas.</p>`,
+        },
+        {
+          question: 'What is traditional wedding attire?',
+          answerHtml:
+            '<p>Traditional wedding attire encompasses ceremonial garments, veils, headwraps, and jewelry worn during marriage rites according to cultural customs. It often showcases the highest degree of textile artistry and symbolic color—such as scarlet Banarasi silk and gold zari for Indian brides, royal blue aso-ebi and matching gele headties in Nigeria, white and pastel ceremonial hanbok in South Korea, and elegant shiromuku silk robes in Japan.</p>',
+        },
+      ];
+
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -60,6 +125,12 @@ const jsonLd = [
     logo: new URL('/favicon.svg', site).href,
     description: t(lang, 'homeMetaDescription'),
   },
+  faqJsonLd(
+    faqItems.map((item) => ({
+      question: item.question,
+      answerHtml: item.answerHtml.replace(/href="([^"]+)"/g, (_, p) => `href="${new URL(p, site).href}"`),
+    }))
+  ),
 ];
 ---
 
@@ -306,6 +377,14 @@ const jsonLd = [
       )
     }
   </section>
+
+  <FaqSection
+    id="home-faq"
+    badge={t(lang, 'faqBadge')}
+    title={t(lang, 'faqTitle')}
+    lead={t(lang, 'faqLead')}
+    items={faqItems}
+  />
 
   <section class="page-container" aria-labelledby="home-trust">
     <div class="rounded-lg bg-surface-soft px-6 py-10 md:px-12 md:py-12">

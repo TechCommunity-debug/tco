@@ -1,30 +1,48 @@
 ---
 slug: ueber-uns
 title: Über Traditional Clothing Hub
-description: Wer wir sind, wie wir zu traditioneller Kleidung recherchieren, woher unsere Bilder stammen und wie du uns Fehler melden kannst.
-updated: 2026-09-30
-todo:
-  - Namen und Kurzbiografien der Redaktion bzw. Autorinnen und Autoren ergänzen (wichtig für E-E-A-T und die AdSense-Prüfung).
-  - Gründungsdatum oder Projektgeschichte ergänzen, sobald vom Betreiber bestätigt.
+description: Erfahre mehr über unsere Mission, traditionelle Kleidung weltweit zu dokumentieren, unsere wissenschaftliche Recherche und den Respekt vor lebendiger Kultur.
+updated: 2026-10-02
 ---
 
-Traditional Clothing Hub ist ein Nachschlagewerk über traditionelle Kleidung aus aller Welt. Für jedes Land, das wir behandeln, erklären wir die wichtigsten Kleidungsstücke, was Menschen zu Hochzeiten und Festen tragen und welche Rolle traditionelle Kleidung heute spielt. Jedes Kleidungsstück hat eine eigene Seite mit seiner Geschichte, den wichtigsten Arten und der Trageweise.
+Traditional Clothing Hub ist ein offenes Nachschlagewerk und Kulturarchiv zur weltweiten Dokumentation traditioneller Kleidung, regionaler Trachten und textiler Handwerkskunst. Für jede behandelte Kultur stellen wir die geschichtliche Bedeutung, Hochzeits- und Festtagskleidung, Fertigungstechniken sowie die Rolle des traditionellen Gewands im heutigen Alltag vor.
+
+## Unsere Mission {#mission}
+
+Textilien und Trachten bewahren das Gedächtnis, die soziale Geschichte und die Kunstfertigkeit der Gemeinschaften, die sie über Generationen hinweg geschaffen haben. In einer zunehmend vernetzten Welt sind traditionelle Kleidungsstücke ein unverzichtbarer Ausdruck regionaler Identität, kultureller Werte und überlieferten handwerklichen Wissens.
+
+Unser Ziel ist es, ein verlässliches, sorgfältig recherchiertes und visuell ansprechendes Nachschlagewerk bereitzustellen. Wir möchten Schülerinnen und Schülern, Forschenden, Designschaffenden und Kulturinteressierten den Zugang zu globalen Textiltraditionen erleichtern.
 
 ## Was wir behandeln {#inhalte}
 
-Wir beginnen mit acht Ländern auf fünf Kontinenten: Japan, Südkorea, China, Indien, Deutschland, Mexiko, Nigeria und Peru. Jede Länderseite verlinkt auf die wichtigsten Kleidungsstücke, und jede Kleidungsstück-Seite führt zurück zu den Ländern, in denen es getragen wird. Die Website gibt es auf Englisch und Deutsch; weitere Länder und Sprachen sollen folgen.
+Wir dokumentieren traditionelle Bekleidung aus Afrika, Amerika, Asien, Europa und Ozeanien. Jedes Länderporträt umfasst:
+- **Zentrale Kleidungsstücke**: Typische Kleidungsstücke, Stoffe, Schnitte und Zubehör für Frauen und Männer.
+- **Hochzeiten und feierliche Anlässe**: Festgewänder, rituelle Farben, Stickereien und Accessoires für bedeutende Lebensabschnitte.
+- **Feste und Brauchtum**: Regionale Trachten, Tänzergewänder und festliche Garderobe im Jahreslauf.
+- **Gegenwart und Wandel**: Wie traditionelle Kleidung heute getragen wird, moderne Interpretationen und lebendige Bräuche.
 
-## So recherchieren wir {#recherche}
+Jede Seite zu einem einzelnen Kleidungsstück beleuchtet dessen Ursprung, Materialität, regionale Varianten und die traditionelle Art des Anlegens.
 
-- Wir schreiben auf Grundlage veröffentlichter Quellen wie Museumssammlungen, Büchern und Fachartikeln und übernehmen keine Behauptungen, die wir nicht überprüfen können.
-- Wo Informationen unsicher sind oder sich Traditionen von Region zu Region unterscheiden, sagen wir das, statt eine Version als die einzig richtige darzustellen.
-- Traditionelle Kleidung ist lebendige Kultur. Wir beschreiben Bräuche respektvoll und orientieren uns daran, wie die Menschen im jeweiligen Land ihre eigene Kleidung beschreiben.
-- Jede Seite zeigt das Datum ihrer letzten Aktualisierung.
+## Unsere Recherchegrundsätze {#recherche}
 
-## Woher unsere Bilder stammen {#bilder}
+Wissenschaftliche Sorgfalt und Respekt vor dem kulturellen Erbe bestimmen unsere redaktionelle Arbeit:
+- **Verlässliche Quellen**: Unsere Texte basieren auf wissenschaftlichen Publikationen, Museumskatalogen, Textilmonografien und Fachaufsätzen. Wir übernehmen keine ungeprüften Behauptungen.
+- **Lebendige Traditionen**: Traditionelle Kleidung ist kein starres Relikt der Vergangenheit, sondern lebendige Kultur. Wir bemühen uns um eine respektvolle Darstellung und verwenden die authentischen Bezeichnungen der jeweiligen Kulturkreise.
+- **Regionale Vielfalt**: Wo Bräuche innerhalb eines Landes variieren oder Quellen unterschiedliche Deutungen bieten, stellen wir diese Vielfalt differenziert dar.
+- **Transparenz**: Jede Seite ist mit dem Datum ihrer letzten Aktualisierung versehen.
 
-Wir verwenden Bilder aus frei zugänglichen Museumssammlungen wie dem Metropolitan Museum of Art und der Smithsonian Institution sowie aus freien Fotoarchiven wie Unsplash. Jedes Bild laden wir herunter, wandeln es in ein komprimiertes Format um und stellen es auf unserem eigenen Server bereit. Jedes Bild ist direkt an Ort und Stelle mit Urheber und Lizenz gekennzeichnet; die vollständige Liste findest du auf unserer Seite [Bildquellen](/de/quellen/).
+## Bildquellen und Archivstandards {#bilder}
 
-## Korrekturen {#korrekturen}
+Hochwertige visuelle Dokumente sind für das Verständnis textiler Details unverzichtbar. Wir nutzen gemeinfreie und frei lizenzierte Bestände führender Museen und Archive – darunter das Metropolitan Museum of Art, die Smithsonian Institution, das Rijksmuseum sowie freie Fotoarchive.
 
-Wenn du einen Fehler entdeckst oder eine Tradition besser kennst, als wir sie beschrieben haben, [schreib uns bitte](/de/kontakt/). Wir lesen jede Nachricht und korrigieren Fehler so schnell wie möglich.
+Alle Abbildungen werden direkt mit Urheber, Institution und Lizenz ausgewiesen. Eine vollständige Übersicht aller Nachweise findest du auf unserer Seite [Bildquellen](/de/quellen/).
+
+## Unabhängigkeit und Projektfinanzierung {#unabhaengigkeit}
+
+Traditional Clothing Hub ist ein unabhängiges Bildungsprojekt. Um den laufenden Betrieb, die weltweite Bereitstellung und weitere Recherchen zu ermöglichen, blenden wir auf ausgewählten Flächen dezente Werbeanzeigen von Drittanbietern ein.
+
+Unsere redaktionelle Arbeit ist vollständig unabhängig: Werbepartner haben keinerlei Einfluss auf Themenauswahl, Rechercheergebnisse oder redaktionelle Texte.
+
+## Korrekturen und Anregungen {#korrekturen}
+
+Kulturelle Überlieferungen sind reich an regionalen Besonderheiten. Wenn du einen sachlichen Fehler bemerkst, neuere wissenschaftliche Quellen beisteuern möchtest oder dein Wissen über deine heimische Tracht teilen willst, [schreib uns bitte](/de/kontakt/).

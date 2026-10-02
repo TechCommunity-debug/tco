@@ -58,6 +58,7 @@ const strings = {
   about: { en: 'About', de: 'Über uns' },
   contact: { en: 'Contact', de: 'Kontakt' },
   privacy: { en: 'Privacy policy', de: 'Datenschutz' },
+  terms: { en: 'Terms & Conditions', de: 'Nutzungsbedingungen' },
   sources: { en: 'Image sources', de: 'Bildquellen' },
   mainNav: { en: 'Main', de: 'Hauptnavigation' },
   footerNav: { en: 'Footer', de: 'Fußzeile' },

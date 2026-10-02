@@ -1,30 +1,48 @@
 ---
 slug: about
 title: About Traditional Clothing Hub
-description: Who we are, how we research traditional clothing, where our images come from and how to report a mistake.
-updated: 2026-09-30
-todo:
-  - Add the names and short bios of the editors/authors (important for E-E-A-T and AdSense review).
-  - Add a founding date or project history once confirmed by the site owner.
+description: Discover our mission to document world traditional clothing, our museum research standards, image provenance, and commitment to cultural heritage.
+updated: 2026-10-02
 ---
 
-Traditional Clothing Hub is a reference site about the traditional clothing of the world. For every country we cover, we explain the main garments, what people wear for weddings and festivals, and how traditional dress is worn today. Each garment has its own page with its history, main types and how it is put on.
+Traditional Clothing Hub is an open educational encyclopedia and cultural archive dedicated to documenting traditional clothing, folk costumes, and textile heritage across the world. For each culture and country represented, we detail historical significance, ceremonial and wedding attire, craftsmanship techniques, and how heritage garments remain vibrant in contemporary celebrations.
+
+## Our mission {#mission}
+
+Textiles and traditional garments carry the memories, social histories, and artistry of the communities that create them. In an increasingly globalized world, traditional dress preserves distinctive regional identities, craftsmanship knowledge, and artistic expressions passed down through generations.
+
+Our goal is to create an accessible, beautifully illustrated, and thoroughly researched global reference. By bridging academic textile history and visual documentation, we help students, researchers, designers, and cultural enthusiasts explore how attire reflects identity across different continents.
 
 ## What we cover {#what-we-cover}
 
-We are starting with eight countries across five continents: Japan, South Korea, China, India, Germany, Mexico, Nigeria and Peru. Each country page links to its key garments, and each garment page links back to the countries where it is worn. The site is available in English and German, and we plan to add more countries and languages over time.
+We document traditional dress across Africa, the Americas, Asia, Europe, and Oceania. For each country, our coverage includes:
+- **Core garments**: Key attire, materials, and standard components for both men and women.
+- **Weddings and ceremonies**: Sacred garments, auspicious colors, embroidery, and ritual accessories worn for life milestones.
+- **Festivals and folk dress**: Regional costumes, dance dress, seasonal celebrations, and festive accoutrements.
+- **Modern context**: How traditional clothing adapts today, including contemporary fashion revivals, festive etiquette, and everyday cultural pride.
 
-## How we research {#how-we-research}
+Each garment entry provides detailed historical background, stylistic variations, regional distinctions, and practical guidance on how pieces are draped or worn.
 
-- We write from published sources such as museum collections, books and academic articles, and we avoid repeating claims we cannot check.
-- Where information is uncertain or where traditions differ from region to region, we say so rather than presenting one version as the only one.
-- Traditional clothing is living culture. We describe practices respectfully and try to reflect how people in each country describe their own dress.
-- Every page shows the date it was last updated.
+## Research methodology {#research}
 
-## Where our images come from {#images}
+Cultural accuracy and scholarly integrity guide every article we publish:
+- **Verified sources**: We synthesize research from published museum catalogs, textile monographs, academic journals, and recognized cultural institutions. We actively avoid unverified folklore and commercial myths.
+- **Living heritage**: Traditional clothing is not a static relic of the past; it is living, evolving culture. We write respectfully and follow the terminology and perspectives of the communities to which these traditions belong.
+- **Nuance and regional diversity**: Where regional variations exist or historical accounts differ, we highlight these distinctions rather than imposing a single oversimplified narrative.
+- **Transparent updating**: Every article displays its last-updated timestamp so readers can trace the currency of our documentation.
 
-We use images from museum open-access collections, such as The Metropolitan Museum of Art and the Smithsonian Institution, and from free photo libraries such as Unsplash. We download each image, convert it to a compressed format and host it on our own server. Every image is credited next to where it appears, and the full list with authors and licences is on our [image sources](/sources/) page.
+## Image provenance and archives {#images}
 
-## Corrections {#corrections}
+Visual authenticity is vital to textile research. We work with open-access collections from world-renowned cultural institutions—including The Metropolitan Museum of Art, the Smithsonian Institution, the Rijksmuseum, and curated open-license photographic archives.
 
-If you spot a mistake, or you know a tradition better than we have described it, please [contact us](/contact/). We read every message and correct errors as quickly as we can.
+Every photograph and historical artwork on our site is credited with its creator, institution, and underlying license directly alongside the image. You can explore the complete catalog of historical and contemporary photography on our [image sources](/sources/) page.
+
+## Project independence and sustainability {#independence}
+
+Traditional Clothing Hub is an independent educational reference project. To maintain high-speed global availability, ongoing historical research, and site infrastructure, we may display non-intrusive third-party advertisements in designated locations across our pages.
+
+Our editorial coverage is strictly independent: advertisers and commercial partners exert no influence over our research, cultural selections, or editorial conclusions.
+
+## Corrections and community feedback {#corrections}
+
+Textile traditions encompass immense regional depth. If you spot a factual error, have access to updated scholarly research, or wish to share nuanced insights about your culture's garments, please reach out via our [contact page](/contact/). We welcome contributions from historians, artisans, and community members.

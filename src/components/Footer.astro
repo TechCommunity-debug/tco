@@ -28,7 +28,10 @@ const columns = [
   },
   {
     heading: t(lang, 'footerLegal'),
-    links: [{ label: t(lang, 'privacy'), href: await pathFor('page:privacy', lang) }],
+    links: [
+      { label: t(lang, 'privacy'), href: await pathFor('page:privacy', lang) },
+      { label: t(lang, 'terms'), href: await pathFor('page:terms', lang) },
+    ],
   },
 ];
 

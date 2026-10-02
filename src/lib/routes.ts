@@ -64,6 +64,9 @@ export async function getGarments(lang: Locale): Promise<Garment[]> {
 let routesPromise: Promise<SiteRoute[]> | undefined;
 
 export function getRoutes(): Promise<SiteRoute[]> {
+  if (import.meta.env.DEV) {
+    return buildRoutes();
+  }
   routesPromise ??= buildRoutes();
   return routesPromise;
 }
