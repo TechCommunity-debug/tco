@@ -27,7 +27,7 @@ English has no prefix, German lives under `/de/` with translated slugs. Every UR
 
 Sub-topics are sections on the parent page, not separate URLs: `/country/japan/#wedding`. Write the anchor into the heading: `## Wedding attire {#wedding}`.
 
-All routes come from one registry, [src/lib/routes.ts](src/lib/routes.ts), rendered by [src/pages/[...path].astro](src/pages/[...path].astro). Canonicals, hreflang (`en`, `de`, `x-default`), the language switcher and `sitemap.xml` are all derived from it, so they cannot drift apart.
+All routes come from one registry, [src/lib/routes.ts](src/lib/routes.ts), rendered by [src/pages/[...path].astro](src/pages/[...path].astro). Canonicals, hreflang (`en`, `de`, `x-default`), the language switcher and the sitemap (`sitemap-index.xml` → `sitemap-0.xml`) are all derived from it, so they cannot drift apart.
 
 ## Content
 
