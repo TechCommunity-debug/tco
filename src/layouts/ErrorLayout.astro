@@ -1,0 +1,151 @@
+﻿---
+import '../styles/global.css';
+import Logo from '../components/Logo.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import Icon from '../components/Icon.astro';
+import { defaultLocale, localeMeta, t, type Locale } from '../i18n/ui';
+import { localePath, pathFor } from '../lib/routes';
+
+interface Props {
+  title: string;
+  statusCode: '404' | '500';
+  description: string;
+  lang: Locale;
+}
+
+const { title, statusCode, description, lang } = Astro.props;
+const currentYear = new Date().getFullYear();
+const otherLang: Locale = lang === 'en' ? 'de' : 'en';
+const otherErrorHref = otherLang === 'de' ? `/de/${statusCode}/` : `/${statusCode}.html`;
+const homeHref = localePath(lang);
+const countriesHref = lang === 'de' ? '/de/laender/' : '/countries/';
+const garmentsHref = lang === 'de' ? '/de/kleidungsstuecke/' : '/garments/';
+const aboutHref = await pathFor('page:about', lang);
+const contactHref = await pathFor('page:contact', lang);
+const privacyHref = await pathFor('page:privacy', lang);
+const termsHref = await pathFor('page:terms', lang);
+const sourcesHref = await pathFor('page:sources', lang);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <script is:inline>
+      (() => {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (_) {}
+      })();
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="TraditionalC" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body class="flex min-h-dvh flex-col bg-canvas text-ink antialiased">
+    <a
+      href="#main-error-content"
+      class="sr-only z-50 rounded-sm bg-ink px-4 py-3 text-body-sm font-medium text-canvas focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+    >
+      {t(lang, 'skipToContent')}
+    </a>
+
+    <header class="sticky top-0 z-40 border-b border-hairline bg-canvas/95 backdrop-blur supports-[backdrop-filter]:bg-canvas/85">
+      <div class="page-container flex h-[72px] items-center justify-between gap-4 md:h-20">
+        <Logo href={homeHref} />
+
+        <nav aria-label={t(lang, 'mainNav')} class="hidden sm:flex items-center gap-1 md:gap-3">
+          <a
+            href={countriesHref}
+            class="flex items-center gap-2 rounded-full border border-hairline px-3.5 py-1.5 text-body-sm font-medium text-ink transition-all hover:border-ink hover:shadow-float dark:border-border-strong"
+          >
+            <Icon name="globe" size={17} />
+            <span>{t(lang, 'countries')}</span>
+          </a>
+          <a
+            href={garmentsHref}
+            class="flex items-center gap-2 rounded-full border border-hairline px-3.5 py-1.5 text-body-sm font-medium text-ink transition-all hover:border-ink hover:shadow-float dark:border-border-strong"
+          >
+            <Icon name="hanger" size={17} />
+            <span>{t(lang, 'garments')}</span>
+          </a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <ThemeToggle lang={lang} />
+          <a
+            href={otherErrorHref}
+            hreflang={otherLang}
+            lang={otherLang}
+            class="flex h-10 items-center gap-1.5 rounded-full border border-hairline px-3.5 text-caption font-medium text-ink transition-shadow hover:shadow-float dark:border-border-strong"
+            title={localeMeta[otherLang].label}
+            aria-label={t(lang, 'switchLanguage')}
+          >
+            <Icon name="globe" size={16} />
+            <span>{localeMeta[otherLang].short}</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-error-content" class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="mt-auto border-t border-hairline bg-canvas">
+      <div class="page-container py-8 md:py-10">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-body-sm text-muted">
+            <a href={homeHref} class="hover:text-ink hover:underline">{t(lang, 'home')}</a>
+            <a href={countriesHref} class="hover:text-ink hover:underline">{t(lang, 'countries')}</a>
+            <a href={garmentsHref} class="hover:text-ink hover:underline">{t(lang, 'garments')}</a>
+            <a href={aboutHref} class="hover:text-ink hover:underline">{t(lang, 'about')}</a>
+            <a href={contactHref} class="hover:text-ink hover:underline">{t(lang, 'contact')}</a>
+            <a href={privacyHref} class="hover:text-ink hover:underline">{t(lang, 'privacy')}</a>
+            <a href={termsHref} class="hover:text-ink hover:underline">{t(lang, 'terms')}</a>
+            <a href={sourcesHref} class="hover:text-ink hover:underline">{t(lang, 'sources')}</a>
+          </div>
+
+          <div class="flex items-center gap-4 text-caption text-muted">
+            <p>{t(lang, 'copyright', { year: currentYear })}</p>
+            <span class="text-hairline" aria-hidden="true">•</span>
+            <div class="flex items-center gap-2">
+              <a
+                href={statusCode === '404' ? '/404.html' : '/500.html'}
+                class:list={['hover:underline', lang === 'en' ? 'font-semibold text-ink' : 'text-muted']}
+              >
+                English
+              </a>
+              <span class="text-muted-soft">/</span>
+              <a
+                href={`/de/${statusCode}/`}
+                class:list={['hover:underline', lang === 'de' ? 'font-semibold text-ink' : 'text-muted']}
+              >
+                Deutsch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

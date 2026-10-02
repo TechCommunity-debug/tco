@@ -1,0 +1,89 @@
+﻿---
+import ErrorLayout from '../layouts/ErrorLayout.astro';
+import Icon from '../components/Icon.astro';
+import { t, segments } from '../i18n/ui';
+import { localePath, pathFor } from '../lib/routes';
+
+interface Props {
+  error?: unknown;
+}
+
+const { error } = Astro.props;
+if (error) {
+  console.error('[500 Server Error]:', error);
+}
+
+const contactPath = await pathFor('page:contact', 'en');
+---
+
+<ErrorLayout
+  statusCode="500"
+  lang="en"
+  title="500: Server error | Traditional Clothing Hub"
+  description="An unexpected internal server error occurred while processing your request. Please try reloading the page or return to the homepage."
+>
+  <script is:inline>
+    if (typeof window !== 'undefined' && window.location.pathname.startsWith('/de/')) {
+      window.location.replace('/de/500/');
+    }
+  </script>
+
+  <div class="page-container flex flex-col items-center justify-center py-12 md:py-20">
+    <div class="w-full max-w-2xl rounded-lg border border-hairline bg-surface-soft/40 p-6 md:p-10 text-center dark:border-hairline dark:bg-surface-soft/60">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-soft px-4 py-1.5 text-body-sm font-bold text-primary dark:border-primary/30">
+        <Icon name="alert-triangle" size={18} />
+        <span>Error 500 • Server Error</span>
+      </div>
+
+      <h1 class="mt-5 text-display-xl font-bold tracking-tight text-ink sm:text-[36px]">
+        {t('en', 'serverErrorTitle')}
+      </h1>
+
+      <p class="mt-3 text-body font-medium text-ink-body">
+        {t('en', 'serverErrorBody')}
+      </p>
+
+      <p class="mt-2 text-body-sm text-muted">
+        {t('en', 'serverErrorHint')}
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <button
+          type="button"
+          onclick="window.location.reload()"
+          class="inline-flex h-12 items-center justify-center gap-2 rounded-sm bg-primary px-6 text-body font-medium text-white transition-colors hover:bg-primary-active focus-visible:outline-none cursor-pointer"
+        >
+          <Icon name="refresh" size={18} />
+          <span>{t('en', 'reloadPage')}</span>
+        </button>
+        <a
+          href={localePath('en')}
+          class="inline-flex h-12 items-center justify-center gap-2 rounded-sm border border-hairline bg-canvas px-5 text-body font-medium text-ink transition-all hover:border-ink hover:shadow-float dark:border-border-strong"
+        >
+          <Icon name="home" size={18} />
+          <span>{t('en', 'backHome')}</span>
+        </a>
+        <a
+          href={contactPath}
+          class="inline-flex h-12 items-center justify-center gap-2 rounded-sm border border-hairline bg-canvas px-5 text-body font-medium text-ink transition-all hover:border-ink hover:shadow-float dark:border-border-strong"
+        >
+          <Icon name="mail" size={18} />
+          <span>{t('en', 'contact')}</span>
+        </a>
+      </div>
+
+      <!-- Secondary Links -->
+      <div class="mt-10 border-t border-hairline-soft pt-6 text-center">
+        <div class="flex items-center justify-center gap-6 text-body-sm font-medium">
+          <a href={localePath('en', segments.en.countries)} class="text-primary hover:underline">
+            {t('en', 'exploreCountriesBtn')} →
+          </a>
+          <span class="text-hairline" aria-hidden="true">•</span>
+          <a href={localePath('en', segments.en.garments)} class="text-primary hover:underline">
+            {t('en', 'exploreGarmentsBtn')} →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ErrorLayout>

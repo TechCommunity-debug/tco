@@ -1,0 +1,83 @@
+﻿---
+import ErrorLayout from '../../layouts/ErrorLayout.astro';
+import Icon from '../../components/Icon.astro';
+import { t, segments } from '../../i18n/ui';
+import { localePath, pathFor } from '../../lib/routes';
+
+interface Props {
+  error?: unknown;
+}
+
+const { error } = Astro.props;
+if (error) {
+  console.error('[500 Server Error (DE)]:', error);
+}
+
+const contactPath = await pathFor('page:contact', 'de');
+---
+
+<ErrorLayout
+  statusCode="500"
+  lang="de"
+  title="500: Serverfehler | Traditional Clothing Hub"
+  description="Bei der Verarbeitung Ihrer Anfrage ist ein unerwarteter Serverfehler aufgetreten. Bitte laden Sie die Seite neu oder kehren Sie zur Startseite zurück."
+>
+  <div class="page-container flex flex-col items-center justify-center py-12 md:py-20">
+    <div class="w-full max-w-2xl rounded-lg border border-hairline bg-surface-soft/40 p-6 md:p-10 text-center dark:border-hairline dark:bg-surface-soft/60">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-soft px-4 py-1.5 text-body-sm font-bold text-primary dark:border-primary/30">
+        <Icon name="alert-triangle" size={18} />
+        <span>Fehler 500 • Serverfehler</span>
+      </div>
+
+      <h1 class="mt-5 text-display-xl font-bold tracking-tight text-ink sm:text-[36px]">
+        {t('de', 'serverErrorTitle')}
+      </h1>
+
+      <p class="mt-3 text-body font-medium text-ink-body">
+        {t('de', 'serverErrorBody')}
+      </p>
+
+      <p class="mt-2 text-body-sm text-muted">
+        {t('de', 'serverErrorHint')}
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <button
+          type="button"
+          onclick="window.location.reload()"
+          class="inline-flex h-12 items-center justify-center gap-2 rounded-sm bg-primary px-6 text-body font-medium text-white transition-colors hover:bg-primary-active focus-visible:outline-none cursor-pointer"
+        >
+          <Icon name="refresh" size={18} />
+          <span>{t('de', 'reloadPage')}</span>
+        </button>
+        <a
+          href={localePath('de')}
+          class="inline-flex h-12 items-center justify-center gap-2 rounded-sm border border-hairline bg-canvas px-5 text-body font-medium text-ink transition-all hover:border-ink hover:shadow-float dark:border-border-strong"
+        >
+          <Icon name="home" size={18} />
+          <span>{t('de', 'backHome')}</span>
+        </a>
+        <a
+          href={contactPath}
+          class="inline-flex h-12 items-center justify-center gap-2 rounded-sm border border-hairline bg-canvas px-5 text-body font-medium text-ink transition-all hover:border-ink hover:shadow-float dark:border-border-strong"
+        >
+          <Icon name="mail" size={18} />
+          <span>{t('de', 'contact')}</span>
+        </a>
+      </div>
+
+      <!-- Secondary Links -->
+      <div class="mt-10 border-t border-hairline-soft pt-6 text-center">
+        <div class="flex items-center justify-center gap-6 text-body-sm font-medium">
+          <a href={localePath('de', segments.de.countries)} class="text-primary hover:underline">
+            {t('de', 'exploreCountriesBtn')} →
+          </a>
+          <span class="text-hairline" aria-hidden="true">•</span>
+          <a href={localePath('de', segments.de.garments)} class="text-primary hover:underline">
+            {t('de', 'exploreGarmentsBtn')} →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ErrorLayout>

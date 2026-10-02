@@ -40,30 +40,32 @@ const errors = [];
 const fail = (/** @type {string} */ page, /** @type {string} */ message) => errors.push(`${page}: ${message}`);
 
 for (const [path, { html }] of pages) {
-  if (path === '/404.html') continue;
-  const linkTags = [...html.matchAll(/<link\s[^>]*>/g)].map((m) => m[0]);
+  const isErrorPage = path === '/404.html' || path === '/500.html' || path === '/de/404/' || path === '/de/500/' || path === '/de/404.html' || path === '/de/500.html';
+  if (!isErrorPage) {
+    const linkTags = [...html.matchAll(/<link\s[^>]*>/g)].map((m) => m[0]);
 
-  const canonical = linkTags.find((tag) => attr(tag, 'rel') === 'canonical');
-  const canonicalHref = canonical && attr(canonical, 'href');
-  if (!canonicalHref) fail(path, 'missing canonical');
-  else if (canonicalHref !== origin + path) fail(path, `canonical ${canonicalHref} is not self-referencing`);
-  if (!path.endsWith('/')) fail(path, 'URL has no trailing slash');
+    const canonical = linkTags.find((tag) => attr(tag, 'rel') === 'canonical');
+    const canonicalHref = canonical && attr(canonical, 'href');
+    if (!canonicalHref) fail(path, 'missing canonical');
+    else if (canonicalHref !== origin + path) fail(path, `canonical ${canonicalHref} is not self-referencing`);
+    if (!path.endsWith('/')) fail(path, 'URL has no trailing slash');
 
-  const lang = html.match(/<html[^>]*\slang="([^"]+)"/)?.[1];
-  const alternates = linkTags.filter((tag) => attr(tag, 'rel') === 'alternate' && attr(tag, 'hreflang'));
-  const self = alternates.find((tag) => attr(tag, 'hreflang') === lang);
-  if (!self || attr(self, 'href') !== origin + path) fail(path, `hreflang="${lang}" does not point to itself`);
-  if (!alternates.some((tag) => attr(tag, 'hreflang') === 'x-default')) fail(path, 'missing hreflang x-default');
-  for (const tag of alternates) {
-    const href = attr(tag, 'href') ?? '';
-    const target = pages.get(href.replace(origin, ''));
-    if (!target) {
-      fail(path, `hreflang target ${href} does not exist`);
-      continue;
+    const lang = html.match(/<html[^>]*\slang="([^"]+)"/)?.[1];
+    const alternates = linkTags.filter((tag) => attr(tag, 'rel') === 'alternate' && attr(tag, 'hreflang'));
+    const self = alternates.find((tag) => attr(tag, 'hreflang') === lang);
+    if (!self || attr(self, 'href') !== origin + path) fail(path, `hreflang="${lang}" does not point to itself`);
+    if (!alternates.some((tag) => attr(tag, 'hreflang') === 'x-default')) fail(path, 'missing hreflang x-default');
+    for (const tag of alternates) {
+      const href = attr(tag, 'href') ?? '';
+      const target = pages.get(href.replace(origin, ''));
+      if (!target) {
+        fail(path, `hreflang target ${href} does not exist`);
+        continue;
+      }
+      if (attr(tag, 'hreflang') === 'x-default') continue;
+      const back = [...target.html.matchAll(/<link\s[^>]*>/g)].some((m) => attr(m[0], 'hreflang') === lang && attr(m[0], 'href') === origin + path);
+      if (!back) fail(path, `hreflang target ${href} does not link back`);
     }
-    if (attr(tag, 'hreflang') === 'x-default') continue;
-    const back = [...target.html.matchAll(/<link\s[^>]*>/g)].some((m) => attr(m[0], 'hreflang') === lang && attr(m[0], 'href') === origin + path);
-    if (!back) fail(path, `hreflang target ${href} does not link back`);
   }
 
   for (const [, href] of html.matchAll(/<a\s[^>]*href="([^"]+)"/g)) {
