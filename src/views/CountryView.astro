@@ -30,6 +30,9 @@ const crumbs: Crumb[] = [
   { label: data.name, href: route.path },
 ];
 
+const womensHeading = headings.find((h) => h.depth === 2 && (h.slug === 'womens-clothing' || h.slug === 'frauenkleidung'));
+const mensHeading = headings.find((h) => h.depth === 2 && (h.slug === 'mens-clothing' || h.slug === 'maennerkleidung'));
+
 const facts = [
   { label: t(lang, 'continent'), links: [{ label: continents[data.continent][lang], href: `${countriesHref}#${continents[data.continent].anchor[lang]}` }] },
   ...(garments.length ? [{ label: t(lang, 'keyGarments'), links: garments.map((g) => ({ label: g.data.name, href: garmentPath(g) })) }] : []),
@@ -47,6 +50,31 @@ const jsonLd = [
 
 <BaseLayout route={route} title={data.title} description={data.description} ogImage={heroImage} jsonLd={jsonLd}>
   <ArticleShell lang={lang} crumbs={crumbs} title={data.title} intro={data.intro} hero={data.hero} headings={headings} updated={data.updated}>
+    {
+      womensHeading && mensHeading && (
+        <nav slot="above-at-a-glance" aria-label={t(lang, 'genderNavLabel')} class="mb-6 border-b border-hairline pb-5">
+          <span class="text-caption font-semibold uppercase tracking-wider text-muted block mb-3">
+            {t(lang, 'jumpTo')}:
+          </span>
+          <div class="flex flex-col gap-2">
+            <a
+              href={`#${womensHeading.slug}`}
+              class="group flex items-center justify-between rounded-lg border border-hairline bg-surface-soft px-3.5 py-2.5 text-body-sm font-medium text-ink transition hover:border-ink hover:bg-surface-strong focus-visible:outline-none"
+            >
+              <span>{womensHeading.text}</span>
+              <span class="text-muted transition-transform group-hover:translate-y-0.5" aria-hidden="true">↓</span>
+            </a>
+            <a
+              href={`#${mensHeading.slug}`}
+              class="group flex items-center justify-between rounded-lg border border-hairline bg-surface-soft px-3.5 py-2.5 text-body-sm font-medium text-ink transition hover:border-ink hover:bg-surface-strong focus-visible:outline-none"
+            >
+              <span>{mensHeading.text}</span>
+              <span class="text-muted transition-transform group-hover:translate-y-0.5" aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </nav>
+      )
+    }
     <Content />
     <FactList slot="facts" items={facts} />
 

@@ -22,11 +22,30 @@ todo:
   - Find a CC0 or Unsplash image of a Shinto wedding (shiromuku) for the wedding section.
 ---
 
-## The kimono and its relatives {#kimono}
+## Women's traditional clothing {#womens-clothing}
 
-In Japanese, traditional clothing is called *wafuku* (Japanese clothes), as opposed to *yōfuku* (Western clothes). The central garment is the **kimono**, which literally means "thing to wear". It is cut from a long, narrow bolt of cloth into straight panels and sewn into a T-shaped robe. The modern kimono developed from the *kosode*, a robe with small sleeve openings that became the main outer garment by the Edo period (1603–1868).
+*Looking for men's traditional clothing? [Jump directly to Men's traditional clothing ↓](#mens-clothing).*
+<span id="kimono"></span>
 
-A kimono is always worn with an **obi**, a wide sash tied at the back, and usually over an under-robe (*nagajuban*). Split-toe socks called *tabi* and sandals such as *zōri* or wooden *geta* complete the outfit. For formal occasions, men wear a kimono with *hakama* (wide pleated trousers) and a *haori* jacket. Read more on our [kimono page](/garment/kimono/).
+Women's traditional clothing in Japan centres on the **kimono**, an exquisite T-shaped robe sewn from straight panels of silk or cotton, tied at the waist with an **obi** sash. Women's kimono styles vary according to age, marital status, and the formality of the occasion:
+
+- **Furisode**: the most formal kimono for unmarried young women, celebrated for its long, swinging sleeves (often 100 to 110 cm) and vivid all-over patterns. It is worn for Coming of Age Day (*Seijin no Hi*), graduation ceremonies, and weddings of relatives.
+- **Kuro-tomesode**: a black silk kimono bearing five family crests (*kamon*) with patterns only below the waist, representing the highest formal wear for married women and mothers at weddings.
+- **Houmongi and Tsukesage**: elegant semi-formal visiting wear with continuous patterns flowing across seams, worn for tea ceremonies, receptions, and parties.
+- **Yukata**: an unlined lightweight cotton kimono worn casually by women of all ages during summer festivals and hot-spring outings.
+- **Bridal wear**: traditional brides wear the pure white **Shiromuku** ensemble with a white hood (*wataboshi*), or the richly brocaded **Irouchikake** outer coat embroidered with cranes, pine, and gold foil.
+- Read more about patterns and care on our [kimono page](/garment/kimono/).
+
+## Men's traditional clothing {#mens-clothing}
+
+*Looking for women's traditional clothing? [Jump to Women's traditional clothing ↑](#womens-clothing).*
+
+Men's traditional clothing in Japan is characterised by restrained elegance, understated colour palettes, and structured accessories:
+
+- **Men's Kimono**: cut in deep, subdued shades such as navy, charcoal, indigo, dark green, and brown, with shorter sleeves attached directly to the body. It is secured by a narrower sash (**kaku-obi**, about 10 cm wide) tied low around the hips in a shellfish knot (*kai-no-kuchi*).
+- **Hakama**: voluminous pleated trousers resembling a wide divided skirt, worn over the kimono. The seven pleats traditionally symbolise bushido virtues: benevolence, justice, politeness, wisdom, sincerity, loyalty, and dignity.
+- **Haori**: a hip-length jacket worn open over the kimono and hakama, fastened across the chest with braided silk cords (*haori himo*).
+- **Montsuki hakama**: the pinnacle of formal menswear, comprising a black silk kimono and matching haori emblazoned with five white family crests (*kamon*), worn with striped grey-and-black hakama. It is the formal dress for grooms, graduation ceremonies, tea masters, and martial arts masters.
 
 ## Wedding attire {#wedding}
 

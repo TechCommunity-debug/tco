@@ -31,11 +31,27 @@ Das Wort *Tracht* ist mit „tragen“ verwandt und bezeichnete ursprünglich ei
 
 Heute pflegen vor allem Trachtenvereine, Familien und örtliche Feste die Tracht. Daneben gibt es die *Trachtenmode*: Dirndl und Lederhosen in vielen Farben und Schnitten, die sich an der Tracht orientieren, aber keiner bestimmten Region zugeordnet sind.
 
-## Dirndl und Lederhose {#dirndl-und-lederhose}
+## Traditionelle Frauenkleidung {#frauenkleidung}
 
-Was im Ausland oft als „die deutsche Tracht“ gilt, stammt aus Bayern und dem übrigen Alpenraum. Das **Dirndl** ist ein Kleid mit eng anliegendem Oberteil, dem Mieder, und weitem Rock, getragen mit einer kurzen Bluse und einer Schürze. Ursprünglich war es Arbeitskleidung von Mägden und Bäuerinnen, im späten 19. Jahrhundert wurde es bei Städterinnen modern. Mehr dazu auf unserer [Dirndl-Seite](/de/kleidungsstueck/dirndl/).
+*Suchst du nach traditioneller Männerkleidung? [Direkt zur Männerkleidung springen ↓](#maennerkleidung).*
+<span id="dirndl-und-lederhose"></span>
 
-Die **Lederhose** gibt es kurz oder als *Kniebundhose*, die bis unter das Knie reicht. Meist gehören Hosenträger mit einem oft bestickten Quersteg über der Brust dazu. Kombiniert wird sie mit kariertem oder weißem Hemd, Weste oder *Janker*, Kniestrümpfen oder *Loferln* und festen *Haferlschuhen*, dazu häufig ein Filzhut. Früher praktische Kleidung für die Arbeit im Gebirge, ist die Lederhose heute vor allem Festtagskleidung.
+Das bekannteste traditionelle Kleidungsstück für Frauen in Deutschland ist das **Dirndl**, das aus Bayern und dem Alpenraum stammt. Es besteht aus einem eng anliegenden Mieder, einem weiten Rock, einer darunter getragenen weißen Bluse und einer Schürze. Wie die Schleife der Schürze gebunden wird, signalisiert traditionell den Beziehungsstatus: links bedeutet ledig, rechts verheiratet oder vergeben, und hinten verwitwet. Ursprünglich die praktische Arbeitskleidung von Mägden und Bäuerinnen, wurde das Dirndl im späten 19. Jahrhundert zur geschätzten Sommerfrische-Mode für Städterinnen. Mehr dazu auf unserer [Dirndl-Seite](/de/kleidungsstueck/dirndl/).
+
+Abseits des alpinen Südens zeigt die traditionelle Frauentracht große Vielfalt:
+
+- **Schwarzwald**: Die evangelischen Frauen in Gutach, Kirnbach und Reichenbach tragen den *Bollenhut*, einen weißen Strohhut mit 14 Wollkugeln – rot für unverheiratete und schwarz für verheiratete Frauen.
+- **Hessen**: Die Schwälmer Tracht zeichnet sich durch mehrere übereinander getragene, bauschige Röcke und kleine Hauben aus.
+- **Nordfriesland**: Auf der Insel Föhr gehört zur Frauentracht reicher Filigranschmuck aus Silber, der zur Konfirmation und zu Festen angelegt wird.
+- **Lausitz**: Sorbische Frauen tragen kunstvolle Festtagstrachten mit gestärkten Spitzenhauben zu Ostern und kirchlichen Anlässen.
+
+## Traditionelle Männerkleidung {#maennerkleidung}
+
+*Suchst du nach traditioneller Frauenkleidung? [Zur Frauenkleidung springen ↑](#frauenkleidung).*
+
+Die bekannteste traditionelle Kleidung für Männer in Deutschland ist die **Lederhose**, eine unverwüstliche Hose aus sämisch gegerbtem Hirsch-, Ziegen- oder Rindleder. Sie wird kurz (über dem Knie endend) oder als *Kniebundhose* (bis unter das Knie) getragen und von H-förmigen Hosenträgern mit besticktem Quersteg über der Brust gehalten. Früher war sie robuste Arbeitskleidung von Bergbauern, Holzfällern und Jägern.
+
+Heute wird die Lederhose als Festtagskleidung mit kariertem oder weißem Leinenhemd, Weste oder *Janker* (einer Jacke aus gewalkter Wolle), zweigeteilten Wadenwärmern (*Loferl*) oder Kniestrümpfen und festen *Haferlschuhen* kombiniert. Abgerundet wird die Tracht oft durch einen Filzhut mit *Gamsbart*. Zu festlichen Anlässen im ganzen Land tragen Männer zudem den **Trachtenanzug**, einen maßgeschneiderten Lodenanzug mit Stehkragen und Hirschhornknöpfen.
 
 ## Regionale Trachten {#regionen}
 

@@ -35,17 +35,30 @@ China officially recognises 56 ethnic groups. The largest, the Han, make up the 
 
 Dress also differs from region to region within the same group, so these are only broad outlines.
 
-## Hanfu {#hanfu}
+## Women's traditional clothing {#womens-clothing}
 
-*Hanfu* ("Han clothing") is a modern umbrella term for the dress of the Han Chinese before the Qing dynasty. It covers many styles that changed over more than two thousand years, but most share a few features: a crossed collar with the left panel wrapped over the right, wide sleeves and a sash at the waist.
+*Looking for men's traditional clothing? [Jump directly to Men's traditional clothing ↓](#mens-clothing).*
+<span id="qipao"></span>
 
-Since the early 2000s, a revival movement has brought hanfu back into public life. Young people wear reconstructed or modern versions for photos, festivals, graduation ceremonies and visits to historic sites, and many shops now make them.
+Traditional women's clothing in China spans centuries of dynastic fashion, exquisite embroidery, and modern elegance:
 
-## Qing robes and the qipao {#qipao}
+- **Qipao (Cheongsam)**: the world-renowned Chinese dress that developed in 1920s Shanghai from Manchu robes blended with Western tailoring. It features a high standing mandarin collar, an asymmetrical front closure fastened with handcrafted knotted frog buttons (*pankou*), a close-fitting waist, and side slits. Worn in rich silk brocades or printed fabrics, it became an enduring emblem of Chinese feminine elegance. Read more on our [qipao page](/garment/qipao/).
+- **Ruqun**: the classic Hanfu ensemble for women, consisting of a short crossover blouse (*ru*) and a long, sweeping pleated skirt (*qun*) tied high at the waist or chest with silk ribbons, popular in the Tang and Song dynasties.
+- **Qing dynasty jackets and robes**: loose-fitting silk jackets and robes featuring intricate body embroidery and wide decorative sleeve bands (*shuixiu*), as seen in historical court and family dress.
+- **Qun Kwa (Qungua)**: the traditional two-piece bridal attire of southern China, comprising a tailored red jacket and skirt densely embroidered with golden dragons and phoenixes.
+- **Miao silver dress**: women of the Miao ethnic group wear magnificent ceremonial dress featuring fine embroidery and elaborate silver headdresses, crowns, and breastplates for festivals.
 
-From 1644 to 1912 China was ruled by the Manchu Qing dynasty, which brought its own clothing customs. Officials wore long robes with narrow sleeves and cuffs shaped like horse hooves, and embroidered dragon robes were worn at court. Women's informal jackets, like the 19th-century example in the photo above, were often made of silk and decorated with embroidery on the body and wide bands at the sleeves.
+## Men's traditional clothing {#mens-clothing}
 
-In the 1920s and 1930s, above all in Shanghai, the **qipao** developed into a close-fitting dress with a high collar, drawing on older long robes and on Western tailoring. In Hong Kong and in English it is often called the cheongsam. Read more on our [qipao page](/garment/qipao/).
+*Looking for women's traditional clothing? [Jump to Women's traditional clothing ↑](#womens-clothing).*
+<span id="hanfu"></span>
+
+Traditional men's clothing in China embodies ancient scholar garments, court attire, and tailored Qing robes:
+
+- **Changshan**: the traditional men's long gown with a mandarin collar, side buttoning, and side slits, which served as standard formal wear for Chinese men from the late Qing dynasty into the twentieth century.
+- **Tang suit (Tangzhuang)**: a structured men's jacket featuring a standing collar, front-opening frog closures, and straight tailoring. Derived from the Qing-era horse jacket (*magua*), it is a favourite outfit for Chinese New Year, weddings, and formal banquets.
+- **Shenyi and Paofu**: historical Hanfu robes worn by scholars and officials, featuring wide sleeves, crossed lapels (closing left over right), and sash belts, representing classical Confucian harmony.
+- **Ethnic garments**: Tibetan men wear the sheepskin-lined *chuba* belted at the waist, Mongolian men wear the side-buttoned *deel* coat suited for riding, and Uyghur men wear embroidered *doppa* caps.
 
 ## Wedding attire {#wedding}
 

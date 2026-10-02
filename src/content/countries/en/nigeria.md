@@ -28,25 +28,28 @@ todo:
 
 Nigeria has hundreds of ethnic groups and languages, so there is no single "Nigerian" costume. The Hausa and Fulani are the largest groups in the north, the Yoruba in the south-west and the Igbo in the south-east. Many other peoples, such as the Edo, Ijaw, Efik, Tiv and Kanuri, have their own dress traditions. Religion, rank and occasion shape what people wear as much as ethnicity does.
 
-## Yoruba dress {#yoruba}
+## Women's traditional clothing {#womens-clothing}
 
-The best-known Yoruba men's outfit centres on the **agbada**, a very wide, flowing robe worn over a shirt (*buba*) and trousers (*sokoto*), with a cap (*fila*). For less formal wear, many men wear just the buba and sokoto. Read more on our [agbada page](/garment/agbada/).
+*Looking for men's traditional clothing? [Jump directly to Men's traditional clothing ↓](#mens-clothing).*
+<span id="yoruba"></span><span id="hausa"></span><span id="igbo"></span>
 
-Women often wear **iro and buba**: a wrapper (*iro*) tied around the waist and a loose blouse (*buba*), with a head tie (*gele*) and sometimes a sash over the shoulder (*ipele*). For special occasions, the gele is tied from stiff fabric into large shapes.
+Traditional women's clothing in Nigeria is celebrated for its sculptural elegance, vivid colours, and rich fabrics across different ethnic traditions:
 
-Two cloths are closely linked with Yoruba dress. *Aso oke* ("top cloth") is woven by hand on narrow looms in strips that are then sewn together, and is used for formal outfits. *Adire* is cotton dyed with indigo using resist techniques, associated especially with the city of Abeokuta.
+- **Iro and buba**: the foundational Yoruba women's attire, featuring a wraparound skirt (*iro*) tied at the waist and a loose-fitting blouse (*buba*). For special occasions, it is crowned by the **gele**, an ornate head tie folded from stiff metallic or cotton fabric into dramatic architectural shapes, and the **ipele**, a matching sash draped gracefully over the shoulder.
+- **George wrappers and coral beads**: in Igbo and Niger Delta communities, women wear double layered wrappers made of **George**, a dense, richly embroidered fabric with scalloped edges. This is paired with an embroidered lace blouse, an artfully tied headwrap, and cascading strings of genuine polished **coral beads** (*aka* or *ivie*) around the neck and wrists, symbolising dignity, royalty, and noble lineage.
+- **Northern wrappers and veils**: Hausa and Fulani women in northern Nigeria commonly wear matching wrappers and fitted blouses, accompanied by a headscarf (**kallabi**) and a flowing draped veil or shawl (**mayafi**) covering the head and shoulders in accordance with local and religious traditions.
+- **Aso Oke and Adire**: women frequently wear garments made from **aso oke** ("prestige cloth"), handwoven on narrow looms into strips sewn together, or **adire**, indigo resist-dyed cotton originating from Abeokuta.
 
-## Hausa and northern dress {#hausa}
+## Men's traditional clothing {#mens-clothing}
 
-In northern Nigeria, many Hausa men wear the **babban riga** ("big gown"), a wide robe often embroidered around the neck and on the chest. It is worn over a long shirt and trousers, with a cap (*hula*) or, on some occasions, a turban.
+*Looking for women's traditional clothing? [Jump to Women's traditional clothing ↑](#womens-clothing).*
 
-Women in the north commonly wear a wrapper with a blouse, or a long dress, together with a head tie and often a large scarf or veil over the head and shoulders, in line with local and religious custom.
+Nigerian men's traditional dress is commanding and distinguished:
 
-## Igbo dress {#igbo}
-
-Among the Igbo, a well-known men's garment is the **isiagu**, a pullover top patterned with lion heads (the name means "lion's head"). It is often worn with trousers or a wrapper and a red cap, which has traditionally been associated with titled men.
-
-Igbo women often wear a wrapper, sometimes two, with a blouse and a head tie. **George**, a heavy, often embroidered fabric that was historically imported, is especially popular for wrappers among Igbo women and in parts of the Niger Delta. Coral beads are worn on formal occasions in several communities, and among the Edo they are closely linked with royalty and bridal dress.
+- **Agbada**: the majestic, wide-flowing four-piece robe worn by Yoruba men and widely embraced across West Africa. It comprises a voluminous, ankle-length outer gown with wide sleeve folds that drape over the shoulders, an inner tunic (*buba*), tailored drawstring trousers (*sokoto*), and an embroidered fabric cap (*fila*). Read more on our [agbada page](/garment/agbada/).
+- **Babban riga**: the grand gown worn by Hausa and Fulani men in the north, featuring dense, geometric embroidery around the neckline and chest pocket. It is worn over a long tunic and trousers, topped with an embroidered *hula* cap or a ceremonial turban.
+- **Isiagu**: the celebrated pullover tunic of Igbo men, patterned with iconic lion head motifs (*isi agu* means "lion's head"). It is worn over tailored trousers or a wrapped cloth, paired with a walking stick and the traditional red cap (*okpu agu*), a mark of titled elders and chiefs.
+- **Kaftans and senator suits**: tailored long-line tunics and trousers crafted from crisp cotton or wool, widely worn for everyday business and semi-formal social events.
 
 ## Wedding attire {#wedding}
 

@@ -24,21 +24,28 @@ todo:
   - "Verify: when modern everyday hanbok (saenghwal hanbok) became popular; the text says \"from around the 1990s\"."
 ---
 
-## The hanbok {#hanbok}
+## Women's traditional clothing {#womens-clothing}
 
-The Korean word *hanbok* simply means "Korean clothing". In North Korea the same dress is usually called *joseon-ot*. The basic outfit has two parts: a short jacket called a **jeogori** and, for women, a full wrap skirt called a **chima**, or for men, roomy trousers called **baji**. The jacket is closed with a pair of long ribbons, the *goreum*, tied at the chest.
+*Looking for men's traditional clothing? [Jump directly to Men's traditional clothing ↓](#mens-clothing).*
+<span id="hanbok"></span>
 
-For going out or for formal occasions, a long overcoat called a *durumagi* is worn on top. The shapes most people recognise today go back largely to the Joseon dynasty (1392–1897), when the women's jeogori gradually became shorter and the chima fuller. Read more about its parts and history on our [hanbok page](/garment/hanbok/).
+Traditional women's clothing in South Korea centres on the graceful, bell-shaped silhouette of the women's **hanbok**:
 
-## Colours, rank and accessories {#accessories}
+- **Chima and Jeogori**: the women's ensemble consists of the **jeogori**, a cropped short jacket with curved sleeve lines and white collar trim (*dongjeong*), fastened across the chest with long decorative ribbons called *goreum*. It is paired with the **chima**, a voluminous, high-waisted wrap skirt that begins tightly pleated above the bust and sweeps outward to the floor, creating fluid movement. Read more on our [hanbok page](/garment/hanbok/).
+- **Bridal and royal robes**: for weddings and court occasions, women wore ceremonial outer gowns such as the **hwarot** (richly embroidered with peonies, phoenixes, and auspicious symbols) and the **wonsam** with colourful striped sleeves. These are crowned with the **jokduri**, a delicate jewelled black coronet.
+- **Accessories**: women adorn their hanbok with the **norigae**, an intricate macramé silk pendant with hanging tassels, and secure their hair in a low chignon with the **binyeo**, an ornate silver, jade, or wooden hairpin.
 
-In the Joseon period, clothing showed a person's place in society. The royal family, court officials and the aristocratic *yangban* class wore silk in colours and patterns set by rank, while ordinary people mostly wore undyed or white cotton and hemp. White clothing was so common that Koreans were sometimes described as the "white-clad people".
+## Men's traditional clothing {#mens-clothing}
 
-Traditional colour symbolism draws on *obangsaek*, the five cardinal colours: blue, red, yellow, white and black. They appear in the **saekdong** jacket, whose sleeves are made of multicoloured stripes and which is often worn by children. Common accessories include:
+*Looking for women's traditional clothing? [Jump to Women's traditional clothing ↑](#womens-clothing).*
+<span id="accessories"></span>
 
-- **Norigae**: a decorative pendant with tassels, hung from the jacket ties or the skirt band.
-- **Binyeo**: a long hairpin that held a married woman's hair in a low bun.
-- **Gat**: a wide-brimmed black hat made of horsehair and bamboo, worn by adult men in the Joseon period.
+Traditional men's clothing in South Korea provides comfort, structural elegance, and dignified status:
+
+- **Baji and Jeogori**: men's hanbok comprises a hip-length **jeogori** jacket paired with **baji**, roomy trousers designed for easy sitting on floor cushions (*ondol*). The trousers are neatly gathered and tied at the ankles with fabric ribbons called *daenim*.
+- **Durumagi and Dopo**: for formal outings and ceremonies, men wear full-length outer coats. The **durumagi** is an overcoat worn over the baji and jeogori, while the **dopo** is a wide-sleeved scholar's robe featuring an additional rear flap, worn by Joseon *yangban* aristocrats.
+- **Gat and headwear**: adult men wore the **gat**, an iconic wide-brimmed black cylindrical hat finely woven from horsehair and bamboo strips, worn over a topknot cap (*sangtugan*).
+- **Samo gwandae**: the traditional wedding attire for grooms, replicating the uniform of high Joseon court officials with a round-collared blue or purple robe (*danryeong*), an embroidered rank badge (*hyangbae*), a stiff belt, and a winged official's hat (*samo*).
 
 ## Wedding attire {#wedding}
 

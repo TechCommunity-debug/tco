@@ -24,19 +24,30 @@ todo:
   - Find a CC0 or Unsplash image of a huipil or Tehuana dress for the regional section.
 ---
 
-## Indigenous dress: huipil and rebozo {#huipil}
+## Women's traditional clothing {#womens-clothing}
 
-Mexico's indigenous peoples, among them Maya, Zapotec, Mixtec, Nahua and Otomí communities, have their own ways of dressing, and styles often differ from one town to the next. The best-known women's garment is the **huipil** (from the Nahuatl *huipilli*), a loose tunic made from one or more rectangular panels of cloth, traditionally woven on a backstrap loom and sewn together with openings for the head and arms. Its colours, motifs and embroidery can show where the wearer comes from.
+*Looking for men's traditional clothing? [Jump directly to Men's traditional clothing ↓](#mens-clothing).*
+<span id="huipil"></span>
 
-Other garments of pre-Hispanic origin include the *quechquemitl*, a short shoulder cape worn in parts of central and eastern Mexico, and the wrap-around skirt (*enredo*). The **rebozo**, a long rectangular shawl, is worn by women across Mexico: over the shoulders or head, or tied to carry a baby or goods.
+Women's traditional clothing in Mexico blends ancient indigenous textile traditions with colonial and regional styles:
 
-## Sarape, charro suit and china poblana {#sarape-and-charro}
+- **Huipil**: a sleeveless tunic woven on backstrap looms from cotton or wool, worn by indigenous women in Oaxaca, Chiapas, Yucatán, and Guerrero. Each huipil is adorned with embroidered geometric and floral motifs that convey the wearer's community, history, and marital status.
+- **Rebozo**: a versatile, long woven shawl with intricate hand-knotted fringe (*rapacejo*). Made of cotton, wool, or silk, the rebozo is draped over the head and shoulders, used for warmth, and practically deployed for carrying infants or marketplace goods.
+- **China poblana**: the legendary national costume associated with Puebla, consisting of a white blouse embroidered with silk and beads, a full green-and-red skirt embellished with sequins depicting the Mexican eagle, and a crossed rebozo.
+- **Tehuana dress**: the iconic dress of Zapotec women on the Isthmus of Tehuantepec (Oaxaca), featuring a dark velvet huipil embroidered with vivid flowers, a long skirt finished with a crisp white starched lace ruffle (*holán*), and gold jewellery—famously worn by artist Frida Kahlo.
+- **Hipil and Terno**: Maya women in Yucatán wear the knee-length white cotton *hipil*, decorated with colourful cross-stitch embroidery around the square neck and hem, and the three-piece *terno* for festive occasions.
 
-The **sarape** is a long woven blanket, traditionally of wool, that men wear over the shoulder or as a cloak. The most admired historic examples come from Saltillo in northern Mexico. Read more on our [sarape page](/garment/sarape/).
+## Men's traditional clothing {#mens-clothing}
 
-The **charro suit** (*traje de charro*) developed from the dress of horsemen on rural estates. It has a short fitted jacket, close-fitting trousers decorated with silver buttons along the outer seam, a bow tie and a wide-brimmed sombrero. It is worn in *charrería*, Mexico's equestrian tradition, which UNESCO inscribed as intangible cultural heritage in 2016, and it is also the stage dress of mariachi musicians.
+*Looking for women's traditional clothing? [Jump to Women's traditional clothing ↑](#womens-clothing).*
+<span id="sarape-and-charro"></span>
 
-The **china poblana**, associated with the city of Puebla, is a women's outfit with an embroidered white blouse, a full red-and-green skirt often decorated with sequins, and a rebozo. A popular story links it to Catarina de San Juan, a woman of Asian origin who lived in Puebla in the seventeenth century, but the outfit as it is known today developed later. It has since become a national symbol.
+Traditional men's attire in Mexico reflects the nation's equestrian culture, regional craftsmanship, and colonial weaving heritage:
+
+- **Sarape**: the renowned rectangular woven wool blanket-shawl with a central neck slit or draped across one shoulder. Originating in Saltillo, Coahuila, the finest sarapes are celebrated for fine stripes and an intricate central diamond medallion. Read more on our [sarape page](/garment/sarape/).
+- **Traje de charro**: the distinguished equestrian suit of Mexican horsemen (*charros*), featuring tightly tailored trousers with silver or bone button accents (*botonadura*) down the outseams, a cropped jacket, a silk neck bow (*moño*), and a wide-brimmed felt sombrero.
+- **Guayabera**: a lightweight linen or cotton shirt with vertical pleats (*alforzas*) and four front pockets, worn untucked in Yucatán, Veracruz, and coastal areas as formal and festive menswear.
+- **Indigenous men's dress**: in highland indigenous communities, men wear loose white cotton shirts and trousers (*calzón de manta*), woven palm hats, leather sandals (*huaraches*), and colourful woven sashes (*fajas*).
 
 ## Regional variety {#regional}
 

@@ -24,13 +24,27 @@ todo:
   - Ein CC0- oder Unsplash-Bild vom Fest der Virgen de la Candelaria oder vom Inti Raymi für den Abschnitt Feste finden.
 ---
 
-## Kleidung im Andenhochland {#hochland}
+## Traditionelle Frauenkleidung {#frauenkleidung}
 
-Im Hochland tragen viele Quechua- und Aymara-Frauen eine **Pollera**, einen weiten, gekräuselten Rock, oft in mehreren Lagen übereinander. Über den Schultern liegt die **Lliclla**, ein rechteckiges, handgewebtes Tuch, das vorne meist mit einer Nadel (*Tupu*) zusammengehalten wird. Vielerorts gehören eine taillierte, oft bestickte Jacke und ein gewebter Gürtel (*Chumpi*) dazu.
+*Suchst du nach traditioneller Männerkleidung? [Direkt zur Männerkleidung springen ↓](#maennerkleidung).*
+<span id="hochland"></span>
 
-Männer tragen typischerweise Hose und Jacke aus handgesponnener Wolle, einen gewebten **Poncho** und einen **Chullo**, eine gestrickte Mütze mit Ohrenklappen. Frauen wie Männer tragen häufig *Ojotas*, einfache Sandalen, die heute oft aus alten Autoreifen hergestellt werden. Mehr über das Kleidungsstück, das in den ganzen Anden verbreitet ist, erfährst du auf unserer [Poncho-Seite](/de/kleidungsstueck/poncho/).
+Die traditionelle Kleidung der Frauen in Peru ist berühmt für kunstvoll gewebte Textilien, farbenfrohe Lagen und markante Hüte:
 
-Am Hut erkennt man besonders gut, woher jemand stammt. Die flache, runde **Montera**, die Melone, Filzhüte und bestickte Mützen kommen in unterschiedlichen Gegenden vor, und Form und Verzierung unterscheiden sich von Gemeinschaft zu Gemeinschaft.
+- **Pollera**: ein weiter, in Falten gelegter Wollrock der Quechua- und Aymara-Frauen im Andenhochland. Oft werden drei bis sechs Röcke übereinander getragen, was vor der Kälte schützt und eine charakteristische Silhouette schafft. Die Säume sind mit bunten Borten und Stickereien verziert, die das Heimatdorf der Trägerin verraten.
+- **Lliclla**: ein schweres, rechteckiges Schultertuch, das vor der Brust mit einer kunstvollen Silber- oder Bronzenadel (*Tupu*) zusammengehalten wird. Es wärmt und dient zugleich als praktisches Tragetuch für Kleinkinder und Einkäufe.
+- **Montera**: regionaltypische Filzhüte mit Bändern und Perlen, deren Form – vom flachen Tellerhut in Cusco bis zum Strohhut im Norden – Auskunft über Herkunft und Familienstand gibt.
+- **Chaquetilla**: eine taillierte Wolljacke mit bunten Stickereien, die über der Bluse getragen wird.
+
+## Traditionelle Männerkleidung {#maennerkleidung}
+
+*Suchst du nach traditioneller Frauenkleidung? [Zur Frauenkleidung springen ↑](#frauenkleidung).*
+
+Die traditionelle Männerkleidung im Hochland Perus ist wetterfest, praktisch und eng mit der Webkunst verbunden:
+
+- **Poncho**: das zentrale Obergewand der Männer in den Anden, handgewebt aus Alpaka-, Lama- oder Schafwolle. Er besteht aus zwei zusammengenähten Bahnen mit einer Kopföffnung, ist an den Seiten offen und bietet volle Bewegungsfreiheit bei der Arbeit auf dem Feld und beim Reiten. Farben und Streifenmuster zeigen die Gemeinschaft des Trägers an. Mehr dazu auf unserer [Poncho-Seite](/de/kleidungsstueck/poncho/).
+- **Chullo**: eine handgestrickte Wollmütze mit Ohrenklappen und Flechtbändern, die von Männern und Jungen getragen wird. Die eingestrickten Symbole spiegeln Tiere, Berge und Naturphänomene der Anden wider.
+- **Bayeta-Hosen und Chumpi**: Dazu tragen Männer Hosen aus handgewebtem Wollstoff (*Bayeta*), eine gemusterte Schärpe (*Chumpi*) an der Taille und feste Sandalen (*Ojotas*). In der Inka-Zeit trugen Männer die seitlich genähte Tunika *Unku*.
 
 ## Webtradition {#weben}
 

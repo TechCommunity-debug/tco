@@ -22,11 +22,30 @@ todo:
   - Ein CC0- oder Unsplash-Bild einer Shintō-Hochzeit (Shiromuku) für den Hochzeitsabschnitt finden.
 ---
 
-## Der Kimono und seine Verwandten {#kimono}
+## Traditionelle Frauenkleidung {#frauenkleidung}
 
-Auf Japanisch heißt traditionelle Kleidung *wafuku* (japanische Kleidung), im Gegensatz zu *yōfuku* (westliche Kleidung). Das zentrale Kleidungsstück ist der **Kimono**, wörtlich „Ding zum Anziehen“. Er wird aus einer langen, schmalen Stoffbahn in gerade Teile geschnitten und zu einem T-förmigen Gewand vernäht. Der heutige Kimono entwickelte sich aus dem *Kosode*, einem Gewand mit kleinen Ärmelöffnungen, das in der Edo-Zeit (1603–1868) zum wichtigsten Obergewand wurde.
+*Suchst du nach traditioneller Männerkleidung? [Direkt zur Männerkleidung springen ↓](#maennerkleidung).*
+<span id="kimono"></span>
 
-Zum Kimono gehört immer ein **Obi**, ein breiter Gürtel, der auf dem Rücken gebunden wird, und meist ein Untergewand (*Nagajuban*). Dazu trägt man *Tabi*, Socken mit abgeteiltem großen Zeh, und Sandalen wie *Zōri* oder hölzerne *Geta*. Zu förmlichen Anlässen tragen Männer den Kimono mit *Hakama* (weiten Faltenhosen) und einer *Haori*-Jacke. Mehr dazu auf unserer [Kimono-Seite](/de/kleidungsstueck/kimono/).
+Die traditionelle Kleidung der Frauen in Japan steht im Zeichen des **Kimono**, eines T-förmigen Gewands aus geraden Seiden- oder Baumwollbahnen, das mit einer breiten Schärpe (**Obi**) an der Taille gebunden wird. Die Frauenstile richten sich nach Alter, Familienstand und Anlass:
+
+- **Furisode**: der festlichste Kimono für unverheiratete junge Frauen mit auffallend langen Schwingärmeln (bis zu 110 cm), getragen zum Tag der Volljährigkeit (*Seijin no Hi*), zu Abschlussfeiern und Hochzeiten.
+- **Kuro-Tomesode**: ein schwarzer Seidenkimono mit fünf Familienwappen (*Kamon*) und Mustern ausschließlich unterhalb der Taille – die formellste Tracht für verheiratete Frauen und Mütter bei Hochzeiten.
+- **Houmongi**: eleganter Besuchskimono mit über die Nähte fließenden Mustern für Teezeremonien und Festessen.
+- **Yukata**: ein ungefütterter, leichter Baumwollkimono, der im Sommer zu Feuerwerken und Straßenfesten getragen wird.
+- **Brautgewänder**: Bräute tragen den reinweißen **Shiromuku** mit weißer Haube (*Wataboshi*) oder den prachtvoll mit Kranichen und Goldfäden bestickten **Irouchikake**-Mantel.
+- Mehr dazu auf unserer [Kimono-Seite](/de/kleidungsstueck/kimono/).
+
+## Traditionelle Männerkleidung {#maennerkleidung}
+
+*Suchst du nach traditioneller Frauenkleidung? [Zur Frauenkleidung springen ↑](#frauenkleidung).*
+
+Die traditionelle Männerkleidung in Japan zeichnet sich durch dezente Farben und klare Formen aus:
+
+- **Männer-Kimono**: meist in gedämpften Tönen wie Dunkelblau, Grau, Braun oder Schwarz gehalten, mit kürzeren Ärmeln und einem schmaleren Gürtel (**Kaku-Obi**), der tief auf den Hüften gebunden wird.
+- **Hakama**: ein weiter, gefalteter Hosenrock, der über dem Kimono getragen wird. Die sieben Falten stehen traditionell für ritterliche Tugenden wie Güte, Gerechtigkeit und Treue.
+- **Haori**: eine hüftlange Jacke, die offen über Kimono und Hakama getragen und vor der Brust mit geflochtenen Seidenbändern (*Haori Himo*) zusammengehalten wird.
+- **Montsuki Hakama**: die festlichste Männerkleidung, bestehend aus schwarzem Kimono und Haori mit fünf weißen Familienwappen (*Kamon*) sowie gestreifter Hakama. Sie wird von Bräutigamen, bei Ehrungen und zur Teezeremonie getragen.
 
 ## Hochzeitskleidung {#hochzeit}
 

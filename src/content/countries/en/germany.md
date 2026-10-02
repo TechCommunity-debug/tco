@@ -31,11 +31,27 @@ The German word for traditional dress is *Tracht* (plural *Trachten*), related t
 
 Today Tracht is kept alive mainly by local costume associations (*Trachtenvereine*), families and festivals. Alongside the historical regional costumes there is *Trachtenmode*, a fashion industry that produces modern dirndl and lederhosen in many colours and cuts that are not tied to any particular region.
 
-## Dirndl and lederhosen {#dirndl-and-lederhosen}
+## Women's traditional clothing {#womens-clothing}
 
-The outfits most people abroad associate with Germany come from Bavaria in the south and the wider Alpine region. The **dirndl** is a dress with a fitted bodice and a full skirt, worn over a short blouse and with an apron. It began as the work clothing of rural women and servants and became fashionable among city dwellers in the late nineteenth century. Read more on our [dirndl page](/garment/dirndl/).
+*Looking for men's traditional clothing? [Jump directly to Men's traditional clothing ↓](#mens-clothing).*
+<span id="dirndl-and-lederhosen"></span>
 
-**Lederhosen** are leather trousers, either short or cut to below the knee (*Kniebundhose*), usually worn with suspenders joined by a strap across the chest, which is often embroidered. They are typically combined with a checked or white shirt, a waistcoat or a wool jacket (*Janker*), knee socks and sturdy shoes, often with a felt hat. Once practical wear for physical work in the mountains, they are now mainly festive dress.
+The best-known women's traditional garment in Germany is the **dirndl**, which originated in Bavaria and the wider Alpine region. The dirndl consists of a fitted bodice (*Mieder*) with a low neckline, a wide gathered skirt, a white blouse worn underneath, and an apron tied at the waist. Traditionally, the placement of the apron's bow indicates marital status: tied on the left indicates unmarried, on the right indicates married or committed, and at the back indicates a widow or waitress. Originally the work dress of Alpine farm women and domestic staff, the dirndl was adopted as fashionable summer wear by urban society in the late nineteenth century. Read more on our [dirndl page](/garment/dirndl/).
+
+Women's traditional clothing outside the Alpine south shows remarkable regional variety:
+
+- **Black Forest**: women of the Protestant communities of Gutach, Kirnbach, and Reichenbach wear the iconic *Bollenhut*, a broad straw hat adorned with fourteen woollen pompoms—red for unmarried women and black for married women.
+- **Hesse**: the Schwalm region is famous for its women's Tracht with multiple layered underskirts and small decorative caps (*Betzel*).
+- **North Frisia**: on the island of Föhr, women wear a dark festive costume embellished with elaborate filigree silver breast jewellery (*Filigranschmuck*).
+- **Lusatia**: Sorbian women maintain distinct historical Trachten with starched lace headdresses worn for church festivals and Easter.
+
+## Men's traditional clothing {#mens-clothing}
+
+*Looking for women's traditional clothing? [Jump to Women's traditional clothing ↑](#womens-clothing).*
+
+The pre-eminent men's traditional attire in Germany is **lederhosen**, durable leather breeches crafted from tanned deer, goat, or cowhide. Lederhosen are cut either short (ending above the knee) or as *Kniebundhosen* (fastened below the knee), held up by H-shaped leather suspenders with an intricately embroidered cross-strap (*Quersteg*) across the chest. Engineered for durability, they were originally practical everyday workwear for farmers, foresters, and mountain hunters.
+
+Today, lederhosen are celebrated festive attire worn with a checked or plain white linen shirt, a sleeveless waistcoat (*Weste*) or boiled wool jacket (*Janker*), two-piece calf warmers (*Loferln*) or woollen knee socks, and side-laced *Haferlschuhe* shoes. The look is frequently completed with a traditional felt hat adorned with a *Gamsbart* (a tuft of chamois hair). Across German-speaking regions, men also wear the **Trachtenanzug**, a tailored loden suit with stand-up collar and horn buttons suitable for formal gatherings.
 
 ## Regional variety {#regional}
 

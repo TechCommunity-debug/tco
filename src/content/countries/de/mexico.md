@@ -24,19 +24,30 @@ todo:
   - Ein CC0- oder Unsplash-Bild eines Huipils oder einer Tehuana-Tracht für den Abschnitt Regionen finden.
 ---
 
-## Indigene Kleidung: Huipil und Rebozo {#huipil}
+## Traditionelle Frauenkleidung {#frauenkleidung}
 
-Die indigenen Völker Mexikos, darunter Maya, Zapoteken, Mixteken, Nahua und Otomí, haben jeweils eigene Kleidungstraditionen, die sich oft von Ort zu Ort unterscheiden. Das bekannteste Kleidungsstück der Frauen ist der **Huipil** (von Nahuatl *huipilli*), ein weites, tunikaartiges Gewand aus einer oder mehreren rechteckigen Stoffbahnen. Traditionell werden sie auf dem Rückengurtwebstuhl gewebt und so zusammengenäht, dass Öffnungen für Kopf und Arme bleiben. Farben, Motive und Stickereien können verraten, woher die Trägerin stammt.
+*Suchst du nach traditioneller Männerkleidung? [Direkt zur Männerkleidung springen ↓](#maennerkleidung).*
+<span id="huipil"></span>
 
-Ebenfalls vorspanischen Ursprungs sind der *Quechquemitl*, ein kurzer Schulterumhang aus Teilen Zentral- und Ostmexikos, und der Wickelrock (*Enredo*). Den **Rebozo**, ein langes rechteckiges Tuch, tragen Frauen im ganzen Land: über Schultern oder Kopf, oder zusammengeknotet, um ein Baby oder Lasten zu tragen.
+Die traditionelle Kleidung der Frauen in Mexiko verbindet jahrtausendealte indigene Webtraditionen mit Einflüssen der Kolonialzeit:
 
-## Sarape, Charro-Anzug und China Poblana {#sarape-und-charro}
+- **Huipil**: eine ärmellose Tunika aus Baumwolle oder Wolle, die auf dem traditionellen Hüftwebrahmen gewebt wird. Sie wird von indigenen Frauen in Oaxaca, Chiapas, Yucatán und Guerrero getragen. Muster und Farben zeigen die Herkunftsgemeinschaft und den Familienstand der Trägerin an.
+- **Rebozo**: ein langes, gewebtes Schultertuch mit kunstvoll geknüpften Fransen (*Rapacejo*). Es wird über Kopf und Schultern gelegt, dient als Kälteschutz und wird im Alltag zum Tragen von Kindern und Lasten genutzt.
+- **China Poblana**: die mit der Stadt Puebla verbundene Nationaltracht, bestehend aus einer fein bestickten weißen Bluse, einem grün-roten Paillettenrock mit mexikanischen Wappenmotiven und einem Rebozo.
+- **Tehuana-Tracht**: die festliche Tracht der Zapotekinnen auf dem Isthmus von Tehuantepec (Oaxaca) aus Samt-Huipil mit großen Blumenstickereien, weitem Rock mit weißem Spitzenvolant und Goldschmuck – bekannt geworden auch durch die Malerin Frida Kahlo.
+- **Hipil und Terno**: Maya-Frauen in Yucatán tragen den weißen Baumwoll-Hipil mit Kreuzstich-Blumenstickerei am Halsausschnitt; die dreiteilige Festtagstracht heißt *Terno*.
 
-Der **Sarape** ist eine lange gewebte Decke, traditionell aus Wolle, die Männer über der Schulter oder als Umhang tragen. Die begehrtesten historischen Stücke stammen aus Saltillo im Norden Mexikos. Mehr dazu auf unserer [Sarape-Seite](/de/kleidungsstueck/sarape/).
+## Traditionelle Männerkleidung {#maennerkleidung}
 
-Der **Charro-Anzug** (*Traje de charro*) entwickelte sich aus der Kleidung der Reiter auf den Landgütern. Dazu gehören eine kurze, taillierte Jacke, eine eng anliegende Hose mit Silberknöpfen entlang der Außennaht, eine Schleife und ein breitkrempiger Sombrero. Getragen wird er bei der *Charrería*, der mexikanischen Reittradition, die die UNESCO 2016 in die Liste des immateriellen Kulturerbes aufgenommen hat, und er ist auch die Bühnenkleidung der Mariachi-Musiker.
+*Suchst du nach traditioneller Frauenkleidung? [Zur Frauenkleidung springen ↑](#frauenkleidung).*
+<span id="sarape-und-charro"></span>
 
-Die **China Poblana**, benannt nach der Stadt Puebla, ist eine Frauentracht mit bestickter weißer Bluse, weitem rot-grünem Rock, oft mit Pailletten besetzt, und Rebozo. Einer verbreiteten Legende nach geht sie auf Catarina de San Juan zurück, eine Frau asiatischer Herkunft, die im 17. Jahrhundert in Puebla lebte. Die heute bekannte Form entstand jedoch erst später. Inzwischen gilt die China Poblana als nationales Symbol.
+Die traditionelle Männerkleidung Mexikos spiegelt Reitertraditionen, koloniale Webkunst und regionale Lebensweisen wider:
+
+- **Sarape**: das berühmte gewebte Wolltuch, das über der Schulter getragen oder als Überwurf genutzt wird. Die traditionsreichsten Sarapes stammen aus Saltillo und zeichnen sich durch feine Farbstreifen und ein großes zentrales Rautenmedaillon aus. Mehr dazu auf unserer [Sarape-Seite](/de/kleidungsstueck/sarape/).
+- **Traje de Charro**: der elegante Anzug der mexikanischen Reiter (*Charros*) mit figurbetonter Hose, seitlichen Silberknöpfen (*Botonadura*), kurzer Jacke, Seidenschleife (*Moño*) und einem breitkrempigen Sombrero aus Filz.
+- **Guayabera**: ein leichtes Leinen- oder Baumwollhemd mit vertikalen Biesenfalten und vier Taschen, das in Yucatán und den Küstenregionen von Männern im Alltag und zu festlichen Anlässen über der Hose getragen wird.
+- **Indigene Männertracht**: In indigenen Dorfgemeinschaften tragen Männer oft weiße Baumwollhemden und weite Hosen (*Calzón de manta*), geflochtene Palmhüte, Ledersandalen (*Huaraches*) und gewebte Schärpen (*Fajas*).
 
 ## Regionale Vielfalt {#regionen}
 

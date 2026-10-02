@@ -23,19 +23,32 @@ todo:
   - Find a CC0 or Unsplash image of Indian wedding attire for the wedding section.
 ---
 
-## The sari {#sari}
+## Women's traditional clothing {#womens-clothing}
 
-The **sari** (also spelled *saree*) is an unstitched length of cloth, often about 5–9 yards (roughly 4.5–8 metres) long, wrapped around the waist and draped over the shoulder. It is worn over a fitted blouse and an ankle-length petticoat, which holds the tucked-in pleats. The decorated end that falls over the shoulder is called the *pallu*.
+*Looking for men's traditional clothing? [Jump directly to Men's traditional clothing ↓](#mens-clothing).*
+<span id="sari"></span>
 
-There are many ways to drape a sari. The most widespread today is the *nivi* style, with pleats tucked in at the front and the pallu over the left shoulder. Other drapes belong to particular regions, such as the nine-yard *nauvari* of Maharashtra. Read more on our [sari page](/garment/sari/).
+The **sari** is the foremost traditional garment for women in India, with a recorded heritage stretching back thousands of years. It consists of an unstitched rectangular length of cloth, typically five to nine yards (4.5 to 8 metres) long, draped gracefully around the waist and over the shoulder. It is worn over a fitted cropped blouse (*choli*) and an ankle-length petticoat into which the pleats are tucked. The most widespread drape today is the *nivi* style, with pleats gathered neatly at the front and the decorated border (*pallu*) draped across the torso over the left shoulder. Renowned regional varieties include Banarasi brocades with gold *zari* from Varanasi, heavy Kanchipuram silks with contrast borders from Tamil Nadu, and nine-yard *nauvari* saris draped between the legs in Maharashtra. Read more on our [sari page](/garment/sari/).
 
-## Other traditional garments {#garments}
+Indian women also wear other classic traditional ensembles:
 
-- **Salwar kameez**: a long tunic (*kameez*) worn with loose trousers (*salwar*) and often a long scarf (*dupatta*). It is associated especially with Punjab and northern India but is now worn across the country.
-- **Lehenga choli**: a long, full skirt (*lehenga*) with a fitted blouse (*choli*) and a dupatta. It is common in Rajasthan and Gujarat and popular for weddings.
-- **Dhoti**: an unstitched cloth wrapped around the waist and legs, worn by men. In the south, men often wear related waist wraps such as the *veshti* in Tamil Nadu and the *mundu* in Kerala.
-- **Kurta**: a long, loose shirt or tunic, worn by men and women with trousers such as the loose *pyjama* or the close-fitting *churidar*.
-- **Sherwani**: a long, fitted coat buttoned down the front, worn by men for formal occasions and weddings, especially in northern India.
+- **Salwar kameez**: a graceful two-piece outfit originating in northern India and the Punjab, consisting of a knee-length tunic (*kameez*) paired with pleated trousers (*salwar*) and a light scarf (*dupatta*).
+- **Lehenga choli**: an opulent floor-length flared skirt (*lehenga*) worn with a fitted cropped blouse (*choli*) and an embroidered dupatta, popular for weddings and grand celebrations across northern and western India.
+- **Chaniya choli**: a vibrant, mirror-embroidered skirt and blouse ensemble worn by women in Gujarat and Rajasthan during festive folk dances such as Garba.
+- **Mekhela chador**: the two-piece traditional silk attire of Assamese women, featuring a pleated wrap skirt (*mekhela*) and draped upper cloth (*chador*).
+
+## Men's traditional clothing {#mens-clothing}
+
+*Looking for women's traditional clothing? [Jump to Women's traditional clothing ↑](#womens-clothing).*
+<span id="garments"></span>
+
+Traditional men's clothing in India focuses on unstitched drapes and tailored tunics:
+
+- **Dhoti**: a long, unstitched rectangular cloth of fine cotton or silk wrapped around the waist and legs, knotted at the waist with pleats tucked in at the back. It is widely worn across north and east India for religious ceremonies, weddings, and formal occasions.
+- **Veshti and Mundu**: in southern India, men wear unstitched waist wraps known as the *veshti* in Tamil Nadu and the *mundu* in Kerala, often woven from fine white cotton with distinctive gold-thread borders (*kasavu*).
+- **Kurta**: a collarless or mandarin-collared knee-length tunic with side slits, worn by men throughout the subcontinent. It is paired with loose cotton trousers (*pyjama*), tight gathered leggings (*churidar*), or a dhoti.
+- **Sherwani**: an elegant, structured long coat buttoned down the front, worn over a kurta and churidar. The sherwani is the standard formal wear for grooms and wedding guests throughout northern India, often paired with an embroidered stole and a regal turban (*safa* or *pagri*).
+- **Kediyu**: a flared, pleated short top worn with tight chorno trousers and colourful turbans by men in Gujarat during folk festivals.
 
 ## Regional variety {#regional}
 

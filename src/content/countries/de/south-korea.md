@@ -24,21 +24,28 @@ todo:
   - "Prüfen: seit wann der moderne Alltags-Hanbok (Saenghwal-Hanbok) verbreitet ist; im Text steht „etwa seit den 1990er-Jahren“."
 ---
 
-## Der Hanbok {#hanbok}
+## Traditionelle Frauenkleidung {#frauenkleidung}
 
-Das koreanische Wort *Hanbok* bedeutet schlicht „koreanische Kleidung“. In Nordkorea heißt dasselbe Gewand meist *Joseon-ot*. Die Grundform besteht aus zwei Teilen: einer kurzen Jacke, dem **Jeogori**, und bei Frauen einem weiten Wickelrock, der **Chima**, bei Männern einer weiten Hose, der **Baji**. Geschlossen wird die Jacke mit zwei langen Bändern, den *Goreum*, die vor der Brust gebunden werden.
+*Suchst du nach traditioneller Männerkleidung? [Direkt zur Männerkleidung springen ↓](#maennerkleidung).*
+<span id="hanbok"></span>
 
-Wer ausgeht oder einen förmlichen Anlass besucht, trägt darüber einen langen Mantel, den *Durumagi*. Die Formen, die man heute kennt, gehen größtenteils auf die Joseon-Dynastie (1392–1897) zurück. In dieser Zeit wurde der Jeogori der Frauen allmählich kürzer und die Chima weiter. Mehr über die einzelnen Teile und die Geschichte erfährst du auf unserer [Hanbok-Seite](/de/kleidungsstueck/hanbok/).
+Die traditionelle Kleidung der Frauen in Südkorea besticht durch die elegante, glockenförmige Silhouette des **Hanbok**:
 
-## Farben, Stand und Accessoires {#accessoires}
+- **Chima und Jeogori**: Das Frauenensemble besteht aus dem **Jeogori**, einer kurzen Jacke mit weißem Kragensaum (*Dongjeong*), die vor der Brust mit zwei langen Bändern (*Goreum*) gebunden wird. Dazu gehört die **Chima**, ein hoch über der Brust ansetzender, weit schwingender Wickelrock, der in sanften Falten bis zum Boden fällt. Mehr dazu auf unserer [Hanbok-Seite](/de/kleidungsstueck/hanbok/).
+- **Braut- und Hofgewänder**: Zu Hochzeiten trugen Bräute traditionell den prächtigen **Hwarot** (bestickt mit Pfingstrosen, Phönixen und Glückssymbolen) oder den **Wonsam** mit gestreiften Ärmeln. Dazu gehört die zierliche Krone (**Jokduri**).
+- **Accessoires**: Frauen schmücken ihren Hanbok mit dem **Norigae**, einem geknüpften Seidenanhänger mit Quasten, und stecken das Haar mit der **Binyeo** fest, einer verzierten Haarnadel aus Silber oder Jade.
 
-In der Joseon-Zeit zeigte die Kleidung, welchen Platz jemand in der Gesellschaft hatte. Die Königsfamilie, Hofbeamte und der adlige Stand der *Yangban* trugen Seide in Farben und Mustern, die dem Rang entsprachen. Das einfache Volk kleidete sich meist in ungefärbte oder weiße Baumwolle und Hanf. Weiße Kleidung war so verbreitet, dass die Koreaner manchmal als „das weiß gekleidete Volk“ bezeichnet wurden.
+## Traditionelle Männerkleidung {#maennerkleidung}
 
-Die traditionelle Farbsymbolik beruht auf dem *Obangsaek*, den fünf Grundfarben Blau, Rot, Gelb, Weiß und Schwarz. Sie finden sich etwa im **Saekdong**-Jeogori, dessen Ärmel aus bunten Streifen bestehen und den oft Kinder tragen. Zu den typischen Accessoires gehören:
+*Suchst du nach traditioneller Frauenkleidung? [Zur Frauenkleidung springen ↑](#frauenkleidung).*
+<span id="accessoires"></span>
 
-- **Norigae**: ein Zieranhänger mit Quasten, der an den Jackenbändern oder am Rockbund hängt.
-- **Binyeo**: eine lange Haarnadel, die bei verheirateten Frauen den tief sitzenden Haarknoten hielt.
-- **Gat**: ein breitkrempiger schwarzer Hut aus Rosshaar und Bambus, den erwachsene Männer in der Joseon-Zeit trugen.
+Die traditionelle Männerkleidung in Südkorea verbindet Bequemlichkeit mit feierlicher Würde:
+
+- **Baji und Jeogori**: Der Männer-Hanbok besteht aus einer hüftlangen **Jeogori**-Jacke und der **Baji**, einer weiten Hose, die für das Sitzen auf dem beheizten Fußboden (*Ondol*) geschnitten ist. An den Knöcheln wird sie mit Stoffbändern (*Daenim*) gebunden.
+- **Durumagi und Dopo**: Beim Ausgehen oder zu Zeremonien tragen Männer den **Durumagi**, einen langen Mantel, oder den **Dopo**, das weitärmelige Gewand der Gelehrten der Joseon-Zeit.
+- **Gat**: Erwachsene Männer trugen den charakteristischen breitkrempigen Zylinderhut aus feinem Rosshaar und Bambus über einer Haarknotenkappe.
+- **Samo Gwandae**: das traditionelle Hochzeitsgewand des Bräutigams, das der Hoftracht der Beamten nachempfunden ist, mit besticktem Rangabzeichen (*Hyangbae*), offiziellem Gürtel und Flügelkappe (*Samo*).
 
 ## Hochzeitskleidung {#hochzeit}
 

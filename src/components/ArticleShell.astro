@@ -45,6 +45,7 @@ const updatedLabel = updated.toLocaleDateString(localeMeta[lang].dateLocale, { y
   <div class="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-16">
     <aside class="lg:col-start-2 lg:row-start-1">
       <div class="rounded-md border border-hairline p-6 shadow-float lg:sticky lg:top-28">
+        <slot name="above-at-a-glance" />
         <h2 class="text-display-sm font-semibold text-ink">{t(lang, 'atAGlance')}</h2>
         <slot name="facts" />
         {

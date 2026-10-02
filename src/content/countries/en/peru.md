@@ -24,13 +24,27 @@ todo:
   - Find a CC0 or Unsplash image from the Virgen de la Candelaria festival or Inti Raymi for the festivals section.
 ---
 
-## Andean highland dress {#highland-dress}
+## Women's traditional clothing {#womens-clothing}
 
-In the highlands, many Quechua and Aymara women wear a **pollera**, a full, gathered skirt that is often layered several times. Over the shoulders they wear a **lliclla**, a rectangular hand-woven shawl, usually fastened at the front with a pin (*tupu*). A fitted jacket, often embroidered, and a woven belt (*chumpi*) complete the outfit in many places.
+*Looking for men's traditional clothing? [Jump directly to Men's traditional clothing ↓](#mens-clothing).*
+<span id="highland-dress"></span>
 
-Men's dress typically includes trousers and a jacket of homespun wool, a woven **poncho** and a **chullo**, a knitted hat with ear flaps. Both women and men often wear *ojotas*, simple sandals that today are frequently made from recycled tyre rubber. Read more about the garment worn across the Andes on our [poncho page](/garment/poncho/).
+Traditional women's clothing in Peru is celebrated for its brilliant woven textiles, layered silhouettes, and regional headwear:
 
-Hats are one of the clearest signs of where someone comes from. The flat, round **montera**, the bowler hat, felt hats and embroidered caps all appear in different areas, and their shape and decoration vary between communities.
+- **Pollera**: a voluminous, gathered woollen skirt worn by Quechua and Aymara women in the Andean highlands. Women often wear multiple polleras layered over one another—sometimes three to six skirts—providing insulation against mountain cold while creating a wide, bell-like profile. The hems are embellished with colourful woven bands and intricate embroidery (*ribetes*) that identify the wearer's home village.
+- **Lliclla**: a heavy rectangular handwoven shoulder cloth pinned across the chest with an ornate silver or bronze decorative pin (*tupu*). The lliclla provides warmth and functions as a secure sling for carrying babies or goods across rugged mountain terrain.
+- **Montera**: distinctive regional hats made of felt or stiffened fabric, decorated with coloured ribbons and beads. Their shape—from flat circular discs in Cusco to tall straw hats in Cajamarca—signals community identity and marital status.
+- **Chaquetilla**: a fitted woollen jacket worn over the blouse, richly embroidered with floral motifs and trimmed with buttons.
+
+## Men's traditional clothing {#mens-clothing}
+
+*Looking for women's traditional clothing? [Jump to Women's traditional clothing ↑](#womens-clothing).*
+
+Traditional men's dress in the Peruvian highlands is practical, weather-resistant, and steeped in weaving history:
+
+- **Poncho**: the defining outer garment of Andean men, handwoven on backstrap or treadle looms from alpaca, llama, or sheep's wool. Made of two rectangular woven panels joined along the centre with a slit for the head, the poncho hangs open at the sides, offering freedom of movement for farming and riding while repelling wind and rain. Distinct colours and geometric patterns immediately indicate the wearer's community. Read more on our [poncho page](/garment/poncho/).
+- **Chullo**: a warm, hand-knitted wool cap with protective ear flaps and braided ties, worn by men and boys. Knitted with fine alpaca yarn using intricate pictorial symbols, chullos depict local fauna, mountain peaks, and cosmological signs.
+- **Bayeta trousers and chumpi**: men wear durable homespun wool trousers (*bayeta*), tied at the waist with a handwoven patterned sash (*chumpi*), and sturdy sandals (*ojotas*). Historically, Inca men wore the side-sewn knee-length tunic known as the *unku*.
 
 ## Weaving traditions {#weaving}
 

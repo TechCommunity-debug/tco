@@ -35,17 +35,30 @@ China erkennt offiziell 56 Volksgruppen an. Die Han bilden die große Mehrheit d
 
 Auch innerhalb einer Volksgruppe unterscheidet sich die Kleidung von Region zu Region. Die Beispiele sind daher nur grobe Umrisse.
 
-## Hanfu {#hanfu}
+## Traditionelle Frauenkleidung {#frauenkleidung}
 
-*Hanfu* („Han-Kleidung“) ist ein moderner Sammelbegriff für die Kleidung der Han-Chinesen vor der Qing-Dynastie. Er umfasst viele Stile, die sich über mehr als zweitausend Jahre verändert haben. Die meisten haben aber einige Merkmale gemeinsam: einen gekreuzten Kragen, bei dem die linke Seite über die rechte geschlagen wird, weite Ärmel und eine Schärpe an der Taille.
+*Suchst du nach traditioneller Männerkleidung? [Direkt zur Männerkleidung springen ↓](#maennerkleidung).*
+<span id="qipao"></span>
 
-Seit Anfang der 2000er-Jahre hat eine Wiederbelebungsbewegung das Hanfu zurück in die Öffentlichkeit gebracht. Junge Menschen tragen nachgeschneiderte oder moderne Varianten für Fotos, zu Festen, bei Abschlussfeiern und beim Besuch historischer Stätten, und viele Geschäfte haben sich darauf spezialisiert.
+Die traditionelle Kleidung der Frauen in China umfasst sowohl kaiserzeitliche Gewänder als auch elegante Schnitte des 20. Jahrhunderts:
 
-## Gewänder der Qing-Zeit und das Qipao {#qipao}
+- **Qipao (Cheongsam)**: das weltbekannte chinesische Kleid, das in den 1920er-Jahren in Shanghai entstand. Es zeichnet sich durch einen hohen Stehkragen, einen asymmetrischen Verschluss mit geknoteten Stoffknöpfen (*Pankou*), eine figurbetonte Silhouette und seitliche Schlitze aus. In edler Seide oder feinem Brokat wurde es zum Symbol moderner chinesischer Eleganz. Mehr dazu auf unserer [Qipao-Seite](/de/kleidungsstueck/qipao/).
+- **Ruqun**: die klassische Hanfu-Tracht der Frauen mit kurzer Kreuzkragenbluse (*Ru*) und weitem, langem Rock (*Qun*), der mit Seidenbändern hoch an der Taille oder über der Brust gebunden wird.
+- **Jacken der Qing-Zeit**: weit geschnittene Seidenjacken und Gewänder mit kunstvollen Stickereien und breiten Zierborten an den Ärmeln (*Shuixiu*).
+- **Qun Kwa (Qungua)**: das zweiteilige traditionelle Brautgewand Südchinas aus roter Jacke und Rock, dicht bestickt mit Drachen und Phönixen in Gold- und Silberfäden.
+- **Silbertracht der Miao**: Frauen der Miao-Minderheit tragen zu Festen kunstvoll bestickte Festtrachten mit eindrucksvollem, schwerem Kopfschmuck und Halsringen aus Silber.
 
-Von 1644 bis 1912 herrschte in China die mandschurische Qing-Dynastie, die eigene Kleidungsbräuche mitbrachte. Beamte trugen lange Gewänder mit engen Ärmeln und Manschetten in Form von Pferdehufen, am Hof wurden bestickte Drachengewänder getragen. Informelle Damenjacken wie das Stück aus dem 19. Jahrhundert auf dem Foto oben waren oft aus Seide, am Körper bestickt und an den Ärmeln mit breiten Borten verziert.
+## Traditionelle Männerkleidung {#maennerkleidung}
 
-In den 1920er- und 1930er-Jahren entwickelte sich vor allem in Shanghai das **Qipao**, ein eng anliegendes Kleid mit hohem Kragen, das auf ältere lange Gewänder und auf westliche Schneiderkunst zurückgriff. In Hongkong und im Englischen heißt es oft Cheongsam. Mehr dazu auf unserer [Qipao-Seite](/de/kleidungsstueck/qipao/).
+*Suchst du nach traditioneller Frauenkleidung? [Zur Frauenkleidung springen ↑](#frauenkleidung).*
+<span id="hanfu"></span>
+
+Die traditionelle Kleidung der Männer in China reicht von Gelehrtenroben bis zu festlichen Jacken:
+
+- **Changshan**: das traditionelle lange Männergewand mit Stehkragen und seitlicher Knopfleiste, das im 19. und frühen 20. Jahrhundert das alltägliche und festliche Obergewand chinesischer Männer war.
+- **Tang-Anzug (Tangzhuang)**: eine gerade geschnittene Jacke mit Stehkragen und geknoteten Stoffknöpfen, die auf die Reitjacke (*Magua*) der Qing-Zeit zurückgeht und heute gern zu Neujahr und Familienfesten getragen wird.
+- **Shenyi und Paofu**: klassische Hanfu-Gewänder von Gelehrten und Beamten mit weiten Ärmeln, übergeschlagenem Kragen (links über rechts) und Taillenschärpe.
+- **Kleidung der Minderheiten**: Männer in Tibet tragen die lammfellgefütterte *Chuba*, Mongolen den zum Reiten geeigneten *Deel* und Uiguren die bestickte *Doppa*-Kappe.
 
 ## Hochzeitskleidung {#hochzeit}
 

@@ -28,25 +28,28 @@ todo:
 
 Nigeria hat Hunderte ethnische Gruppen, eine einheitliche „nigerianische“ Tracht gibt es deshalb nicht. Im Norden sind die Hausa und Fulani die größten Gruppen, im Südwesten die Yoruba und im Südosten die Igbo. Viele weitere Völker, etwa die Edo, Ijaw, Efik, Tiv und Kanuri, haben eigene Kleidungstraditionen. Religion, Rang und Anlass bestimmen die Kleidung ebenso stark wie die ethnische Zugehörigkeit.
 
-## Kleidung der Yoruba {#yoruba}
+## Traditionelle Frauenkleidung {#frauenkleidung}
 
-Im Mittelpunkt der bekanntesten Männerkleidung der Yoruba steht der **Agbada**, ein sehr weites, fließendes Gewand, das über einem Hemd (*Buba*) und einer Hose (*Sokoto*) getragen wird, dazu eine Kappe (*Fila*). Weniger förmlich tragen viele Männer nur Buba und Sokoto. Mehr dazu auf unserer [Agbada-Seite](/de/kleidungsstueck/agbada/).
+*Suchst du nach traditioneller Männerkleidung? [Direkt zur Männerkleidung springen ↓](#maennerkleidung).*
+<span id="yoruba"></span><span id="hausa"></span><span id="igbo"></span>
 
-Frauen tragen oft **Iro und Buba**: ein um die Hüfte gebundenes Wickeltuch (*Iro*) und eine weite Bluse (*Buba*), dazu ein Kopftuch (*Gele*) und manchmal eine Schärpe über der Schulter (*Ipele*). Zu besonderen Anlässen wird das Gele aus steifem Stoff zu großen Formen gebunden.
+Die traditionelle Kleidung der Frauen in Nigeria zeichnet sich durch skulpturale Formen, leuchtende Farben und edle Stoffe aus:
 
-Zwei Stoffe sind eng mit der Kleidung der Yoruba verbunden. *Aso Oke* („oberer Stoff“) wird von Hand auf schmalen Webstühlen in Streifen gewebt, die anschließend zusammengenäht werden, und dient für festliche Kleidung. *Adire* ist Baumwolle, die mit Indigo in Reservetechniken gefärbt wird. Sie wird besonders mit der Stadt Abeokuta verbunden.
+- **Iro und Buba**: das klassische Ensemble der Yoruba-Frauen aus einem um die Hüfte gewickelten Rock (*Iro*) und einer weiten Bluse (*Buba*). Zu festlichen Anlässen gehören das kunstvoll zu Fächern und Schleifen gebundene Kopftuch (**Gele**) sowie eine über die Schulter gelegte Schärpe (**Ipele**).
+- **George-Wickeltücher und Korallenperlen**: Bei den Igbo und im Nigerdelta tragen Frauen zwei übereinandergelegte Wickeltücher aus **George**, einem schweren, reich bestickten Stoff. Dazu gehören eine Spitzenbluse, ein Kopftuch und mehrere Reihen echter, polierter **Korallenperlen**, die Wohlstand und Würde verkörpern.
+- **Kleidung im Norden**: Hausa- und Fulani-Frauen im Norden tragen oft ein Wickeltuch mit Bluse oder ein langes Gewand, dazu ein Kopftuch (**Kallabi**) und einen elegant über Kopf und Schultern drapierten Schleier (**Mayafi**).
+- **Aso Oke und Adire**: Festliche Frauenkleidung wird häufig aus **Aso Oke** gefertigt, einem in schmalen Streifen handgewebten Prachtstoff, oder aus **Adire**, dem traditionell mit Indigo gefärbten Baumwollstoff aus Abeokuta.
 
-## Kleidung der Hausa und im Norden {#hausa}
+## Traditionelle Männerkleidung {#maennerkleidung}
 
-Im Norden Nigerias tragen viele Hausa-Männer die **Babban Riga** („großes Gewand“), ein weites Gewand, das oft am Hals und auf der Brust bestickt ist. Darunter trägt man ein langes Hemd und eine Hose, dazu eine Kappe (*Hula*) oder zu manchen Anlässen einen Turban.
+*Suchst du nach traditioneller Frauenkleidung? [Zur Frauenkleidung springen ↑](#frauenkleidung).*
 
-Frauen im Norden tragen häufig ein Wickeltuch mit Bluse oder ein langes Kleid, dazu ein Kopftuch und oft einen großen Schal oder Schleier über Kopf und Schultern, je nach örtlichem und religiösem Brauch.
+Die traditionelle Männerkleidung in Nigeria ist repräsentativ und ausdrucksstark:
 
-## Kleidung der Igbo {#igbo}
-
-Ein bekanntes Männerkleidungsstück der Igbo ist das **Isiagu**, ein Oberteil zum Überziehen mit Löwenkopfmuster (der Name bedeutet „Löwenkopf“). Man trägt es oft mit Hose oder Wickeltuch und einer roten Kappe, die traditionell mit Titelträgern verbunden wird.
-
-Igbo-Frauen tragen oft ein Wickeltuch, manchmal zwei, mit Bluse und Kopftuch. **George**, ein schwerer, oft bestickter Stoff, der früher importiert wurde, ist bei Igbo-Frauen und in Teilen des Nigerdeltas für Wickeltücher besonders beliebt. Korallenperlen werden in mehreren Gemeinschaften zu festlichen Anlässen getragen, bei den Edo sind sie eng mit dem Königtum und der Brautkleidung verbunden.
+- **Agbada**: das weite, fließende vierteilige Gewand der Yoruba-Männer, das in ganz Westafrika getragen wird. Es besteht aus dem bodenlangen Überwurf mit weiten Schulterflügeln, einem Innenhemd (*Buba*), einer Hose (*Sokoto*) und einer bestickten Kappe (*Fila*). Mehr dazu auf unserer [Agbada-Seite](/de/kleidungsstueck/agbada/).
+- **Babban Riga**: das große Prachtgewand der Hausa und Fulani im Norden mit aufwendigen geometrischen Stickereien an Halsausschnitt und Brust. Es wird über Hemd und Hose mit einer bestickten *Hula*-Kappe oder einem Turban getragen.
+- **Isiagu**: das charakteristische Oberteil der Igbo-Männer mit auffälligen Löwenkopfmotiven (*Isi Agu* bedeutet „Löwenkopf“). Es wird mit Hose oder Wickeltuch, Spazierstock und einer roten Kappe getragen, die traditionell Würdenträgern vorbehalten ist.
+- **Kaftan**: langes Hemd mit passender Hose, das im Alltag und zu weniger förmlichen Anlässen im ganzen Land beliebt ist.
 
 ## Hochzeitskleidung {#hochzeit}
 

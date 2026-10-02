@@ -23,19 +23,32 @@ todo:
   - Ein CC0- oder Unsplash-Bild indischer Hochzeitskleidung für den Hochzeitsabschnitt finden.
 ---
 
-## Der Sari {#sari}
+## Traditionelle Frauenkleidung {#frauenkleidung}
 
-Der **Sari** (auch *Saree* geschrieben) ist eine ungenähte Stoffbahn, meist etwa 4,5–8 Meter (rund 5–9 Yards) lang, die um die Taille gewickelt und über die Schulter gelegt wird. Darunter trägt man eine eng anliegende Bluse und einen knöchellangen Unterrock, in den die Falten gesteckt werden. Das verzierte Ende, das über die Schulter fällt, heißt *Pallu*.
+*Suchst du nach traditioneller Männerkleidung? [Direkt zur Männerkleidung springen ↓](#maennerkleidung).*
+<span id="sari"></span>
 
-Es gibt viele Arten, einen Sari zu drapieren. Am weitesten verbreitet ist heute der *Nivi*-Stil: Die Falten werden vorn eingesteckt, der Pallu liegt über der linken Schulter. Andere Drapierungen gehören zu bestimmten Regionen, etwa der neun Yards lange *Nauvari* aus Maharashtra. Mehr dazu auf unserer [Sari-Seite](/de/kleidungsstueck/sari/).
+Der **Sari** ist das bedeutendste traditionelle Kleidungsstück der Frauen in Indien. Er besteht aus einer einzelnen, ungesäumten Stoffbahn von meist fünf bis neun Metern Länge, die um die Taille gewickelt und über die Schulter gelegt wird. Getragen wird der Sari über einer kurzen, eng anliegenden Bluse (*Choli*) und einem Unterrock, in den die Falten gesteckt werden. Die heute gebräuchlichste Drapierung ist der *Nivi*-Stil, bei dem die Falten vorn eingefügt werden und das verzierte Ende (*Pallu*) über die linke Schulter fällt. Berühmt sind Banarasi-Seidensaris mit Gold- und Silberbrokat (*Zari*) aus Varanasi, schwere Kanchipuram-Seidensaris aus Tamil Nadu sowie der neun Yards lange *Nauvari*-Sari aus Maharashtra, der hosengleich zwischen den Beinen hindurchgeführt wird. Mehr dazu auf unserer [Sari-Seite](/de/kleidungsstueck/sari/).
 
-## Weitere traditionelle Kleidung {#weitere-kleidung}
+Neben dem Sari tragen Frauen in Indien weitere traditionsreiche Ensembles:
 
-- **Salwar Kameez**: eine lange Tunika (*Kameez*) mit weiter Hose (*Salwar*) und oft einem langen Schal (*Dupatta*). Er wird vor allem mit dem Punjab und Nordindien verbunden, ist heute aber im ganzen Land verbreitet.
-- **Lehenga Choli**: ein langer, weiter Rock (*Lehenga*) mit eng anliegender Bluse (*Choli*) und Dupatta. Die Kombination ist in Rajasthan und Gujarat verbreitet und bei Hochzeiten beliebt.
-- **Dhoti**: ein ungenähtes Tuch, das Männer um Hüfte und Beine wickeln. Im Süden tragen Männer oft verwandte Hüfttücher wie den *Veshti* in Tamil Nadu und den *Mundu* in Kerala.
-- **Kurta**: ein langes, locker sitzendes Hemd oder eine Tunika für Männer und Frauen, getragen mit Hosen wie der weiten *Pyjama* oder der eng anliegenden *Churidar*.
-- **Sherwani**: ein langer, tailliert geschnittener Mantel mit Knopfleiste, den Männer zu förmlichen Anlässen und Hochzeiten tragen, besonders in Nordindien.
+- **Salwar Kameez**: ein klassischer Zweiteiler aus einer knielangen Tunika (*Kameez*), einer bequemen Hose (*Salwar*) und einem Schal (*Dupatta*), der ursprünglich aus dem Punjab stammt und heute landesweit getragen wird.
+- **Lehenga Choli**: ein weit schwingender, aufwendig bestickter Rock (*Lehenga*) mit passender Bluse (*Choli*) und Dupatta, der in Nordindien besonders zu Hochzeiten beliebt ist.
+- **Chaniya Choli**: ein farbenfrohes, oft mit kleinen Spiegeln verziertes Festgewand, das Frauen in Gujarat und Rajasthan zum Garba-Tanz während Navratri tragen.
+- **Mekhela Chador**: die zweigeteilte Seidentracht der Frauen in Assam, bestehend aus einem gewickelten Rock (*Mekhela*) und einem drapierten Obertuch (*Chador*).
+
+## Traditionelle Männerkleidung {#maennerkleidung}
+
+*Suchst du nach traditioneller Frauenkleidung? [Zur Frauenkleidung springen ↑](#frauenkleidung).*
+<span id="weitere-kleidung"></span>
+
+Die traditionelle Kleidung der Männer in Indien umfasst ungeschnittene Wickeltücher sowie maßgeschneiderte Tuniken und Mäntel:
+
+- **Dhoti**: ein ungeschnittenes Baumwoll- oder Seidentuch, das kunstvoll um Hüfte und Beine gewickelt und hinten in den Bund gesteckt wird. Es wird in ganz Nord- und Ostindien zu religiösen Zeremonien und Festen getragen.
+- **Veshti und Mundu**: Im Süden tragen Männer traditionelle Hüfttücher, wie den *Veshti* in Tamil Nadu oder den *Mundu* in Kerala, häufig aus feiner weißer Baumwolle mit Goldfadenborte (*Kasavu*).
+- **Kurta**: ein bequemes, knielanges Hemd mit seitlichen Schlitzen, das mit weiten Hosen (*Pyjama*), engen Faltenhosen (*Churidar*) oder einem Dhoti kombiniert wird.
+- **Sherwani**: ein vornehmer, knielanger Gehrock mit Stehkragen und durchgehender Knopfleiste. Der Sherwani ist das festlichste Kleidungsstück für Bräutigame und Ehrengäste in Nordindien, meist ergänzt durch einen Turban (*Safa*) und eine Seidenschärpe.
+- **Kediyu**: ein an der Brust gerafftes, ausgestelltes Oberteil, das Männer in Gujarat mit engen Hosen und Turban zu Festtänzen tragen.
 
 ## Regionale Vielfalt {#regionen}
 
