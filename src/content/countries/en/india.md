@@ -16,7 +16,7 @@ facts:
     value: Kurta, sherwani
   - label: Famous silk saris
     value: Banarasi, Kanchipuram
-updated: 2026-09-30
+updated: 2026-10-01
 todo:
   - Add a references list (museum, handloom or academic sources) for the regional weaves and wedding sections.
   - "Verify: regional bridal customs mentioned (kasavu sari in Kerala, white sari with red border at Durga Puja) against a reliable source."

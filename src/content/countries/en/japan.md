@@ -16,7 +16,7 @@ facts:
     value: Yukata
   - label: Bridal kimono
     value: Shiromuku
-updated: 2026-09-30
+updated: 2026-10-01
 todo:
   - Add a references list (museum or academic sources) for the history and wedding sections.
   - Find a CC0 or Unsplash image of a Shinto wedding (shiromuku) for the wedding section.

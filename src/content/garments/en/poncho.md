@@ -16,7 +16,7 @@ facts:
     value: Alpaca, llama, sheep's wool
   - label: Shape
     value: Rectangle with a neck opening
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add references for the history section (e.g. museum catalogue texts, academic work on colonial Andean dress).
   - "Verify: current scholarly view on when the open-sided poncho became widespread in the Andes, and the origin of the word poncho."

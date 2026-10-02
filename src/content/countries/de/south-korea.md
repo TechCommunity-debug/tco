@@ -16,7 +16,7 @@ facts:
     value: Hwarot, Wonsam
   - label: Wichtigste Feiertage
     value: Seollal, Chuseok
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellenverzeichnis (Museums- oder Fachliteratur) für die Abschnitte zur Joseon-Zeit und zur Hochzeit ergänzen.
   - Aktuelle Regeln für den freien Eintritt in die Seouler Königspaläste im Hanbok prüfen, auch mögliche Vorgaben zu modernen oder geliehenen Hanboks.

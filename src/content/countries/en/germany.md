@@ -16,7 +16,7 @@ facts:
     value: Dirndl and lederhosen (Bavaria)
   - label: Regional icon
     value: Bollenhut (Black Forest)
-updated: 2026-09-30
+updated: 2026-10-01
 todo:
   - Add a references list (e.g. regional museums or Tracht associations) for the regional and wedding sections.
   - "Verify: description of the Schwalm women's costume (layered skirts, small caps)."

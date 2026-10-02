@@ -16,7 +16,7 @@ facts:
     value: Obi sash, tabi, zōri
   - label: Summer version
     value: Yukata
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add references for the history section (e.g. museum catalogue texts).
   - Check whether to add a section on kimono care and storage, with a reliable source.

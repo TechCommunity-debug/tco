@@ -44,12 +44,12 @@ const formatDate = (value: string | Date) =>
     <Breadcrumbs lang={lang} crumbs={crumbs} />
     <div class="mt-6 max-w-3xl">
       <h1 class="text-display-xl font-bold text-ink md:text-[32px]">{page.data.title}</h1>
+      <p class="mt-2 text-caption text-muted">
+        {t(lang, 'lastUpdated')}: <time datetime={page.data.updated.toISOString().slice(0, 10)}>{formatDate(page.data.updated)}</time>
+      </p>
       <div class="prose-content mt-6">
         <Content />
       </div>
-      <p class="mt-10 text-caption text-muted">
-        {t(lang, 'lastUpdated')}: <time datetime={page.data.updated.toISOString().slice(0, 10)}>{formatDate(page.data.updated)}</time>
-      </p>
     </div>
 
     {

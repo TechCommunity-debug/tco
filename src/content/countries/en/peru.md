@@ -16,7 +16,7 @@ facts:
     value: Poncho
   - label: Knitted hat
     value: Chullo
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add a references list (museum, UNESCO or academic sources) for the weaving, festival and wedding sections.
   - Wedding section is deliberately general. Add specific, sourced customs for particular regions or communities if available.

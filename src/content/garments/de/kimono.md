@@ -16,7 +16,7 @@ facts:
     value: Obi, Tabi, Zōri
   - label: Sommervariante
     value: Yukata
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellen für den Abschnitt Geschichte ergänzen (z. B. Texte aus Museumskatalogen).
   - Prüfen, ob ein Abschnitt zu Pflege und Aufbewahrung sinnvoll ist, mit verlässlicher Quelle.

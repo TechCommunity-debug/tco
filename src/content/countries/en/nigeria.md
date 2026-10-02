@@ -16,7 +16,7 @@ facts:
     value: Babban riga
   - label: Matching guest outfits
     value: Aso ebi
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add a references list (museum or academic sources) for the sections on Yoruba, Hausa and Igbo dress.
   - "Verify: the traditional association of Igbo red caps with titled men, and which titles or ranks wear them."

@@ -16,7 +16,7 @@ facts:
     value: Hwarot, wonsam
   - label: Main holidays
     value: Seollal, Chuseok
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add a references list (museum or academic sources) for the Joseon history and wedding sections.
   - Verify the current rules for free admission to Seoul's royal palaces in hanbok, including any guidelines on modern or rental styles.

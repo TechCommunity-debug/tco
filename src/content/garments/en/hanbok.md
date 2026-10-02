@@ -16,7 +16,7 @@ facts:
     value: Jeogori, chima, baji
   - label: Overcoat
     value: Durumagi
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add references for the history section (e.g. National Folk Museum of Korea texts or museum catalogues).
   - "Verify: when the word \"hanbok\" came into common use (the text says around the late 19th and early 20th centuries)."

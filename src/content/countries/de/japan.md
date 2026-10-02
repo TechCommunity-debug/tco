@@ -16,7 +16,7 @@ facts:
     value: Yukata
   - label: Brautkimono
     value: Shiromuku
-updated: 2026-09-30
+updated: 2026-10-01
 todo:
   - Quellenverzeichnis (Museums- oder Fachliteratur) für die Abschnitte Geschichte und Hochzeit ergänzen.
   - Ein CC0- oder Unsplash-Bild einer Shintō-Hochzeit (Shiromuku) für den Hochzeitsabschnitt finden.

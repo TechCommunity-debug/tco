@@ -16,7 +16,7 @@ facts:
     value: Aso Oke, Damast, Spitze
   - label: Verwandtes Gewand
     value: Babban Riga (Hausa)
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellen für den Abschnitt Geschichte ergänzen (Museums- oder Fachliteratur zu westafrikanischen Gewändern).
   - "Prüfen: die Herkunft des Agbada und seine Beziehung zur Babban Riga und anderen westafrikanischen Gewändern."

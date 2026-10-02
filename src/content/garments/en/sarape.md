@@ -16,7 +16,7 @@ facts:
     value: Saltillo sarape
   - label: Material
     value: Wool, often with cotton
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add references for the history section (e.g. museum catalogue texts on Saltillo sarapes).
   - "Verify: the role of Tlaxcalan settlers (late 16th century) in the Saltillo weaving tradition."

@@ -16,7 +16,7 @@ facts:
     value: Poncho
   - label: Strickmütze
     value: Chullo
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellenverzeichnis (Museums-, UNESCO- oder Fachquellen) für die Abschnitte Weben, Feste und Hochzeit ergänzen.
   - Der Hochzeitsabschnitt ist bewusst allgemein gehalten. Konkrete, belegte Bräuche einzelner Regionen oder Gemeinschaften ergänzen, falls verfügbar.

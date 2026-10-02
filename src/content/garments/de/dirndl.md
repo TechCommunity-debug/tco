@@ -16,7 +16,7 @@ facts:
     value: Bluse, Schürze, Strickjacke oder Tuch
   - label: Gegenstück für Männer
     value: Lederhose
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellen für den Abschnitt Geschichte ergänzen (z. B. Ausstellungstexte zur Tracht in Bayern und Österreich).
   - "Prüfen: welchen Anteil Bühnenstücke und Filme der 1920er- und 1930er-Jahre (z. B. die Operette Im weißen Rößl, 1930) an der Verbreitung des Dirndls hatten."

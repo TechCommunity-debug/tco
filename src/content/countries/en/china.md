@@ -16,7 +16,7 @@ facts:
     value: Qipao (cheongsam)
   - label: Wedding colour
     value: Red
-updated: 2026-09-30
+updated: 2026-10-01
 todo:
   - Add a references list (museum or academic sources) for the Qing and wedding sections.
   - "Verify: when the modern hanfu revival began (the text says \"since the early 2000s\")."

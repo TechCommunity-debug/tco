@@ -16,7 +16,7 @@ facts:
     value: Blouse and petticoat
   - label: Most common drape
     value: Nivi
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add references for the history section (e.g. museum catalogue texts or textile histories).
   - "Verify: the role often credited to Jnanadanandini Devi in popularising the blouse with the sari in Bengal, and the dates."

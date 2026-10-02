@@ -16,7 +16,7 @@ facts:
     value: Cheongsam (長衫)
   - label: Typische Merkmale
     value: Stehkragen, Knebelknöpfe, Seitenschlitze
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellen für den Abschnitt Geschichte ergänzen (z. B. Museumskataloge zur Kleidung der Republikzeit).
   - "Prüfen: die Deutung, dass frühe Qipao teilweise vom Changpao der Männer inspiriert waren, den manche Frauen in den 1920er-Jahren trugen."

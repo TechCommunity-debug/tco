@@ -16,7 +16,7 @@ facts:
     value: Bluse und Unterrock
   - label: Häufigste Drapierung
     value: Nivi
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellen für den Abschnitt Geschichte ergänzen (z. B. Texte aus Museumskatalogen oder Textilgeschichten).
   - "Prüfen: die Rolle, die Jnanadanandini Devi oft bei der Verbreitung der Bluse zum Sari in Bengalen zugeschrieben wird, samt Datierung."

@@ -2,7 +2,7 @@
 slug: quellen
 title: Bildquellen und Bildnachweise
 description: Alle Bilder auf Traditional Clothing Hub mit Urheber, Quelle, Lizenz und Datum des Herunterladens.
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 Wir verwenden nur Bilder, die gemeinfrei sind oder die wir unter einer freien Lizenz nutzen dürfen. Unsere Bilder stammen aus:

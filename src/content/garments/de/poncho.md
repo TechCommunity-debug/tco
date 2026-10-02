@@ -16,7 +16,7 @@ facts:
     value: Alpaka-, Lama-, Schafwolle
   - label: Form
     value: Rechteck mit Kopföffnung
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellen für den Abschnitt Geschichte ergänzen (z. B. Texte aus Museumskatalogen, Fachliteratur zur Kleidung im kolonialen Andenraum).
   - "Prüfen: aktueller Forschungsstand, wann sich der seitlich offene Poncho in den Anden verbreitete, und woher das Wort Poncho stammt."

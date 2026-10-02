@@ -16,7 +16,7 @@ facts:
     value: Dirndl und Lederhose (Bayern)
   - label: Regionales Wahrzeichen
     value: Bollenhut (Schwarzwald)
-updated: 2026-09-30
+updated: 2026-10-01
 todo:
   - Quellenverzeichnis (z. B. Regionalmuseen oder Trachtenverbände) für die Abschnitte Regionen und Hochzeit ergänzen.
   - "Prüfen: Beschreibung der Schwälmer Frauentracht (mehrere Röcke, kleine Hauben)."

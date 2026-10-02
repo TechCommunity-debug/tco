@@ -16,7 +16,7 @@ facts:
     value: Rebozo, sarape
   - label: Horseman's suit
     value: Traje de charro
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add a references list (e.g. museum and academic sources) for the indigenous dress and wedding sections.
   - "Verify: the origin of the china poblana outfit and how historians view the Catarina de San Juan story."

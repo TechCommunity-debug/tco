@@ -16,7 +16,7 @@ facts:
     value: Rebozo, Sarape
   - label: Reitertracht
     value: Traje de charro
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellenverzeichnis (z. B. Museums- und Fachliteratur) für die Abschnitte indigene Kleidung und Hochzeit ergänzen.
   - "Prüfen: Herkunft der China-Poblana-Tracht und wie die Geschichtswissenschaft die Legende um Catarina de San Juan bewertet."

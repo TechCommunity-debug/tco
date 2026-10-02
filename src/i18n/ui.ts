@@ -3,7 +3,7 @@ export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'en';
 
 export const localeMeta: Record<Locale, { label: string; short: string; ogLocale: string; dateLocale: string }> = {
-  en: { label: 'English', short: 'EN', ogLocale: 'en_US', dateLocale: 'en-GB' },
+  en: { label: 'English', short: 'EN', ogLocale: 'en_US', dateLocale: 'en-US' },
   de: { label: 'Deutsch', short: 'DE', ogLocale: 'de_DE', dateLocale: 'de-DE' },
 };
 

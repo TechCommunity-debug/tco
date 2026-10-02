@@ -16,7 +16,7 @@ facts:
     value: Aso oke, damask, lace
   - label: Related robe
     value: Babban riga (Hausa)
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add references for the history section (museum or academic sources on West African robes).
   - "Verify: the origins of the agbada and its relationship to the babban riga and other West African robes."

@@ -16,7 +16,7 @@ facts:
     value: Qipao (Cheongsam)
   - label: Hochzeitsfarbe
     value: Rot
-updated: 2026-09-30
+updated: 2026-10-01
 todo:
   - Quellenverzeichnis (Museums- oder Fachliteratur) für die Abschnitte zur Qing-Zeit und zur Hochzeit ergänzen.
   - "Prüfen: seit wann es die moderne Hanfu-Bewegung gibt (im Text: seit Anfang der 2000er-Jahre)."

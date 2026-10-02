@@ -16,7 +16,7 @@ facts:
     value: Cheongsam (長衫)
   - label: Typical features
     value: Mandarin collar, frog buttons, side slits
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add references for the history section (e.g. museum catalogue texts on Republican-era dress).
   - "Verify: the view that early qipao were partly inspired by women adopting the men's changpao in the 1920s."

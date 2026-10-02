@@ -2,7 +2,7 @@
 slug: sources
 title: Image Sources and Credits
 description: Every image on Traditional Clothing Hub with its author, source, licence and download date.
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 We only use images that are in the public domain or that we are allowed to use under a free licence. Our images come from:

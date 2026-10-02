@@ -16,7 +16,7 @@ facts:
     value: Babban Riga
   - label: Einheitliche Gästekleidung
     value: Aso Ebi
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellenverzeichnis (Museums- oder Fachliteratur) für die Abschnitte zur Kleidung der Yoruba, Hausa und Igbo ergänzen.
   - "Prüfen: die traditionelle Verbindung der roten Kappen der Igbo mit Titelträgern und welche Titel oder Ränge sie tragen."

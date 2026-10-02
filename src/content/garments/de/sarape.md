@@ -16,7 +16,7 @@ facts:
     value: Sarape aus Saltillo
   - label: Material
     value: Wolle, oft mit Baumwolle
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellen für den Abschnitt Geschichte ergänzen (z. B. Museumskatalogtexte zu Sarapes aus Saltillo).
   - "Prüfen: die Rolle der tlaxkaltekischen Siedler (Ende des 16. Jahrhunderts) für die Webtradition in Saltillo."

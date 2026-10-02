@@ -16,7 +16,7 @@ facts:
     value: Jeogori, Chima, Baji
   - label: Mantel
     value: Durumagi
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Quellen für den Abschnitt Geschichte ergänzen (z. B. Texte des National Folk Museum of Korea oder Museumskataloge).
   - "Prüfen: seit wann das Wort „Hanbok“ gebräuchlich ist (im Text: etwa Ende des 19. und Anfang des 20. Jahrhunderts)."

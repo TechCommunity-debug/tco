@@ -16,7 +16,7 @@ facts:
     value: Kurta, Sherwani
   - label: Berühmte Seidensaris
     value: Banarasi, Kanchipuram
-updated: 2026-09-30
+updated: 2026-10-01
 todo:
   - Quellenverzeichnis (Museums-, Handweberei- oder Fachliteratur) für die Abschnitte Regionen und Hochzeit ergänzen.
   - "Prüfen: die genannten regionalen Brautbräuche (Kasavu-Sari in Kerala, weißer Sari mit roter Borte bei der Durga Puja) anhand einer verlässlichen Quelle."

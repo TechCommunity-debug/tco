@@ -16,7 +16,7 @@ facts:
     value: Blouse, apron, cardigan or shawl
   - label: Men's counterpart
     value: Lederhosen
-updated: 2026-09-30
+updated: 2026-10-02
 todo:
   - Add references for the history section (e.g. museum exhibition texts on Tracht in Bavaria and Austria).
   - "Verify: how far stage productions and films of the 1920s and 1930s (e.g. the operetta Im weißen Rößl, 1930) popularised the dirndl."
